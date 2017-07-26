@@ -12,5 +12,11 @@ subscribes from /message_server topic,
 publishes on corresponding nodes /ns/message_status topic
 
 """
-# TODO design subscriber and publisher
-rospy.loginfo(trans)
+
+import rospy
+from environment_information import get_robot_distances
+
+rospy.loginfo("SSSSS")
+
+# TODO design subscriber and publisher to message_handler topics
+rospy.loginfo(get_robot_distances('sos1', 'sos2'))

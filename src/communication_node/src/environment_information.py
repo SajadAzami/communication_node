@@ -7,6 +7,9 @@
 Utils package for environment information extraction.
 """
 
+import tf
+import rospy
+
 
 def get_current_position(name_space):
     """Get current location of robot using tf translation
@@ -29,7 +32,6 @@ def get_current_position(name_space):
             # TODO lacks compatibility, uses /map which may be not available
             (transform, rot) = listener.lookupTransform((name_space + '/map'), (name_space + '/base_link'),
                                                         rospy.Time(0))
-            rospy.loginfo(trans)
             flag = False
         except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
             continue
