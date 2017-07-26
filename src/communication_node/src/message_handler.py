@@ -13,3 +13,4 @@ publishes on corresponding nodes /ns/message_status topic
 
 """
 # TODO design subscriber and publisher
+rospy.loginfo(trans)

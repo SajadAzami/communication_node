@@ -25,29 +25,7 @@ subscribes from /change_model_topic
 
 """
 
-import math
-import random
-import sys
-import threading
-import time
-
 import numpy as np
-
-import actionlib
-import roslib
-import rospy
-import smach
-import smach_ros
-import tf
-import turtlesim
-from actionlib_msgs.msg import GoalStatusArray
-from move_base_msgs.msg import *
-from nav_msgs.msg import OccupancyGrid
-from smach_ros import ServiceState
-from geometry_msgs.msg import PoseStamped
-from geometry_msgs.msg import Pose
-from std_msgs.msg import Header
-from tf import TransformListener
 
 
 def _one_slope_model_checker(l0, decay_factor, distance, mode='yes_or_no'):
@@ -89,7 +67,7 @@ def one_slope_model_checker(distance,
     l0 : reference loss value for the distance of 1m
 
 
-    :return:
+    :returns:
     result : boolean or integer(depending on the mode), indicating signal strength
     """
 
