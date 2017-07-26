@@ -1,3 +1,4 @@
+# coding=utf-8
 """Environment Information.
 
 # Authors:  Sajjad Azami <sajjadaazami@gmail.com>

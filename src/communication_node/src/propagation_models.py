@@ -1,3 +1,4 @@
+# coding=utf-8
 """Propagation Models.
 
 # Authors:  Sajjad Azami <sajjadaazami@gmail.com>
