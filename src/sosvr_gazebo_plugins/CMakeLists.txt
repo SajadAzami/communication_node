@@ -1,19 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(setup)
+project(sosvr_gazebo_plugins)  # --- ${PROJECT_NAME} == sosvr_gazebo_plugins
 
+# note that while this packge contains gazebo plugins which are ros aware , these plugins should
+#be used by being attached to gazebo models or worlds or etc. like simple gazebo plugins
+
+# Load catkin and all dependencies required for this package
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
-  costmap_2d
-  nav_msgs
-  tf
-  geometry_msgs
-  sensor_msgs
-  cv_bridge
-  std_msgs
-  image_transport
-  gazebo_plugins
   gazebo_ros
+  gazebo_plugins
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
@@ -42,41 +38,25 @@ include_directories(${Boost_INCLUDE_DIRS})
 ## catkin specific configuration ##
 ###################################
 
+
 catkin_package(
- CATKIN_DEPENDS
- nav_msgs
- roscpp
- rospy
- tf
- sensor_msgs
- cv_bridge
- std_msgs
- image_transport
- geometry_msgs
- costmap_2d
- gazebo_plugins
- gazebo_ros
- INCLUDE_DIRS include
- LIBRARIES
+  DEPENDS
+    roscpp
+    rospy
+    gazebo_ros
+    gazebo_plugins
+    INCLUDE_DIRS include
+    LIBRARIES
 )
+
+
 
 ###########
 ## Build ##
 ###########
 
+add_library(sosvr_gazebo_plugin_simple src/simple_world_plugin.cpp)
+target_link_libraries(sosvr_gazebo_plugin_simple ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
-add_library(factory src/factory.cc)
-target_link_libraries(factory ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-
-add_library(hello_world src/hello_world.cc)
-target_link_libraries(hello_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(model_push src/model_push.cc)
-target_link_libraries(model_push ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(system_gui src/system_gui.cc)
-target_link_libraries(system_gui ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(world_edit src/world_edit.cc)
-target_link_libraries(world_edit ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+add_library(sosvr_gazebo_plugin_hello_world src/hello_world.cc)
+target_link_libraries(sosvr_gazebo_plugin_hello_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
