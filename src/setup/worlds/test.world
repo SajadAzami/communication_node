@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+<world name="default">
+
+   <!-- reference to your plugin -->
+   <plugin name="gazebo_tutorials" filename="libsosvr_gazebo_plugin_simple.so" />
+
+ </world>
+</sdf>

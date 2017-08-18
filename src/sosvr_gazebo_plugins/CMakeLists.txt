@@ -8,6 +8,7 @@ project(sosvr_gazebo_plugins)  # --- ${PROJECT_NAME} == sosvr_gazebo_plugins
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
+  nav_msgs
   gazebo_ros
   gazebo_plugins
 )
@@ -20,7 +21,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
 
-## Find OGRE and OGRE-Paging 
+## Find OGRE and OGRE-Paging
 include (FindPkgConfig)
 if (PKG_CONFIG_FOUND)
   pkg_check_modules(OGRE OGRE)
@@ -43,6 +44,7 @@ catkin_package(
   DEPENDS
     roscpp
     rospy
+    nav_msgs
     gazebo_ros
     gazebo_plugins
     INCLUDE_DIRS include
@@ -57,6 +59,3 @@ catkin_package(
 
 add_library(sosvr_gazebo_plugin_simple src/simple_world_plugin.cpp)
 target_link_libraries(sosvr_gazebo_plugin_simple ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(sosvr_gazebo_plugin_hello_world src/hello_world.cc)
-target_link_libraries(sosvr_gazebo_plugin_hello_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
