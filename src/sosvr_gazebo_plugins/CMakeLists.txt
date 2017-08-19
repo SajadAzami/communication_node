@@ -9,6 +9,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   nav_msgs
+  message_generation
+  std_msgs
   gazebo_ros
   gazebo_plugins
 )
@@ -40,16 +42,29 @@ include_directories(${Boost_INCLUDE_DIRS})
 ###################################
 
 
+add_service_files(
+  FILES
+  distance_serivce.srv
+)
+generate_messages(
+  DEPENDENCIES
+  nav_msgs
+  std_msgs
+)
+
 catkin_package(
   DEPENDS
     roscpp
     rospy
     nav_msgs
+    message_generation
+    std_msgs
     gazebo_ros
     gazebo_plugins
     INCLUDE_DIRS include
     LIBRARIES
 )
+
 
 
 
