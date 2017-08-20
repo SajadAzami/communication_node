@@ -2,7 +2,13 @@
 
 import rospy;
 from sosvr_gazebo_plugins.srv import *
+""" API
 
+# Authors:  Mohammad Hossein Gohari Nejad <mhgoharinejad@gmail.com>
+# License:  BSD 3 clause
+
+
+"""
 
 class GetInfo():
     def __init__(self):
@@ -15,7 +21,7 @@ class GetInfo():
            print ("Service call failed ");
 
 
-    def  Request(self,command="distance",robot1="sos1",robot2="sos2"):
+    def  Request(self,command="walls",robot1="sos1",robot2="sos2"):
            request = distance_serivceRequest(command,robot1,robot2);
            output=[None,None];
            try:

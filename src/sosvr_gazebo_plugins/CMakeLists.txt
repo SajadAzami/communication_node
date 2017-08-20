@@ -74,3 +74,6 @@ catkin_package(
 
 add_library(sosvr_gazebo_plugin_simple src/simple_world_plugin.cpp)
 target_link_libraries(sosvr_gazebo_plugin_simple ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+add_library(sosvr_gazebo_plugin_contact src/Contact_plugin.cpp)
+target_link_libraries(sosvr_gazebo_plugin_contact ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})

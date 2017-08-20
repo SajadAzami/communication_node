@@ -8,5 +8,5 @@ from getInfo import  GetInfo;
 if (__name__ == "__main__") :
     rospy.init_node("test_node");
     a = GetInfo();
-    print (a.Request(robot1="asphalt_plane",robot2="asphalt_plane_1")[0]);
+    print (a.Request(robot1="asphalt_plane",robot2="asphalt_plane_1")[1]);
     print ("this was the distance that you expected");
