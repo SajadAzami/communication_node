@@ -1,4 +1,4 @@
-<sdf version='1.5'>
+<sdf version='1.6'>
   <world name='default'>
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
@@ -29,6 +29,9 @@
                 <mu>100</mu>
                 <mu2>50</mu2>
               </ode>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
             <contact>
               <ode/>
@@ -61,8 +64,6 @@
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
-      <gravity>0 0 -9.8</gravity>
-      <magnetic_field>5.5645e-06 2.28758e-05 -4.23884e-05</magnetic_field>
     </physics>
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
@@ -93,6 +94,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -134,6 +138,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -175,6 +182,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -216,6 +226,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -242,64 +255,72 @@
     </model>
     <state world_name='default'>
       <sim_time>5574 331000000</sim_time>
-      <real_time>1780 590626915</real_time>
-      <wall_time>1489060935 254807737</wall_time>
+      <real_time>0 0</real_time>
+      <wall_time>1503012605 802633223</wall_time>
+      <iterations>0</iterations>
       <model name='Construction Cone_1'>
         <pose frame=''>4 -11 0.05 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4 -11 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 0.196303 2.74907 -1.10697 3.14159</acceleration>
-          <wrench>-0 0 0.196303 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1_clone'>
         <pose frame=''>16.4841 -18 0.05 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>16.4841 -18 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1e-06 1e-06 -2.10777 1.57915 1.48487 3.14159</acceleration>
-          <wrench>1e-06 1e-06 -2.10777 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1_clone_0'>
         <pose frame=''>13 13.5608 0.05 -1e-06 1e-06 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>13 13.5608 0.05 -1e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1e-06 0 -0.915003 1.62955 0.907373 3.14159</acceleration>
-          <wrench>1e-06 0 -0.915003 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1_clone_1'>
-        <pose frame=''>4 10 0.050001 -2e-06 1e-06 -8.07794e-28</pose>
+        <pose frame=''>4 10 0.050001 -2e-06 1e-06 -0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4 10 0.050001 -2e-06 1e-06 -8.07794e-28</pose>
+          <pose frame=''>4 10 0.050001 -2e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 -3e-06 -0.827226 2.25629 -1.52699 1.2676e-15</acceleration>
-          <wrench>-2e-06 -3e-06 -0.827226 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Dumpster'>
         <pose frame=''>4.00975 12.2971 0.050917 0 -2e-06 -3e-05</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.00975 12.2971 0.050917 0 -2e-06 -3e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.007925 0.000108 2.76817 3.02414 -0.808238 3.14159</acceleration>
-          <wrench>-0.007925 0.000108 2.76817 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Dumpster_clone'>
-        <pose frame=''>15.2831 -17.3807 0.050917 4.23516e-22 -2e-06 -1.53387</pose>
+        <pose frame=''>15.2831 -17.3807 0.050917 0 -2e-06 -1.53387</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>15.2831 -17.3807 0.050917 4.23516e-22 -2e-06 -1.53387</pose>
+          <pose frame=''>15.2831 -17.3807 0.050917 0 -2e-06 -1.53387</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.000185 0.007924 2.76817 -2.33181 -0.200972 -4e-06</acceleration>
-          <wrench>-0.000185 0.007924 2.76817 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='asphalt_plane'>
         <pose frame=''>10 10 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 10 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -309,6 +330,7 @@
       </model>
       <model name='asphalt_plane_0'>
         <pose frame=''>-10 10 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-10 10 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -318,6 +340,7 @@
       </model>
       <model name='asphalt_plane_1'>
         <pose frame=''>-10 -10 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-10 -10 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -327,6 +350,7 @@
       </model>
       <model name='asphalt_plane_2'>
         <pose frame=''>10 -10 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 -10 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -336,6 +360,7 @@
       </model>
       <model name='drc_practice_blue_cylinder'>
         <pose frame=''>-7 12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-7 12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -345,6 +370,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_0'>
         <pose frame=''>-7 11 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-7 11 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -354,6 +380,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_1'>
         <pose frame=''>8 0.462617 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>8 0.462617 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -363,6 +390,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_10'>
         <pose frame=''>14.8683 -3.4221 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14.8683 -3.4221 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -372,6 +400,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_11'>
         <pose frame=''>15.4965 -4 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15.4965 -4 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -381,6 +410,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_12'>
         <pose frame=''>15.6647 -4.95742 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15.6647 -4.95742 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -390,6 +420,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_13'>
         <pose frame=''>15.8123 -5.75923 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15.8123 -5.75923 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -399,6 +430,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_14'>
         <pose frame=''>15.538 -11.3847 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15.538 -11.3847 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -408,6 +440,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_15'>
         <pose frame=''>15 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -417,6 +450,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_16'>
         <pose frame=''>13 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>13 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -426,6 +460,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_17'>
         <pose frame=''>11.4923 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11.4923 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -435,6 +470,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_18'>
         <pose frame=''>10 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -444,6 +480,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_19'>
         <pose frame=''>8.58666 -12.4153 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>8.58666 -12.4153 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -453,6 +490,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_2'>
         <pose frame=''>8.44787 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>8.44787 0 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -462,6 +500,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_20'>
         <pose frame=''>4.412 -13.5099 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.412 -13.5099 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -471,6 +510,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_21'>
         <pose frame=''>6 -13 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6 -13 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -480,6 +520,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_22'>
         <pose frame=''>7.44132 -12.4897 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>7.44132 -12.4897 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -489,6 +530,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_23'>
         <pose frame=''>3 -10 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>3 -10 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -498,6 +540,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_24'>
         <pose frame=''>4 -9 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4 -9 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -507,6 +550,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_25'>
         <pose frame=''>5 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>5 -8 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -516,6 +560,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26'>
         <pose frame=''>4.70894 -1.66155 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.70894 -1.66155 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -525,6 +570,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone'>
         <pose frame=''>10 -7 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 -7 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -534,6 +580,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_0'>
         <pose frame=''>9.54352 -6.42883 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9.54352 -6.42883 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -543,6 +590,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_1'>
         <pose frame=''>13 -10 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>13 -10 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -552,6 +600,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_10'>
         <pose frame=''>13 -3 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>13 -3 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -561,6 +610,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_11'>
         <pose frame=''>6 -3 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6 -3 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -570,6 +620,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_12'>
         <pose frame=''>6.13327 -5.58971 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6.13327 -5.58971 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -579,6 +630,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_13'>
         <pose frame=''>3.48589 -9.53385 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>3.48589 -9.53385 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -588,6 +640,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_14'>
         <pose frame=''>4.55828 -8.41577 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.55828 -8.41577 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -597,6 +650,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_15'>
         <pose frame=''>5.41593 -7.49103 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>5.41593 -7.49103 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -606,6 +660,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_16'>
         <pose frame=''>7 -13 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>7 -13 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -615,6 +670,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_17'>
         <pose frame=''>5 -13 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>5 -13 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -624,6 +680,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_18'>
         <pose frame=''>4 -14 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4 -14 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -633,6 +690,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_19'>
         <pose frame=''>10.5567 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.5567 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -642,6 +700,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_2'>
         <pose frame=''>13.4822 -10.5787 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>13.4822 -10.5787 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -651,6 +710,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_20'>
         <pose frame=''>9 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -660,6 +720,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_21'>
         <pose frame=''>12.4067 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>12.4067 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -669,6 +730,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_22'>
         <pose frame=''>15 -11 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15 -11 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -678,6 +740,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_23'>
         <pose frame=''>10 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 -8 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -687,6 +750,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_24'>
         <pose frame=''>9.44392 -8.50424 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9.44392 -8.50424 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -696,6 +760,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_25'>
         <pose frame=''>9 -9 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9 -9 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -705,6 +770,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_26'>
         <pose frame=''>14 1 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14 1 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -714,6 +780,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_27'>
         <pose frame=''>14.5948 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14.5948 0 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -723,6 +790,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_28'>
         <pose frame=''>11 -19.4872 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11 -19.4872 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -732,6 +800,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_29'>
         <pose frame=''>10 -19 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 -19 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -741,6 +810,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_3'>
         <pose frame=''>14 -11 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14 -11 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -750,6 +820,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_30'>
         <pose frame=''>9 -18.531 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9 -18.531 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -759,6 +830,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_31'>
         <pose frame=''>9 -17.5588 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9 -17.5588 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -768,6 +840,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_32'>
         <pose frame=''>9.53971 -17 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9.53971 -17 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -777,6 +850,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_33'>
         <pose frame=''>10 -16.4882 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10 -16.4882 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -786,6 +860,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_34'>
         <pose frame=''>11 -16 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11 -16 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -795,6 +870,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_35'>
         <pose frame=''>11.5353 -15.427 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11.5353 -15.427 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -804,6 +880,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_36'>
         <pose frame=''>6.05389 -4.78795 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6.05389 -4.78795 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -813,6 +890,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_37'>
         <pose frame=''>8 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>8 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -822,6 +900,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_38'>
         <pose frame=''>16 -7.57508 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>16 -7.57508 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -831,6 +910,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_39'>
         <pose frame=''>15.8802 -6.75476 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>15.8802 -6.75476 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -840,6 +920,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_4'>
         <pose frame=''>14 -12 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14 -12 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -849,6 +930,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_5'>
         <pose frame=''>16 -10.5669 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>16 -10.5669 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -858,6 +940,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_6'>
         <pose frame=''>16.0679 -9.84362 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>16.0679 -9.84362 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -867,6 +950,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_7'>
         <pose frame=''>16.0662 -9.1751 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>16.0662 -9.1751 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -876,6 +960,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_8'>
         <pose frame=''>16.1138 -8.45819 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>16.1138 -8.45819 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -885,6 +970,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_26_clone_9'>
         <pose frame=''>14 -3 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14 -3 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -894,6 +980,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_27'>
         <pose frame=''>5.50377 -2.36426 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>5.50377 -2.36426 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -903,6 +990,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_28'>
         <pose frame=''>6.07081 -3.77597 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6.07081 -3.77597 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -912,6 +1000,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_29'>
         <pose frame=''>6.15345 -6.28597 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6.15345 -6.28597 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -921,6 +1010,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_3'>
         <pose frame=''>9 -0.571045 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9 -0.571045 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -930,6 +1020,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_30'>
         <pose frame=''>6 -7 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>6 -7 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -939,6 +1030,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_31'>
         <pose frame=''>10.6371 -7.44109 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.6371 -7.44109 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -948,6 +1040,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_32'>
         <pose frame=''>11.0806 -8.02202 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11.0806 -8.02202 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -957,6 +1050,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_33'>
         <pose frame=''>11.5003 -8.48616 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11.5003 -8.48616 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -966,6 +1060,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_34'>
         <pose frame=''>12 -9 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>12 -9 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -975,6 +1070,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_35'>
         <pose frame=''>12.4701 -9.54953 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>12.4701 -9.54953 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -984,6 +1080,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_4'>
         <pose frame=''>9.0856 -1.41112 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9.0856 -1.41112 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -993,6 +1090,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_5'>
         <pose frame=''>9.10531 -2.16526 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9.10531 -2.16526 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1002,6 +1100,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_6'>
         <pose frame=''>9.79936 -2.44835 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>9.79936 -2.44835 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1011,6 +1110,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_7'>
         <pose frame=''>10.5644 -2.66622 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.5644 -2.66622 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1020,6 +1120,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_8'>
         <pose frame=''>11.3313 -2.69708 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>11.3313 -2.69708 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1029,6 +1130,7 @@
       </model>
       <model name='drc_practice_blue_cylinder_9'>
         <pose frame=''>12.1104 -2.71394 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>12.1104 -2.71394 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1038,6 +1140,7 @@
       </model>
       <model name='drc_practice_organge_jersey_barrier_1_clone_clone'>
         <pose frame=''>5.44091 8.76051 0 0 0 -0.7</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>5.44091 8.76051 0 0 0 -0.7</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1047,6 +1150,7 @@
       </model>
       <model name='drc_practice_organge_jersey_barrier_1_clone_clone_clone'>
         <pose frame=''>5.81205 12.1259 0 0 0 -1.5</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>5.81205 12.1259 0 0 0 -1.5</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1056,6 +1160,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0'>
         <pose frame=''>12.7677 12.6561 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>12.7677 12.6561 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1065,6 +1170,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2'>
         <pose frame=''>7 9.50066 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>7 9.50066 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1074,6 +1180,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone'>
         <pose frame=''>-16.004 7.30856 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-16.004 7.30856 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1083,6 +1190,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone'>
         <pose frame=''>-16 3.4685 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-16 3.4685 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1092,6 +1200,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone'>
         <pose frame=''>-11 5.43458 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-11 5.43458 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1101,6 +1210,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone_clone'>
         <pose frame=''>-11 12.5575 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-11 12.5575 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1110,6 +1220,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone_clone_0'>
         <pose frame=''>10.54 5 0 0 0 -1.52883</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.54 5 0 0 0 -1.52883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1119,6 +1230,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone_clone_0_clone'>
         <pose frame=''>-4 -2 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-4 -2 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1128,6 +1240,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone_clone_0_clone_clone'>
         <pose frame=''>-1 -6 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-1 -6 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1137,6 +1250,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone_clone_0_clone_clone_0'>
         <pose frame=''>0 -2 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>0 -2 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1146,6 +1260,7 @@
       </model>
       <model name='drc_practice_white_jersey_barrier_0_clone_2_clone_clone_clone_clone_clone'>
         <pose frame=''>-0.66017 8.40689 0 0 -0 0.7</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-0.66017 8.40689 0 0 -0 0.7</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1155,6 +1270,7 @@
       </model>
       <model name='fire_hydrant_0'>
         <pose frame=''>17 4 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>17 4 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1164,6 +1280,7 @@
       </model>
       <model name='fire_hydrant_0_clone_1'>
         <pose frame=''>14.146 4.04654 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>14.146 4.04654 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1173,6 +1290,7 @@
       </model>
       <model name='fire_hydrant_0_clone_1_clone'>
         <pose frame=''>4.50713 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.50713 8 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1182,6 +1300,7 @@
       </model>
       <model name='fire_hydrant_0_clone_2'>
         <pose frame=''>17 5 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>17 5 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1191,6 +1310,7 @@
       </model>
       <model name='fire_hydrant_1'>
         <pose frame=''>4 -12.4371 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4 -12.4371 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1200,6 +1320,7 @@
       </model>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1209,6 +1330,7 @@
       </model>
       <model name='jersey_barrier_clone_clone_clone_clone'>
         <pose frame=''>2.98054 -13.7608 0 0 0 -1.61146</pose>
+        <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.98054 -13.7608 0 0 0 -1.61146</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1218,6 +1340,7 @@
       </model>
       <model name='longwall'>
         <pose frame=''>0.229981 -20.0786 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>0.229982 -20.0786 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1227,6 +1350,7 @@
       </model>
       <model name='longwall_0'>
         <pose frame=''>-20.0177 -0.255752 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-20.0177 -0.255753 0 0 0 -1.57092</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1236,6 +1360,7 @@
       </model>
       <model name='longwall_0_clone'>
         <pose frame=''>20.1053 0.258056 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>20.1053 0.258055 0 0 0 -1.57092</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1245,6 +1370,7 @@
       </model>
       <model name='longwall_clone'>
         <pose frame=''>-0.214439 20.0862 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-0.214438 20.0862 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1252,8 +1378,43 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='pioneer3at'>
+        <pose frame=''>-10 -12 0.18 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>-10 -12 0.18 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='left_front_wheel'>
+          <pose frame=''>-9.875 -11.799 0.12 1.5707 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='left_rear_wheel'>
+          <pose frame=''>-10.125 -11.799 0.12 1.5707 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='right_front_wheel'>
+          <pose frame=''>-9.875 -12.201 0.12 1.5707 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='right_rear_wheel'>
+          <pose frame=''>-10.125 -12.201 0.12 1.5707 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='room1'>
         <pose frame=''>13.1523 12.4323 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_11'>
           <pose frame=''>16.2736 13.6271 0 0 0 -1.0472</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1287,6 +1448,7 @@
       </model>
       <model name='worlds_0_clone'>
         <pose frame=''>-1 -9 0 0 -0 1.49697</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-1 -9 0 0 -0 3.06777</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1296,6 +1458,7 @@
       </model>
       <model name='worlds_1'>
         <pose frame=''>3 10.4406 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>3 10.4406 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1305,6 +1468,7 @@
       </model>
       <model name='worlds_1_clone'>
         <pose frame=''>11.6021 8.07399 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>11.6021 8.07399 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1314,6 +1478,7 @@
       </model>
       <model name='worlds_1_clone_0'>
         <pose frame=''>11.6134 3.89135 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>11.6134 3.89135 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1323,6 +1488,7 @@
       </model>
       <model name='worlds_1_clone_0_clone'>
         <pose frame=''>13.736 1.79456 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>13.736 1.79456 0 0 0 -0.000121</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1332,6 +1498,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone'>
         <pose frame=''>17.9203 1.82357 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>17.9203 1.82357 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1341,6 +1508,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0'>
         <pose frame=''>8 15 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>8 15 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1350,6 +1518,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone'>
         <pose frame=''>-17.8162 14.4688 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-17.8162 14.4688 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1359,6 +1528,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone'>
         <pose frame=''>-17.8054 -4.32089 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-17.8054 -4.32089 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1368,6 +1538,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone_0'>
         <pose frame=''>-13.6699 -4.29855 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-13.6699 -4.29855 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1377,6 +1548,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone_0_clone'>
         <pose frame=''>-12.8938 -0.809745 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-12.8938 -0.809745 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1386,6 +1558,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone_0_clone_clone'>
         <pose frame=''>-1.54431 4.60476 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-1.54431 4.60476 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1395,6 +1568,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone_0_clone_clone_0'>
         <pose frame=''>1.87166 2.0906 0 0 0 -1.22347</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>1.87166 2.0906 0 0 -0 0.347334</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1404,6 +1578,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone_0_clone_clone_clone'>
         <pose frame=''>-2 1.45154 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-2 1.45154 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1413,6 +1588,7 @@
       </model>
       <model name='worlds_1_clone_0_clone_clone_0_clone_clone_1'>
         <pose frame=''>-9.47339 -4.28892 0 0 0 -1.57092</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-9.47339 -4.28892 0 0 0 -0.00012</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1422,6 +1598,7 @@
       </model>
       <model name='worlds_1_clone_1'>
         <pose frame=''>-13 18 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-13 18 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1431,6 +1608,7 @@
       </model>
       <model name='worlds_1_clone_1_clone'>
         <pose frame=''>-15.7734 12.3225 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-15.7734 12.3225 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1440,6 +1618,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_0'>
         <pose frame=''>-0.708445 17.9147 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-0.708445 17.9147 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1449,6 +1628,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_1'>
         <pose frame=''>-0.716318 13.714 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-0.716318 13.714 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1458,6 +1638,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_2'>
         <pose frame=''>-7 18 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-7 18 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1467,6 +1648,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_3'>
         <pose frame=''>-10 15 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-10 15 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1476,6 +1658,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_4'>
         <pose frame=''>-10 11 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-10 11 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1485,6 +1668,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_5'>
         <pose frame=''>-4 15 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-4 15 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1494,6 +1678,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_6'>
         <pose frame=''>-4 11 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-4 11 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1503,6 +1688,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_7'>
         <pose frame=''>-10 7 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-10 7 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1512,6 +1698,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_7_clone'>
         <pose frame=''>-7 4 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-7 4 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1521,6 +1708,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_7_clone_clone'>
         <pose frame=''>1.48825 6.4581 0 0 0 -0.589381</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>1.48825 6.4581 0 0 -0 0.981419</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1529,7 +1717,8 @@
         </link>
       </model>
       <model name='worlds_1_clone_1_clone_7_clone_clone_0'>
-        <pose frame=''>6.00131 2.13117 0 0 -0 0.900287</pose>
+        <pose frame=''>6.00131 2.13117 0 0 -0 0.90029</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>6.00131 2.13117 0 0 -0 2.47109</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1539,6 +1728,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_7_clone_clone_clone'>
         <pose frame=''>5 4.58681 0 0 0 -0.589381</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>5 4.58681 0 0 -0 0.981419</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1548,6 +1738,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_7_clone_clone_clone_0'>
         <pose frame=''>-8.55218 -6 0 0 0 -0.589381</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-8.55218 -6 0 0 -0 0.981419</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1557,6 +1748,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_clone'>
         <pose frame=''>-15.0638 5.287 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-15.0638 5.287 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1566,6 +1758,7 @@
       </model>
       <model name='worlds_1_clone_1_clone_clone_0'>
         <pose frame=''>-15.0769 1.18275 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-15.0769 1.18275 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1575,6 +1768,7 @@
       </model>
       <model name='worlds_1_clone_clone'>
         <pose frame=''>15 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>15 8 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1584,6 +1778,7 @@
       </model>
       <model name='worlds_2'>
         <pose frame=''>4.42901 7.33195 0 0 -0 1.08023</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>4.42901 7.33195 0 0 -0 2.65103</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1593,6 +1788,7 @@
       </model>
       <model name='worlds_2_clone'>
         <pose frame=''>2.34689 -10.1873 0 0 -0 0.67691</pose>
+        <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>2.34689 -10.1873 0 0 -0 2.24771</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -1600,7 +1796,9 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <iterations>0</iterations>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
     </state>
     <model name='longwall'>
       <pose frame=''>15.115 -2.2 0 0 -0 0</pose>
@@ -1620,6 +1818,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1663,6 +1864,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1706,6 +1910,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1749,6 +1956,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1792,6 +2002,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1831,6 +2044,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1870,6 +2086,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1909,6 +2128,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1948,6 +2170,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -1997,6 +2222,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2023,6 +2251,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2056,6 +2287,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2089,6 +2323,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2123,6 +2360,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2166,6 +2406,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2215,6 +2458,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2248,6 +2494,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2274,6 +2523,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2314,6 +2566,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2339,6 +2594,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2391,6 +2649,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2434,6 +2695,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2475,6 +2739,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2507,7 +2774,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>13 -17 0.050919 1.29247e-26 -1e-06 -2.8e-05</pose>
+      <pose frame=''>13 -17 0.050919 0 -1e-06 -2.8e-05</pose>
     </model>
     <model name='jersey_barrier_clone_clone_clone_clone'>
       <static>1</static>
@@ -2534,6 +2801,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2552,6 +2822,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2570,6 +2843,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2588,6 +2864,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2606,6 +2885,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2624,6 +2906,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2650,6 +2935,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2668,8 +2956,9 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-7.16475 -4.58914 98.6493 0 1.37944 0.552044</pose>
+        <pose frame=''>-31.322 -29.6244 63.8201 -0 0.953797 0.648044</pose>
         <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
       </camera>
     </gui>
     <model name='worlds_1_clone'>
@@ -2690,6 +2979,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2733,6 +3025,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2776,6 +3071,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2819,6 +3117,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2862,6 +3163,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2905,6 +3209,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2948,6 +3255,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -2991,6 +3301,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3040,6 +3353,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3067,6 +3383,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3110,6 +3429,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3159,6 +3481,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3186,6 +3511,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3229,6 +3557,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3272,6 +3603,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3315,6 +3649,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3358,6 +3695,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3401,6 +3741,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3444,6 +3787,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3487,6 +3833,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3530,6 +3879,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3573,6 +3925,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3616,6 +3971,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3659,6 +4017,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3708,6 +4069,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3735,6 +4099,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3784,6 +4151,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3817,6 +4187,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3844,6 +4217,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3887,6 +4263,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3930,6 +4309,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -3973,6 +4355,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4016,6 +4401,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4065,6 +4453,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4098,6 +4489,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4125,6 +4519,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4174,6 +4571,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4207,6 +4607,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4234,6 +4637,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4283,6 +4689,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4316,6 +4725,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4349,6 +4761,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4382,6 +4797,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4415,6 +4833,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4448,6 +4869,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4481,6 +4905,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4514,6 +4941,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4547,6 +4977,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4580,6 +5013,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4613,6 +5049,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4646,6 +5085,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4679,6 +5121,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4712,6 +5157,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4745,6 +5193,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4778,6 +5229,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4811,6 +5265,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4844,6 +5301,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4877,6 +5337,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4910,6 +5373,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4943,6 +5409,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -4976,6 +5445,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5009,6 +5481,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5042,6 +5517,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5075,6 +5553,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5108,6 +5589,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5141,6 +5625,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5174,6 +5661,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5207,6 +5697,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5240,6 +5733,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5273,6 +5769,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5306,6 +5805,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5339,6 +5841,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5372,6 +5877,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5405,6 +5913,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5438,6 +5949,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5471,6 +5985,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5504,6 +6021,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5537,6 +6057,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5570,6 +6093,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5603,6 +6129,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5636,6 +6165,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5669,6 +6201,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5702,6 +6237,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5735,6 +6273,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5768,6 +6309,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5801,6 +6345,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5834,6 +6381,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5867,6 +6417,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5900,6 +6453,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5933,6 +6489,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5966,6 +6525,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -5999,6 +6561,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6032,6 +6597,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6065,6 +6633,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6098,6 +6669,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6131,6 +6705,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6164,6 +6741,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6197,6 +6777,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6230,6 +6813,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6263,6 +6849,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6296,6 +6885,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6329,6 +6921,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6362,6 +6957,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6395,6 +6993,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6428,6 +7029,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6461,6 +7065,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6494,6 +7101,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6527,6 +7137,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6560,6 +7173,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6593,6 +7209,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6626,6 +7245,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6659,6 +7281,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6692,6 +7317,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6725,6 +7353,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6758,6 +7389,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6791,6 +7425,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6824,6 +7461,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6851,6 +7491,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6893,6 +7536,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6938,6 +7584,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -6983,6 +7632,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -7028,6 +7680,9 @@
             <bounce/>
             <friction>
               <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
             </friction>
           </surface>
         </collision>
@@ -7055,6 +7710,327 @@
         <gravity>1</gravity>
       </link>
       <pose frame=''>4 10 0.05 -1e-06 0 0</pose>
+    </model>
+    <plugin name='sosvr_gazebo_plugin_simple' filename='libsosvr_gazebo_plugin_simple.so'/>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <model name='pioneer3at'>
+      <pose frame=''>-11.2938 -12.5035 0.18 0 -0 0</pose>
+      <static>0</static>
+      <link name='chassis'>
+        <inertial>
+          <mass>14</mass>
+          <inertia>
+            <ixx>0.147117</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.334951</iyy>
+            <iyz>0</iyz>
+            <izz>0.397834</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.501 0.3 0.19</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pioneer3at/meshes/chassis.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='right_front_wheel'>
+        <pose frame=''>0.125 -0.201 -0.06 1.5707 -0 0</pose>
+        <inertial>
+          <mass>1.5</mass>
+          <inertia>
+            <ixx>0.00524062</ixx>
+            <iyy>0.00524062</iyy>
+            <izz>0.009075</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.11</radius>
+              <length>0.075</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <slip1>0.5</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pioneer3at/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='left_front_wheel'>
+        <pose frame=''>0.125 0.201 -0.06 1.5707 -0 0</pose>
+        <inertial>
+          <mass>1.5</mass>
+          <inertia>
+            <ixx>0.00524062</ixx>
+            <iyy>0.00524062</iyy>
+            <izz>0.009075</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.11</radius>
+              <length>0.075</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <slip1>0.5</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pioneer3at/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='right_rear_wheel'>
+        <pose frame=''>-0.125 -0.201 -0.06 1.5707 -0 0</pose>
+        <inertial>
+          <mass>1.5</mass>
+          <inertia>
+            <ixx>0.00524062</ixx>
+            <iyy>0.00524062</iyy>
+            <izz>0.009075</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.11</radius>
+              <length>0.075</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <slip1>0.5</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pioneer3at/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='left_rear_wheel'>
+        <pose frame=''>-0.125 0.201 -0.06 1.5707 -0 0</pose>
+        <inertial>
+          <mass>1.5</mass>
+          <inertia>
+            <ixx>0.00524062</ixx>
+            <iyy>0.00524062</iyy>
+            <izz>0.009075</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.11</radius>
+              <length>0.075</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <slip1>0.5</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pioneer3at/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='right_front' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>right_front_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <use_parent_model_frame>1</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='right_rear' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>right_rear_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <use_parent_model_frame>1</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='left_front' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>left_front_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <use_parent_model_frame>1</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='left_rear' type='revolute'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <child>left_rear_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <use_parent_model_frame>1</use_parent_model_frame>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <plugin name='SkidSteerDrivePlugin' filename='libSkidSteerDrivePlugin.so'>
+        <right_front>right_front</right_front>
+        <right_rear>right_rear</right_rear>
+        <left_front>left_front</left_front>
+        <left_rear>left_rear</left_rear>
+        <MaxForce>5.0</MaxForce>
+      </plugin>
     </model>
   </world>
 </sdf>
