@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>sosvr_gazebo_plugins</name>
+  <name>gazebo_information_plugins</name>
   <version>0.0.0</version>
-  <description>The sosvr_gazebo_plugins package</description>
+  <description>The gazebo_information_plugins package</description>
 
 
   <maintainer email="mhgoharinejad@gmail.com">Hossein76</maintainer>

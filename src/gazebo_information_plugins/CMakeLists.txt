@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(sosvr_gazebo_plugins)  # --- ${PROJECT_NAME} == sosvr_gazebo_plugins
+project(gazebo_information_plugins)  # --- ${PROJECT_NAME} == gazebo_information_plugins
 
 # note that while this packge contains gazebo plugins which are ros aware , these plugins should
 #be used by being attached to gazebo models or worlds or etc. like simple gazebo plugins
