@@ -10,6 +10,31 @@ Utils package for environment information extraction.
 
 import tf
 import rospy
+from gazebo_information_plugins.srv import *
+
+
+class GetInfo:
+    def __init__(self):
+        self.client = None
+        rospy.wait_for_service("distance_service")
+        try:
+            self.client = rospy.ServiceProxy("distance_service", distance_serivce)
+            print ("server found")
+        except rospy.ServiceException:
+            print ("Service call failed ")
+
+    def request(self, command="walls", robot1="sos1", robot2="sos2"):
+        request = distance_serivceRequest(command, robot1, robot2)
+        output = [None, None]
+        try:
+            response = self.client(request)
+            output = [response.distance, response.number_of_objects]
+        except rospy.ServiceException:
+            print ("sending the request failed")
+            response = "failed"
+        return output
+
+envirnment_info= GetInfo();
 
 
 def get_current_position(name_space):
@@ -39,11 +64,33 @@ def get_current_position(name_space):
     return transform
 
 
-def get_n_walls_between():
+def get_n_walls_between(ns1,ns2):
+    """Returns number of objects between object1 and object2 in Gazebo
+    as well as distance between them
+    :parameter
+    ns1 : string, object1 namespace
+
+    ns2 : string, object2 namespace
+
+    :returns
+    number_of_walls  : integer, number of all the objects between 2 robots
+    should the name of robots be wrong or no model can be found with given names
+    this method returns -1
+    Relations
+    ----------
     """
-    """
-    # TODO Gohari
-    pass
+    output_info=envirnment_info.request(command="walls", robot1=ns1, robot2=ns2)
+    distance=output_info[0]
+    number_of_walls=output_info[1]
+    if(distance==-1):
+        print("wrong model name")
+        return -1
+    else :
+        print ("number of objects between  {0} and {1} is : {2} ".format(ns1,ns2,number_of_walls))
+    return number_of_walls
+
+
+
 
 
 def get_object_distance(ns1, ns2):
@@ -59,9 +106,11 @@ def get_object_distance(ns1, ns2):
     Relations
     ----------
     """
-    # TODO Gohari
 
-    rate = rospy.Rate(10.0)
-    transform_1 = get_current_position(ns1)
-    transform_2 = get_current_position(ns2)
-    return abs(transform_2 - transform_1)
+    output_info=envirnment_info.request(command="distance", robot1=ns1, robot2=ns2)
+    distance=output_info[0];
+    if(distance==-1):
+        print("wrong model name")
+    else :
+        print ("distance between {0} and {1} is : {2} meters".format(ns1,ns2,distance))
+    return distance

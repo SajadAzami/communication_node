@@ -7,6 +7,7 @@
 */
 #include <gazebo/common/Plugin.hh>
 #include <ignition/math/Pose3.hh>
+#include <ignition/math/Vector3.hh>
 #include "gazebo/physics/physics.hh"
 #include "gazebo/common/common.hh"
 #include "gazebo/gazebo.hh"
@@ -23,6 +24,7 @@
 namespace gazebo {
     class WorldPluginTutorial : public WorldPlugin {
     public:
+        physics::Atmosphere _atmospher;
         physics::WorldPtr _world;
         ros::Publisher polygonPublisher;
         ros::NodeHandle n;
@@ -33,6 +35,10 @@ namespace gazebo {
         int check;
 
         WorldPluginTutorial() : WorldPlugin() {}
+
+        double get_Temperature(){return _atmospher.Temperature(0.0);}
+        double get_Pressure(){return _atmospher.Pressure(0.0);}
+        ignition::math::Vector3d get_Magnetic_Field(){return _world->MagneticField(); }
 
         int get_walls(std::string robot_name1, std::string robot_name2) {
 
@@ -114,7 +120,7 @@ namespace gazebo {
                 return;
             }
             _world = _parent;
-
+            _atmospher=_world->Atmosphere();
             ROS_INFO("Hello World!");
             ROS_INFO("Hello World!");
 
@@ -197,6 +203,18 @@ namespace gazebo {
                 res.distance = get_distance(robot1, robot2);
                 res.number_of_objects = 0;
             } else if (command == "walls") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            }
+            else if (command == "temp") {
+                res.distance = get_Temperature();
+                res.number_of_objects = 0;
+            }
+            else if (command == "pressure") {
+                res.distance = get_Pressure();
+                res.number_of_objects = 0;
+            }
+            else if (command == "magnet") {
                 res.distance = get_distance(robot1, robot2);
                 res.number_of_objects = get_walls(robot1, robot2);
             }
