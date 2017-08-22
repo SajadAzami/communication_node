@@ -7711,7 +7711,7 @@
       </link>
       <pose frame=''>4 10 0.05 -1e-06 0 0</pose>
     </model>
-    <plugin name='sosvr_gazebo_plugin_simple' filename='libsosvr_gazebo_plugin_simple.so'/>
+    <plugin name='gazebo_simple_world' filename='libgazebo_simple_world.so'/>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>

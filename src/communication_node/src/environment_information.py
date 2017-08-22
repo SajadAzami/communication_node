@@ -39,12 +39,19 @@ def get_current_position(name_space):
     return transform
 
 
-def get_robot_distances(ns1, ns2):
-    """Returns robot1 and robot2 distances
-    :parameter
-    ns1 : string, robot1 namespace
+def get_n_walls_between():
+    """
+    """
+    # TODO Gohari
+    pass
 
-    ns2 : string, robot2 namespace
+
+def get_object_distance(ns1, ns2):
+    """Returns object1 and object2 distances in Gazebo
+    :parameter
+    ns1 : string, object1 namespace
+
+    ns2 : string, object2 namespace
 
     :returns
     distance : float, distance between 2 robot
@@ -52,6 +59,8 @@ def get_robot_distances(ns1, ns2):
     Relations
     ----------
     """
+    # TODO Gohari
+
     rate = rospy.Rate(10.0)
     transform_1 = get_current_position(ns1)
     transform_2 = get_current_position(ns2)

@@ -7,7 +7,7 @@
 
 """
 import rospy
-from sosvr_gazebo_plugins.srv import *
+from gazebo_information_plugins.srv import *
 
 
 class GetInfo:
