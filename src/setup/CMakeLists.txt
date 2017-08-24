@@ -56,7 +56,7 @@ catkin_package(
  costmap_2d
  gazebo_plugins
  gazebo_ros
- INCLUDE_DIRS include
+ INCLUDE_DIRS 
  LIBRARIES
 )
 
@@ -65,18 +65,3 @@ catkin_package(
 ###########
 
 
-add_library(factory src/factory.cc)
-target_link_libraries(factory ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-
-add_library(hello_world src/hello_world.cc)
-target_link_libraries(hello_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(model_push src/model_push.cc)
-target_link_libraries(model_push ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(system_gui src/system_gui.cc)
-target_link_libraries(system_gui ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
-add_library(world_edit src/world_edit.cc)
-target_link_libraries(world_edit ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})

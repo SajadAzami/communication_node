@@ -34,8 +34,8 @@ namespace gazebo {
 
         WorldPluginTutorial() : WorldPlugin() {}
 
-      double get_Temperature(){return _world->Atmosphere ().Temperature(0.0);}
-      double get_Pressure(){return _world->Atmosphere ().Pressure(0.0);}
+    //  double get_Temperature(){return _world->Atmosphere ().Temperature(0.0);}
+    //  double get_Pressure(){return _world->Atmosphere ().Pressure(0.0);}
     //TODO    ignition::math::Vector3d get_Magnetic_Field(){return _world->MagneticField(); }
 
         int get_walls(std::string robot_name1, std::string robot_name2) {
@@ -119,7 +119,6 @@ namespace gazebo {
                 return;
             }
             _world = _parent;
-            _world->Atmosphere();
             ROS_INFO("Hello World!");
             ROS_INFO("Hello World!");
 
@@ -205,11 +204,11 @@ namespace gazebo {
                 res.number_of_objects = get_walls(robot1, robot2);
             }
             else if (command == "temp") {
-                res.distance = get_Temperature()-273;
+                res.distance = 0;
                 res.number_of_objects = 0;
             }
             else if (command == "pressure") {
-                res.distance = get_Pressure();
+                res.distance = 0;
                 res.number_of_objects = 0;
             }
         /*TODO   else if (command == "magnet") {

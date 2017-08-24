@@ -61,7 +61,7 @@ catkin_package(
     std_msgs
     gazebo_ros
     gazebo_plugins
-    INCLUDE_DIRS include
+    INCLUDE_DIRS
     LIBRARIES
 )
 
@@ -74,6 +74,12 @@ catkin_package(
 
 add_library(gazebo_simple_world src/SimpleWorldPlugin.cpp)
 target_link_libraries(gazebo_simple_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+
+###### for gazebo 7
+#add_library(gazebo_simple_world src/SimpleWorldPlugin_v7.cpp)
+#target_link_libraries(gazebo_simple_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
 
 add_library(gazebo_plugin_contact src/ContactPlugin.cpp)
 target_link_libraries(gazebo_plugin_contact ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})

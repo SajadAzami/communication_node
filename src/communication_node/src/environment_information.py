@@ -16,9 +16,9 @@ from gazebo_information_plugins.srv import *
 class GetInfo:
     def __init__(self):
         self.client = None
-        rospy.wait_for_service("distance_service")
+        rospy.wait_for_service("GzInfo_service")
         try:
-            self.client = rospy.ServiceProxy("distance_service", distance_serivce)
+            self.client = rospy.ServiceProxy("GzInfo_service", distance_serivce)
             print ("server found")
         except rospy.ServiceException:
             print ("Service call failed ")
@@ -85,8 +85,6 @@ def get_n_walls_between(ns1,ns2):
     if(distance==-1):
         print("wrong model name")
         return -1
-    else :
-        print ("number of objects between  {0} and {1} is : {2} ".format(ns1,ns2,number_of_walls))
     return number_of_walls
 
 
@@ -111,6 +109,33 @@ def get_object_distance(ns1, ns2):
     distance=output_info[0];
     if(distance==-1):
         print("wrong model name")
-    else :
-        print ("distance between {0} and {1} is : {2} meters".format(ns1,ns2,distance))
     return distance
+
+
+def get_Temp():
+    """Returns Temperature of Atmosphere in Gazebo
+
+    :returns
+    temp : float,
+
+    Relations
+    ----------
+    """
+
+    output_info=envirnment_info.request(command="temp")
+    temp=output_info[0];
+    return temp
+
+def get_Pressure():
+    """Returns Pressure of Atmosphere in Gazebo
+
+    :returns
+    pressure : float,
+
+    Relations
+    ----------
+    """
+
+    output_info=envirnment_info.request(command="pressure")
+    pressure=output_info[0];
+    return pressure
