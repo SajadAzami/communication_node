@@ -34,7 +34,8 @@ class GetInfo:
             response = "failed"
         return output
 
-envirnment_info= GetInfo();
+
+envirnment_info = GetInfo();
 
 
 def get_current_position(name_space):
@@ -64,7 +65,7 @@ def get_current_position(name_space):
     return transform
 
 
-def get_n_walls_between(ns1,ns2):
+def get_n_walls_between(ns1, ns2):
     """Returns number of objects between object1 and object2 in Gazebo
     as well as distance between them
     :parameter
@@ -79,16 +80,13 @@ def get_n_walls_between(ns1,ns2):
     Relations
     ----------
     """
-    output_info=envirnment_info.request(command="walls", robot1=ns1, robot2=ns2)
-    distance=output_info[0]
-    number_of_walls=output_info[1]
-    if(distance==-1):
+    output_info = envirnment_info.request(command="walls", robot1=ns1, robot2=ns2)
+    distance = output_info[0]
+    number_of_walls = output_info[1]
+    if (distance == -1):
         print("wrong model name")
         return -1
     return number_of_walls
-
-
-
 
 
 def get_object_distance(ns1, ns2):
@@ -105,16 +103,18 @@ def get_object_distance(ns1, ns2):
     ----------
     """
 
-    output_info=envirnment_info.request(command="distance", robot1=ns1, robot2=ns2)
-    distance=output_info[0];
-    if(distance==-1):
+    output_info = envirnment_info.request(command="distance", robot1=ns1, robot2=ns2)
+    distance = output_info[0];
+    if (distance == -1):
         print("wrong model name")
     return distance
 
 
-def get_Temp():
+
+def get_temp():
     """Returns Temperature of Atmosphere in Gazebo
 
+    :NOTE needs gazebo-8
     :returns
     temp : float,
 
@@ -122,13 +122,15 @@ def get_Temp():
     ----------
     """
 
-    output_info=envirnment_info.request(command="temp")
-    temp=output_info[0];
+    output_info = envirnment_info.request(command="temp")
+    temp = output_info[0];
     return temp
 
-def get_Pressure():
+
+def get_pressure():
     """Returns Pressure of Atmosphere in Gazebo
 
+    :NOTE needs gazebo-8
     :returns
     pressure : float,
 
@@ -136,6 +138,6 @@ def get_Pressure():
     ----------
     """
 
-    output_info=envirnment_info.request(command="pressure")
-    pressure=output_info[0];
+    output_info = envirnment_info.request(command="pressure")
+    pressure = output_info[0];
     return pressure
