@@ -1,10 +1,10 @@
-#WSS Registration Node:
+## WSS Registration Node:
 a node for registering robots in WSS communuication node in order to know each other and be able to send queries of data communication to other robots.
 
-#Protocol:
+## Protocol:
 to be adedd...
 
-#Usage
+## Usage
 after sourcing environment
 run registration server
 ```
