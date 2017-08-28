@@ -35,7 +35,7 @@ class GetInfo:
         return output
 
 
-envirnment_info = GetInfo();
+envirnment_info = GetInfo()
 
 
 def get_current_position(name_space):
@@ -104,7 +104,7 @@ def get_object_distance(ns1, ns2):
     """
 
     output_info = envirnment_info.request(command="distance", robot1=ns1, robot2=ns2)
-    distance = output_info[0];
+    distance = output_info[0]
     if (distance == -1):
         print("wrong model name")
     return distance
@@ -123,7 +123,7 @@ def get_temp():
     """
 
     output_info = envirnment_info.request(command="temp")
-    temp = output_info[0];
+    temp = output_info[0]
     return temp
 
 
@@ -139,5 +139,5 @@ def get_pressure():
     """
 
     output_info = envirnment_info.request(command="pressure")
-    pressure = output_info[0];
+    pressure = output_info[0]
     return pressure
