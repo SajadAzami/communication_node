@@ -86,7 +86,7 @@ namespace gazebo {
             int number_of_walls = vec.size() - 2;
             check = 0;
             vec.clear();
-            math::Pose new_test_pose(0.0, 0.0, 90.0, 0, 0, 0);
+            math::Pose new_test_pose(200.0, 200.0, 10.0, 0, 0, 0);
             _world->GetModel(test_object)->SetWorldPose(new_test_pose);
             return number_of_walls;
 
