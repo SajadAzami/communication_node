@@ -2,7 +2,7 @@
 
 """ API
 
-# Authors:  Mohammad Hossein Gohari Nejad <mhgoharinejad@gmail.com>
+# Authors:  MohammadHossein GohariNejad <mhgoharinejad@gmail.com>
 # License:  BSD 3 clause
 
 """

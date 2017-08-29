@@ -1,8 +1,9 @@
+#!/usr/bin/env python
 # coding=utf-8
 """Environment Information.
 
 # Authors:  Sajjad Azami <sajjadaazami@gmail.com>
-#           Saman Golestannejad
+#           MohammadHossein GohariNejad
 # License:  BSD 3 clause
 
 Utils package for environment information extraction.
@@ -35,7 +36,7 @@ class GetInfo:
         return output
 
 
-envirnment_info = GetInfo()
+environment_info = GetInfo()
 
 
 def get_current_position(name_space):
@@ -80,10 +81,10 @@ def get_n_walls_between(ns1, ns2):
     Relations
     ----------
     """
-    output_info = envirnment_info.request(command="walls", robot1=ns1, robot2=ns2)
+    output_info = environment_info.request(command="walls", robot1=ns1, robot2=ns2)
     distance = output_info[0]
     number_of_walls = output_info[1]
-    if (distance == -1):
+    if distance == -1:
         print("wrong model name")
         return -1
     return number_of_walls
@@ -103,12 +104,11 @@ def get_object_distance(ns1, ns2):
     ----------
     """
 
-    output_info = envirnment_info.request(command="distance", robot1=ns1, robot2=ns2)
+    output_info = environment_info.request(command="distance", robot1=ns1, robot2=ns2)
     distance = output_info[0]
-    if (distance == -1):
+    if distance == -1:
         print("wrong model name")
     return distance
-
 
 
 def get_temp():
@@ -122,7 +122,7 @@ def get_temp():
     ----------
     """
 
-    output_info = envirnment_info.request(command="temp")
+    output_info = environment_info.request(command="temp")
     temp = output_info[0]
     return temp
 
@@ -138,6 +138,6 @@ def get_pressure():
     ----------
     """
 
-    output_info = envirnment_info.request(command="pressure")
+    output_info = environment_info.request(command="pressure")
     pressure = output_info[0]
     return pressure
