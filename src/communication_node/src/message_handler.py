@@ -15,9 +15,24 @@ publishes on corresponding nodes /ns/message_status topic
 """
 
 import rospy
-from environment_information import get_n_walls_between
+from std_msgs.msg import String
+
 from environment_information import get_object_distance
+from propagation_models import one_slope_model_checker
 
 
-# TODO design subscriber and publisher to message_handler topics
-print(get_n_walls_between("drc_practice_blue_cylinder_26_clone_4","asphalt_plane_0"))
+def callback(data):
+    distance = get_object_distance("pioneer3at", "Dumpster")
+    result = one_slope_model_checker(distance=distance)
+    print result
+    print "Done!"
+    # data.data
+
+
+def listener():
+    rospy.init_node('communication_node_message_handler', anonymous=True)
+    rospy.Subscriber("/message_server", String, callback)
+    rospy.spin()
+
+
+listener()

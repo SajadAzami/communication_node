@@ -30,15 +30,22 @@ subscribes from /change_model_topic
 import numpy as np
 
 
-def _one_slope_model_checker(l0, decay_factor, distance, mode='yes_or_no'):
-    # TODO handle different modes, need for a threshold
-    return l0 + 10 * decay_factor * np.log10(distance)
+def _one_slope_model_checker(distance, decay_factor, l0, mode, threshold):
+    signal_strength = l0 + 10 * decay_factor * np.log10(distance)
+    if mode == 'real_value':
+        return signal_strength
+    if mode == 'yes_or_no':
+        if signal_strength >= threshold:
+            return True
+        else:
+            return False
 
 
 def one_slope_model_checker(distance,
                             decay_factor=4.0,
                             l0=33.3,
-                            mode='yes_or_no'):
+                            mode='yes_or_no',
+                            threshold=60):
     """Compute the signal strength using 1SM method.
         l0 and decay_factor are empirical parameters for a given environment.
         Tab.1 in [2] presents a few values taken from various references.
@@ -73,4 +80,4 @@ def one_slope_model_checker(distance,
     result : boolean or integer(depending on the mode), indicating signal strength
     """
 
-    return _one_slope_model_checker(l0, decay_factor, distance, mode)
+    return _one_slope_model_checker(l0, decay_factor, distance, mode, threshold)
