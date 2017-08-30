@@ -22,7 +22,7 @@ def send_message(message, robot_namespace):
     """Sending a message
     This is the message sending protocol
 
-    :returns
+    :parameter
     message : string
     robot_namespace : string, indicating robot name_space
 
@@ -35,3 +35,18 @@ def send_message(message, robot_namespace):
 
     message_publisher.publish(message)
     rate.sleep()
+
+
+def register(robot_namespace):
+    """Register a robot in communication_nod
+    This is needed for security, reliability and etc.
+
+    :returns
+    message : string
+    robot_namespace : string, indicating robot name_space
+
+    Relations
+    ----------
+    """
+    # TODO registration api goes here(TAHER)
+    pass
