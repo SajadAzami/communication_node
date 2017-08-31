@@ -8,6 +8,9 @@ project(communication_node)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  actionlib
+  actionlib_msgs
+  message_generation
   roscpp
   rospy
   std_msgs
@@ -67,11 +70,22 @@ find_package(catkin REQUIRED COMPONENTS
 #   Action2.action
 # )
 
+add_action_files(
+  DIRECTORY action
+  FILES Registration.action
+)
+
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
 #   std_msgs
 # )
+
+generate_messages(
+  DEPENDENCIES
+  actionlib_msgs   std_msgs
+)
+
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -118,6 +132,7 @@ catkin_package(
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -130,10 +145,20 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/communication_node_node.cpp)
+
+add_executable(
+registration_server src/registration_server.cpp
+${catkin_LIBRARIES}
+)
+add_executable(
+registration_client src/registration_client.cpp
+${catkin_LIBRARIES}
+)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -145,10 +170,28 @@ include_directories(
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_dependencies(
+  registration_server
+  @{communication_node_EXPORTED_TARGETS}
+)
+add_dependencies(
+  registration_client
+  @{communication_node_EXPORTED_TARGETS}
+)
+
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
+
+target_link_libraries(
+   registration_server
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(
+   registration_client
+   ${catkin_LIBRARIES}
+ )
 
 #############
 ## Install ##
@@ -184,6 +227,8 @@ include_directories(
 #   # myfile2
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
+
+
 
 #############
 ## Testing ##

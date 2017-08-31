@@ -30,23 +30,25 @@ subscribes from /change_model_topic
 import numpy as np
 
 
-def _one_slope_model_checker(distance, decay_factor, l0, mode, threshold):
+# TODO get the model parameters from parameter server
+
+def _one_slope_model_checker(distance, decay_factor, l0, threshold):
     signal_strength = l0 + 10 * decay_factor * np.log10(distance)
-    if mode == 'real_value':
-        return signal_strength
-    if mode == 'yes_or_no':
-        if signal_strength >= threshold:
-            return True
-        else:
-            return False
+    if signal_strength >= threshold:
+        return True
+    else:
+        return False
+
+
+def _one_slope_model_strength(distance, decay_factor, l0):
+    return l0 + 10 * decay_factor * np.log10(distance)
 
 
 def one_slope_model_checker(distance,
                             decay_factor=4.0,
                             l0=33.3,
-                            mode='yes_or_no',
                             threshold=60):
-    """Compute the signal strength using 1SM method.
+    """Compute the possibility of communication using 1SM method.
         l0 and decay_factor are empirical parameters for a given environment.
         Tab.1 in [2] presents a few values taken from various references.
         Here are some recommended values:
@@ -65,9 +67,6 @@ def one_slope_model_checker(distance,
         | 46.4 | 3.5 | office building |
          ------------------------------
     :parameter
-    mode : result mode, string, default 'yes_or_no'
-        - 'yes_or_no'
-        - 'loss_percentage'
 
     decay_factor : power decay factor or path loss exponent
 
@@ -77,7 +76,27 @@ def one_slope_model_checker(distance,
 
 
     :returns:
-    result : boolean or integer(depending on the mode), indicating signal strength
+    result : boolean indicating communication possibility
     """
 
-    return _one_slope_model_checker(l0, decay_factor, distance, mode, threshold)
+    return _one_slope_model_checker(l0, decay_factor, distance, threshold)
+
+
+def one_slope_model_strength(distance,
+                             decay_factor=4.0,
+                             l0=33.3):
+    """Compute the signal strength using 1SM method.
+    :parameter
+
+    decay_factor : power decay factor or path loss exponent
+
+    distance : distance between robots
+
+    l0 : reference loss value for the distance of 1m
+
+
+    :returns:
+    result : integer indicating signal strength
+    """
+
+    return _one_slope_model_strength(l0, decay_factor, distance)

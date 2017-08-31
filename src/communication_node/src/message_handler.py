@@ -15,18 +15,26 @@ publishes on corresponding nodes /ns/message_status topic
 """
 
 import rospy
-from std_msgs.msg import String
+from std_msgs.msg import String  # TODO to be replaced with WSS message
 
 from environment_information import get_object_distance
 from propagation_models import one_slope_model_checker
 
 
 def callback(data):
-    distance = get_object_distance("pioneer3at", "Dumpster")
-    result = one_slope_model_checker(distance=distance)
-    print result
-    print "Done!"
     # data.data
+    prop_model = data.prop_model
+    if prop_model == '1sm':
+        distance = get_object_distance("pioneer3at", "Dumpster")
+        # TODO distance = get_object_distance(data.sender, data.receiver)
+        result = one_slope_model_checker(distance=distance)
+        if result:
+            # TODO send the message
+            print "communication is not possible"
+            pass
+        else:
+            # TODO, ignore the message, send feedback
+            pass
 
 
 def listener():
@@ -35,4 +43,5 @@ def listener():
     rospy.spin()
 
 
+# TODO Run the registration_server
 listener()

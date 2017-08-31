@@ -1,17 +1,17 @@
 #include <ros/ros.h>
 #include <actionlib/server/simple_action_server.h>
-#include <registration_node/RegistrationAction.h>
+#include <communication_node/RegistrationAction.h>
 
 class RegistrationAction
 {
 protected:
 
   ros::NodeHandle nh_;
-  actionlib::SimpleActionServer<registration_node::RegistrationAction> as_; // NodeHandle instance must be created before this line. Otherwise strange error occurs.
+  actionlib::SimpleActionServer<communication_node::RegistrationAction> as_; // NodeHandle instance must be created before this line. Otherwise strange error occurs.
   std::string action_name_;
   // create messages that are used to published feedback/result
-  registration_node::RegistrationFeedback feedback_;
-  registration_node::RegistrationResult result_;
+  communication_node::RegistrationFeedback feedback_;
+  communication_node::RegistrationResult result_;
   // Construct a string vector of name of robots registered for parameter server
   std::vector<std::string> robots_list_;
   // counter of robots registered
@@ -32,7 +32,7 @@ public:
   {
   }
 
-  void executeCB(const registration_node::RegistrationGoalConstPtr &goal)
+  void executeCB(const communication_node::RegistrationGoalConstPtr &goal)
   {
     // helper variables
     ros::Rate r(1);
