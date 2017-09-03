@@ -33,8 +33,10 @@ import numpy as np
 # TODO get the model parameters from parameter server
 
 def _one_slope_model_checker(distance, decay_factor, l0, threshold):
-    signal_strength = l0 + 10 * decay_factor * np.log10(distance)
-    if signal_strength >= threshold:
+    signal_loss = l0 + 10 * decay_factor * np.log10(distance)
+    print signal_loss
+
+    if signal_loss <= threshold:
         return True
     else:
         return False
@@ -47,7 +49,7 @@ def _one_slope_model_strength(distance, decay_factor, l0):
 def one_slope_model_checker(distance,
                             decay_factor=4.0,
                             l0=33.3,
-                            threshold=60):
+                            threshold=70):
     """Compute the possibility of communication using 1SM method.
         l0 and decay_factor are empirical parameters for a given environment.
         Tab.1 in [2] presents a few values taken from various references.
@@ -96,7 +98,7 @@ def one_slope_model_strength(distance,
 
 
     :returns:
-    result : integer indicating signal strength
+    result : integer indicating signal loss
     """
 
     return _one_slope_model_strength(l0, decay_factor, distance)

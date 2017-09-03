@@ -23,17 +23,19 @@ from propagation_models import one_slope_model_checker
 
 def callback(data):
     # data.data
-    prop_model = data.prop_model
+    # prop_model = data.prop_model
+    prop_model = '1sm'
     if prop_model == '1sm':
         distance = get_object_distance("pioneer3at", "Dumpster")
         # TODO distance = get_object_distance(data.sender, data.receiver)
         result = one_slope_model_checker(distance=distance)
         if result:
             # TODO send the message
-            print "communication is not possible"
+            print "communication is possible"
             pass
         else:
             # TODO, ignore the message, send feedback
+            print "communication is not possible"
             pass
 
 
