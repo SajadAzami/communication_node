@@ -5,11 +5,12 @@
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "test_registation");
+  ros::init(argc, argv, "test_registration");
 
   // create the action client
   // true causes the client to spin its own thread
   actionlib::SimpleActionClient<communication_node::RegistrationAction> ac("registration", true);
+  ros::NodeHandle nh("~");
 
   ROS_INFO("Waiting for action server to start.");
   // wait for the action server to start
@@ -18,7 +19,10 @@ int main(int argc, char **argv)
   ROS_INFO("Action server started, sending goal.");
   // send a goal to the action
   communication_node::RegistrationGoal goal;
-  goal.robot_namespace = "robot_1";
+
+  std::string robot_namespace="robot_1";
+  nh.param("robot_namespace",robot_namespace,std::string("robot_1"));
+  goal.robot_namespace = robot_namespace;
   ac.sendGoal(goal);
 
   //wait for the action to return

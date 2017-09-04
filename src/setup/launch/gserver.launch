@@ -5,4 +5,9 @@
   <arg name="paused" default="false"/>
       <arg name="world_name" default="$(find setup)/worlds/super_world.world"/>
   </include>
+ <node pkg="communication_node" type="registration_server" name="registration_server_node" />
+
+
+
+  
 </launch>
