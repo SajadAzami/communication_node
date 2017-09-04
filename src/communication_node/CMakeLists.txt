@@ -17,7 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -120,6 +120,7 @@ catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES communication_node
 #  CATKIN_DEPENDS roscpp rospy std_msgs
+  CATKIN_DEPENDS actionlib_msgs
 #  DEPENDS system_lib
 )
 
@@ -151,14 +152,34 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/communication_node_node.cpp)
 
+## registration_server
 add_executable(
 registration_server src/registration_server.cpp
 ${catkin_LIBRARIES}
 )
+add_dependencies(
+  registration_server
+  ${communication_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS}
+)
+target_link_libraries(
+   registration_server
+   ${catkin_LIBRARIES}
+ )
+
+
+# registration_client
 add_executable(
 registration_client src/registration_client.cpp
 ${catkin_LIBRARIES}
 )
+add_dependencies(
+  registration_client
+  ${communication_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS}
+)
+target_link_libraries(
+   registration_client
+   ${catkin_LIBRARIES}
+ )
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -170,28 +191,12 @@ ${catkin_LIBRARIES}
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-add_dependencies(
-  registration_server
-  @{communication_node_EXPORTED_TARGETS}
-)
-add_dependencies(
-  registration_client
-  @{communication_node_EXPORTED_TARGETS}
-)
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
 
-target_link_libraries(
-   registration_server
-   ${catkin_LIBRARIES}
- )
- target_link_libraries(
-   registration_client
-   ${catkin_LIBRARIES}
- )
 
 #############
 ## Install ##
