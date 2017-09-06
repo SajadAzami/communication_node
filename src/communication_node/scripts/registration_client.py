@@ -13,7 +13,7 @@ import communication_node.msg
 def registration_client():
     # Creates the SimpleActionClient, passing the type of the action
     # (RegistrationAction) to the constructor.
-    client = actionlib.SimpleActionClient('registration', communication_node.msg.RegistrationAction)
+    client = actionlib.SimpleActionClient('/registration', communication_node.msg.RegistrationAction)
 
     # Waits until the action server has started up and started
     # listening for goals.
