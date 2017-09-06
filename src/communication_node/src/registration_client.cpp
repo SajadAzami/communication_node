@@ -29,6 +29,8 @@ int main(int argc, char **argv)
   {
     actionlib::SimpleClientGoalState state = ac.getState();
     ROS_INFO("Action finished: %s",state.toString().c_str());
+    ROS_INFO("Robot: %s registered successfully.", robot_namespace.c_str());
+
   }
   else
     ROS_INFO("Action did not finish before the time out.");
