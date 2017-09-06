@@ -1,16 +1,23 @@
 <?xml version="1.0"?>
 <launch>
-   <include file="$(find setup)/launch/gserver.launch" />
 
-  <param name="use_sim_time" value="true" />
+<arg name="robot_name" default="sos1"/>
+<arg name="initial_x" default="0.0"/>
+<arg name="initial_y" default="0.0"/>
 
 <include file="$(find setup)/launch/p3at_spawn.launch">
-    <arg name="robotname" value="sos1"/>
-    <arg name="initialx" value="-5"/>
-    <arg name="initialy" value="-1"/>
+    <arg name="robotname" value="$(arg robot_name)"/>
+    <arg name="initialx" value="$(arg initial_x)"/>
+    <arg name="initialy" value="$(arg initial_y)"/>
   </include>
 
 
+  <include file="$(find setup)/launch/p3at_move_base.launch">
+      <arg name="robotname" value="$(arg robot_name)"/>
+    </include>
+    <include file="$(find setup)/launch/p3at_gmapping.launch">
+        <arg name="robotname" value="$(arg robot_name)"/>
+      </include>
 
 
 
