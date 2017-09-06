@@ -9,7 +9,7 @@ int main(int argc, char **argv)
   std::string robot_namespace=argv[1];
   // create the action client
   // true causes the client to spin its own thread
-  actionlib::SimpleActionClient<communication_node::RegistrationAction> ac("registration", true);
+  actionlib::SimpleActionClient<communication_node::RegistrationAction> ac("/registration", true);
 
   ROS_INFO("Waiting for action server to start.");
   // wait for the action server to start
