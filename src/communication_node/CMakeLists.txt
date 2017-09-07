@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  nav_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -50,11 +51,11 @@ find_package(Boost REQUIRED COMPONENTS system)
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(FILES
+  Data_Image.msg
+  Data_Position.msg
+  Data_Map.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -83,7 +84,7 @@ add_action_files(
 
 generate_messages(
   DEPENDENCIES
-  actionlib_msgs   std_msgs
+  actionlib_msgs   std_msgs   nav_msgs
 )
 
 

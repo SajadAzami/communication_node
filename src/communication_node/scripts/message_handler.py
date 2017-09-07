@@ -15,10 +15,12 @@ publishes on corresponding nodes /ns/message_status topic
 """
 
 import rospy
-from std_msgs.msg import String  # TODO to be replaced with WSS message
+# from std_msgs.msg import String  # TODO to be replaced with WSS message
+from communication_node.msg import Data_Map
 
 from environment_information import get_object_distance
 from propagation_models import one_slope_model_checker
+
 
 
 def callback(data):

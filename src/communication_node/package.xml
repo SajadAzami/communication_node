@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<package>
+<?xml version="1.0"?><package>
   <name>communication_node</name>
   <version>0.0.0</version>
   <description>The communication_node package</description>
@@ -61,4 +60,4 @@
     <!-- Other tools can request additional information be placed here -->
 
   </export>
-</package>
+<build_depend>message_generation</build_depend></package>

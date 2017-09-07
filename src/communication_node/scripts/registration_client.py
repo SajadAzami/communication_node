@@ -10,7 +10,7 @@ import actionlib
 # goal message and the result message.
 import communication_node.msg
 
-def registration_client():
+def registration_client(name_space):
     # Creates the SimpleActionClient, passing the type of the action
     # (RegistrationAction) to the constructor.
     client = actionlib.SimpleActionClient('/registration', communication_node.msg.RegistrationAction)
@@ -20,7 +20,7 @@ def registration_client():
     client.wait_for_server()
 
     # Creates a goal to send to the action server.
-    goal = communication_node.msg.RegistrationGoal(robot_namespace="SOS1")
+    goal = communication_node.msg.RegistrationGoal(robot_namespace = name_space)
 
     # Sends the goal to the action server.
     client.send_goal(goal)
@@ -29,14 +29,14 @@ def registration_client():
     client.wait_for_result()
 
     # Prints out the result of executing the action
-    return client.get_result()  # A FibonacciResult
+    return client.get_result()  # A RegistrationResult
 
 if __name__ == '__main__':
     try:
         # Initializes a rospy node so that the SimpleActionClient can
         # publish and subscribe over ROS.
         rospy.init_node('registration_client_py')
-        result = registration_client()
+        result = registration_client("SOS1")
         print("Result:", ', '.join([str(n) for n in result.robots_list]))
     except rospy.ROSInterruptException:
         print("program interrupted before completion", file=sys.stderr)

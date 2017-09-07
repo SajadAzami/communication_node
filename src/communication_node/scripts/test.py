@@ -4,9 +4,19 @@
 """
 Testing the communication_node
 """
-
-from messenger_api import send_message
+import rospy
+from messenger_api import send_map_message
 from messenger_api import register
+from communication_node.msg import Data_Map
 
-register('robot1')  # TODO register for test(TAHER)
-send_message("this is me", "robot1")
+robot_namespace = 'robot1'
+rospy.init_node(robot_namespace + '_registration_send_msg_test_node', anonymous=True)
+register(robot_namespace)  # TODO register for test
+msg = Data_Map()
+msg.source = "robot1"
+msg.destination = "base_station"
+msg.command = "update map - test 1"
+# msg.data = 
+print(msg)
+send_map_message(msg, msg.destination)
+

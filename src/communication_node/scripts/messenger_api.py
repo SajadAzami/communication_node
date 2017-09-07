@@ -15,10 +15,10 @@ publishes on /message_server topic
 """
 
 import rospy
-from std_msgs.msg import String
+from communication_node.msg import Data_Map
+from registration_client import  registration_client
 
-
-def send_message(message, robot_namespace):
+def send_map_message(message, robot_namespace):
     """Sending a message
     This is the message sending protocol
 
@@ -29,16 +29,18 @@ def send_message(message, robot_namespace):
     Relations
     ----------
     """
-    message_publisher = rospy.Publisher('/message_server', String, queue_size=10)
-    rospy.init_node(robot_namespace + '_message_sender_node', anonymous=True)
+    message_publisher = rospy.Publisher('/message_server', Data_Map, queue_size=10)
+    # rospy.init_node(robot_namespace + '_message_sender_node', anonymous=True)
     rate = rospy.Rate(10)  # 10hz
 
-    message_publisher.publish(message)
-    rate.sleep()
-
+    while not rospy.is_shutdown():
+        rospy.loginfo(message)
+        message_publisher.publish(message)
+        rate.sleep()
+    
 
 def register(robot_namespace):
-    """Register a robot in communication_nod
+    """Register a robot in communication_node
     This is needed for security, reliability and etc.
 
     :returns
@@ -48,5 +50,9 @@ def register(robot_namespace):
     Relations
     ----------
     """
-    # TODO registration api goes here(TAHER)
+    # TODO registration api goes here
+    # AZAMI registration client python ro gozashtam boro biaresh inja harjoori mikhai estefade koni
+    #maybe like this
+    result = registration_client(robot_namespace)
+    print("Result:", ', '.join([str(n) for n in result.robots_list]))
     pass
