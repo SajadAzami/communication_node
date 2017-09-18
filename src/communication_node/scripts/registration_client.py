@@ -2,13 +2,9 @@
 from __future__ import print_function
 import rospy
 
-
-# Brings in the SimpleActionClient
 import actionlib
-
-# Brings in the messages used by the registration action, including the
-# goal message and the result message.
 import communication_node.msg
+
 
 def registration_client(name_space):
     # Creates the SimpleActionClient, passing the type of the action
@@ -20,7 +16,7 @@ def registration_client(name_space):
     client.wait_for_server()
 
     # Creates a goal to send to the action server.
-    goal = communication_node.msg.RegistrationGoal(robot_namespace = name_space)
+    goal = communication_node.msg.RegistrationGoal(robot_namespace=name_space)
 
     # Sends the goal to the action server.
     client.send_goal(goal)
@@ -30,6 +26,7 @@ def registration_client(name_space):
 
     # Prints out the result of executing the action
     return client.get_result()  # A RegistrationResult
+
 
 if __name__ == '__main__':
     try:

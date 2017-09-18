@@ -22,6 +22,7 @@ from propagation_models import one_slope_model_checker
 
 
 def callback(data):
+    # TODO handle for different message types
     # TODO prop_model = data.prop_model
     prop_model = '1sm'
     if prop_model == '1sm':
@@ -36,11 +37,9 @@ def callback(data):
                 message_publisher.publish(data)
                 rate.sleep()
             print "communication is possible"
-            pass
         else:
             # TODO, ignore the message, send feedback
             print "communication is not possible"
-            pass
 
 
 def listener():
@@ -49,5 +48,4 @@ def listener():
     rospy.spin()
 
 
-# TODO Run the registration_server
 listener()
