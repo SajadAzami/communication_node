@@ -36,7 +36,6 @@ def send_message(message, message_type):
         message_publisher = rospy.Publisher('/message_server', Data_Image, queue_size=10)
     elif message_type is 'Data_Position':
         message_publisher = rospy.Publisher('/message_server', Data_Position, queue_size=10)
-
     elif message_type is 'Data_Generic':
         pass
 
@@ -45,6 +44,42 @@ def send_message(message, message_type):
 
     message_publisher.publish(message)
     rate.sleep()
+
+
+def __receive_message_callback(data):
+    print data
+
+
+def receive_message(name_space, message_type):
+    """Receive a message
+    This is the message sending protocol
+
+    :parameter
+    message_type : message_type in String
+    name_space : your robot's name_space
+
+    Relations
+    ----------
+    """
+    rospy.init_node(name_space + '_message_receiver')
+
+    if message_type is 'Data_Map':
+        print 'Subscribing from ' + name_space + "/inbox"
+        print 'Message type: ' + message_type
+        rospy.Subscriber(name_space + "/inbox", Data_Map, __receive_message_callback)
+    elif message_type is 'Data_Image':
+
+        print 'Subscribing from ' + name_space + "/inbox"
+        print 'Message type: ' + message_type
+        rospy.Subscriber(name_space + "/inbox", Data_Image, __receive_message_callback)
+    elif message_type is 'Data_Position':
+
+        print 'Subscribing from ' + name_space + "/inbox"
+        print 'Message type: ' + message_type
+        rospy.Subscriber(name_space + "/inbox", Data_Position, __receive_message_callback)
+    elif message_type is 'Data_Generic':
+        pass
+    rospy.spin()
 
 
 def register(robot_namespace):
