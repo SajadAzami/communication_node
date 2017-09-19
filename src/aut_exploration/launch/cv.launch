@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="aut_exploration" type="cv" name="cv" output="screen">
+    </node>
+</launch>

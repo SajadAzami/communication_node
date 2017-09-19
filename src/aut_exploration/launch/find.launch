@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+  <group ns="sos1">
+    <node pkg="aut_exploration" type="alive_finder" name="alive_finder" output="screen">
+        <param name="robot_namespace" value="sos1" />
+    </node>
+  </group>
+  <group ns="sos2">
+    <node pkg="aut_exploration" type="alive_finder" name="alive_finder" output="screen">
+        <param name="robot_namespace" value="sos2" />
+    </node>
+  </group>
+  <group ns="sos3">
+    <node pkg="aut_exploration" type="alive_finder" name="alive_finder" output="screen">
+        <param name="robot_namespace" value="sos3" />
+    </node>
+  </group>
+  <group ns="sos4">
+    <node pkg="aut_exploration" type="alive_finder" name="alive_finder" output="screen">
+        <param name="robot_namespace" value="sos4" />
+    </node>
+  </group>
+  <node pkg="sound_play" type="soundplay_node.py" name="sound_play" output="screen"/>
+</launch>

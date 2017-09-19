@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+	<param name="robotsNum" type="int" value="4"/>
+	<param name="gridsNum" type="int" value="4"/>
+	<param name="total_namespace" value="sos"/>
+	<param name="map_x1" type="double" value="-20"/>
+	<param name="map_y1" type="double" value="-20"/>
+	<param name="map_x2" type="double" value="20"/>
+	<param name="map_y2" type="double" value="20"/>
+	<param name="aliveVictimsNum" type="int" value="100"/>
+	<param name="deadVictimsNum" type="int" value="100"/>
+	<param name="finishTime" type="int" value="100"/> <!-- (All time) - (last 5*60 secs) -->
+
+
+
+
+    <node pkg="aut_exploration" type="master.py" name="master" output="screen">
+	</node>
+</launch>

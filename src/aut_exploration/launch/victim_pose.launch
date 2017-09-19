@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+<group ns = "sos1">
+    <node pkg="aut_exploration" type="victim_node" name="victim_pose" output="screen">
+		<param name="robot_namespace" value="sos1" />
+		<param name="laser_angle" type ="int" value="260" />
+		<param name="image_pixle_width" type ="int" value="280" />
+		<param name="camera_horizontal"  value="62.8" />
+		<param name="laser_rayCount" type ="int" value="720" />  
+    </node>
+</group>
+</launch>
