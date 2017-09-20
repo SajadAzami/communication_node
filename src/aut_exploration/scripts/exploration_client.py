@@ -47,8 +47,8 @@ Odom_data = None;
 current_victim_status=None;
 current_goal_status = 0 ; # goal status--- PENDING=0--- ACTIVE=1---PREEMPTED=2--SUCCEEDED=3--ABORTED=4---REJECTED=5--PREEMPTING=6---RECALLING=7---RECALLED=8---LOST=9
 sac=None;
-agent_subscriber=None;
-agent_publisher=None;
+client_subscriber=None;
+client_publisher=None;
 command_from_master=None;
 exploration_boundry=None;
 driving=False;
@@ -218,10 +218,10 @@ def master_request_handler(req):
 
 
 def start_services():
-     global agent_publisher;
-     global agent_subscriber;
-     agent_subscriber = rospy.Subscriber("agent_subscriber", Master_toAgent, master_request_handler);
-     agent_publisher=rospy.Publisher("master_server", Agent_toMaster);
+     global client_publisher;
+     global client_subscriber;
+     client_subscriber = rospy.Subscriber("server_message", Master_toAgent, master_request_handler);
+     client_publisher=rospy.Publisher("client_message", Agent_toMaster,queue_size=5);
 
 
 
@@ -529,12 +529,12 @@ class ContactMaster(smach.State):
         self.initial=True
 
     def send_the_service(self,service_toMaster):
-        global agent_publisher;
-        agent_publisher.publish(service_toMaster);
+        global client_publisher;
+        client_publisher.publish(service_toMaster);
 
     def execute(self, userdata):
         global move_base_cancel_publisher;
-        global agent_publisher;
+        global client_publisher;
         global markers;
         global Dead_or_Alive;
         global Odom_data;
@@ -798,7 +798,7 @@ class VictimDetected(smach.State):
 
     # def waiting(self):
     #     global move_base_cancel_publisher;
-    #     global agent_publisher;
+    #     global client_publisher;
     #     global markers;
     #     global Dead_or_Alive;
     #     global Odom_data;
@@ -822,7 +822,7 @@ class VictimDetected(smach.State):
     #     service_toMaster.vic_y=markers[len(markers)-1].pose.position.y;
     #     response_fromMaster=None;
     #     try:
-    #        response_fromMaster = agent_publisher(service_toMaster);
+    #        response_fromMaster = client_publisher(service_toMaster);
     #     except rospy.ServiceException, e:
     #         print ("sending cordinates of the victim to master failed");
     #         response_fromMaster="failed";

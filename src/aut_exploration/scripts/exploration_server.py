@@ -39,7 +39,7 @@ startTime = 0 # remained time = finishTime - (rospy.Time.now().secs - startTime)
 
 isFinishedExploringGrid = [] # [int:robotNumber] -> bool
 
-agent_action = []
+server_publisher = []
 
 stateNumber = -1
 Grids = []
@@ -119,7 +119,7 @@ def enterInDriveMode(robotName):
     else:
         return
 
- 
+
     robotIsEnable[robotNum] = False
 
 def exitFromDriveMode():
@@ -143,7 +143,7 @@ def exitFromDriveMode():
 
 def checkJoyData(data):
     if (data.buttons[5] == 1 or data.buttons[4] == 1):
-        exitFromDriveMode()       
+        exitFromDriveMode()
 
 def isRepeatedVictim(x, y, isAlive):
     if isAlive == True:
@@ -172,7 +172,7 @@ def victimFound(robotNumber, x, y, isAlive):
 
     if isRepeatedVictim(x,y, isAlive):
         return false
-  
+
     if isAlive == True:
         robotsAliveVictims[robotNumber].append(Victim(x, y, robotsExploreGrid[robotNumber]))
         if stateNumber == 4:
@@ -183,7 +183,7 @@ def victimFound(robotNumber, x, y, isAlive):
     return true # victim is confirmed
 
 def goToGoal(robotNumber, goalPoint):
-    global isHalted, robotIsEnable, agent_action, robotsGoal, goalStyleStatus
+    global isHalted, robotIsEnable, server_publisher, robotsGoal, goalStyleStatus
 
     if isHalted[robotNumber] or not robotIsEnable[robotNumber]:
         return
@@ -192,12 +192,12 @@ def goToGoal(robotNumber, goalPoint):
     lastRobotsCommand_X[robotNumber] = goalPoint.x
     lastRobotsCommand_Y[robotNumber] = goalPoint.y
 
-    req = Master_toAgentGoal()
+    req = Master_toAgent()
     req.command = 'standby'
     req.goal_x = goalPoint.x
     req.goal_y = goalPoint.y
-    agent_action[robotNumber].send_goal(req)
-	
+    server_publisher[robotNumber].publish(req)
+
     print ("goal send to robot (" + str(robotNumber) + ") : ( " + str(goalPoint.x) + ", " + str(goalPoint.y) + ")")
 
 
@@ -206,7 +206,7 @@ def goToGoal(robotNumber, goalPoint):
     goalStyleStatus[robotNumber] = GoalStyle.GOAL
 
 def goToGrid(robotNumber, gridNumber):
-    global isHalted, targetPercentage, gridCenters, isFinishedExploringGrid, aliveVictimsFoundNum, deadVictimsFoundNum, aliveVictimsNum, deadVictimsNum, robotsExploreGrid, Grids, robotIsEnable, agent_action
+    global isHalted, targetPercentage, gridCenters, isFinishedExploringGrid, aliveVictimsFoundNum, deadVictimsFoundNum, aliveVictimsNum, deadVictimsNum, robotsExploreGrid, Grids, robotIsEnable, server_publisher
     if isHalted[robotNumber] or not robotIsEnable[robotNumber]:
         return
 
@@ -216,7 +216,7 @@ def goToGrid(robotNumber, gridNumber):
     isFinishedExploringGrid[robotNumber] = False
 
 
-    req = Master_toAgentGoal()
+    req = Master_toAgent()
     if targetPercentage >= 85 and not aliveVictimsFoundNum + deadVictimsFoundNum == aliveVictimsNum + deadVictimsNum:
         req.command = 'detect_victim'
     else:
@@ -226,8 +226,8 @@ def goToGrid(robotNumber, gridNumber):
     req.goal_x = gridCenters[gridNumber].x
     req.goal_y = gridCenters[gridNumber].y
     # TODO : percentage ro bgire
-    agent_action[robotNumber].send_goal(req)
-	
+    server_publisher[robotNumber].publish(req)
+
     print ("goal send to robot (" + str(robotNumber) + ") : gridNum = " + str(gridNumber) + " gridCenter:( "+ str(gridCenters[gridNumber].x) + ", " + str(gridCenters[gridNumber].y) + ")")
 
     robotsExploreGrid[robotNumber] = gridNumber
@@ -240,7 +240,7 @@ def getGridIndexInSortedArray(gridNumber): # return index of grid number in sort
     return -1
 
 def agentCallback0(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (1) callback:" + agentData.agent_state)
     if robotIsEnable[0]:
         agentState = agentData.agent_state
@@ -252,12 +252,12 @@ def agentCallback0(agentData):
                 isAlive = True
             isConfirmed = victimFound(0, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[0].send_goal(req)
+            server_publisher[0].publish(req)
 
             if isConfirmed:
                 rn = 0
@@ -270,7 +270,7 @@ def agentCallback0(agentData):
             couldntReach(0)
 
 def agentCallback1(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (2) callback:" + agentData.agent_state)
     if robotIsEnable[1]:
         agentState = agentData.agent_state
@@ -282,12 +282,12 @@ def agentCallback1(agentData):
                 isAlive = True
             isConfirmed = victimFound(1, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[1].send_goal(req)
+            server_publisher[1].publish(req)
 
             if isConfirmed:
                 rn = 1
@@ -298,7 +298,7 @@ def agentCallback1(agentData):
         else: # failed_toMOVE
             couldntReach(1)
 def agentCallback2(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (3) callback:" + agentData.agent_state)
     if robotIsEnable[2]:
         agentState = agentData.agent_state
@@ -310,22 +310,22 @@ def agentCallback2(agentData):
                 isAlive = True
             isConfirmed = victimFound(2, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[2].send_goal(req)
+            server_publisher[2].publish(req)
             if isConfirmed:
                 rn = 2
                 if lastRobotsCommand_Type[rn]:
                     goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
                 elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])           
+                    goToGrid(rn, lastRobotsCommand_X[rn])
         else: # failed_toMOVE
             couldntReach(2)
 def agentCallback3(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (4) callback:" + agentData.agent_state)
     if robotIsEnable[3]:
         agentState = agentData.agent_state
@@ -337,12 +337,12 @@ def agentCallback3(agentData):
                 isAlive = True
             isConfirmed = victimFound(3, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[3].send_goal(req)
+            server_publisher[3].publish(req)
             if isConfirmed:
                 rn = 3
                 if lastRobotsCommand_Type[rn]:
@@ -352,7 +352,7 @@ def agentCallback3(agentData):
         else: # failed_toMOVE
             couldntReach(3)
 def agentCallback4(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (5) callback:" + agentData.agent_state)
     if robotIsEnable[4]:
         agentState = agentData.agent_state
@@ -364,12 +364,12 @@ def agentCallback4(agentData):
                 isAlive = True
             isConfirmed = victimFound(4, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[4].send_goal(req)
+            server_publisher[4].publish(req)
             if isConfirmed:
                 rn = 4
                 if lastRobotsCommand_Type[rn]:
@@ -379,7 +379,7 @@ def agentCallback4(agentData):
         else: # failed_toMOVE
             couldntReach(4)
 def agentCallback5(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (6) callback:" + agentData.agent_state)
     if robotIsEnable[5]:
         agentState = agentData.agent_state
@@ -391,22 +391,22 @@ def agentCallback5(agentData):
                 isAlive = True
             isConfirmed = victimFound(5, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[5].send_goal(req)
+            server_publisher[5].publish(req)
             if isConfirmed:
                 rn = 5
                 if lastRobotsCommand_Type[rn]:
                     goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
                 elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn]) 
+                    goToGrid(rn, lastRobotsCommand_X[rn])
         else: # failed_toMOVE
             couldntReach(5)
 def agentCallback6(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (7) callback:" + agentData.agent_state)
     if robotIsEnable[6]:
         agentState = agentData.agent_state
@@ -418,12 +418,12 @@ def agentCallback6(agentData):
                 isAlive = True
             isConfirmed = victimFound(6, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[6].send_goal(req)
+            server_publisher[6].publish(req)
             if isConfirmed:
                 rn = 6
                 if lastRobotsCommand_Type[rn]:
@@ -433,7 +433,7 @@ def agentCallback6(agentData):
         else: # failed_toMOVE
             couldntReach(6)
 def agentCallback7(agentData):
-    global isFinishedExploringGrid, robotIsEnable, agent_action
+    global isFinishedExploringGrid, robotIsEnable, server_publisher
     print ("agent (8) callback:" + agentData.agent_state)
     if robotIsEnable[7]:
         agentState = agentData.agent_state
@@ -445,12 +445,12 @@ def agentCallback7(agentData):
                 isAlive = True
             isConfirmed = victimFound(7, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgentGoal()
+            req = Master_toAgent()
             if isConfirmed:
                 req.command = 'victim_confirmed'
-            else: 
+            else:
                 req.command = 'go_on'
-            agent_action[7].send_goal(req)
+            server_publisher[7].publish(req)
             if isConfirmed:
                 rn = 7
                 if lastRobotsCommand_Type[rn]:
@@ -482,7 +482,7 @@ def couldntReach(robotNumber):
             goToGrid(robotNumber, sortedGridArray[index])
         else:
             goToGrid(robotNumber, robotsExploreGrid[robotNumber])
-    else: # goalStyleStatus[robotNumber] == GoalStyle.DEFAULT_GRID 
+    else: # goalStyleStatus[robotNumber] == GoalStyle.DEFAULT_GRID
         tryNum[robotNumber][robotsExploreGrid[robotNumber]] = tryNum[robotNumber][robotsExploreGrid[robotNumber]] + 1
         if tryNum[robotNumber][robotsExploreGrid[robotNumber]] >= 3:
             gn = getSortedGridsNumbers()[0]
@@ -526,7 +526,7 @@ class Exploring(smach.State): # state 1
     def execute(self, userdata):
         global stateNumber, targetPercentage, finishTime, startTime, aliveVictimsFoundNum, deadVictimsFoundNum, aliveVictimsNum, deadVictimsNum, robotsNum, defaultGrids, goalStyleStatus
         print "enter in state 1"
-       
+
         stateNumber = 1
 
         global targetPercentage, finishTime, startTime
@@ -568,7 +568,7 @@ class RaisePercentage(smach.State): # state 2
     def execute(self, userdata):
         global stateNumber, targetPercentage
         print "enter in state 2"
-    
+
         stateNumber = 2
 
         global targetPercentage
@@ -585,7 +585,7 @@ class VictimsFinished(smach.State): # state 3
     def execute(self, userdata):
         global stateNumber, robotsNum, robotsAliveVictims
         print "enter in state 3"
-       
+
         stateNumber = 3
 
         hasGoal = []
@@ -628,17 +628,17 @@ class Rescue(smach.State): # state 4
         smach.State.__init__(self, outcomes=['shut_down'])
 
     def execute(self, userdata):
-        
+
         global stateNumber, robotsGoal, robotsAliveVictims, robotsNum, robotsPose, targetPercentage, goalStyleStatus
         print "enter in state 4"
-      
+
         stateNumber = 4
 
         global robotsGoal, robotsAliveVictims, robotsNum, robotsPose, targetPercentage
         targetPercentage = 100
 
         hasGoal = []
-        
+
         for i in range(0, robotsNum):
             if (len(robotsAliveVictims[i]) == 0):
                 hasGoal.append(False)
@@ -707,9 +707,9 @@ def getGridPercentage(gridNumber):
     points.append(Point(maxX, minY, 0))
     points.append(Point(maxX, maxY, 0))
     req.points = points
-    a = getPercentage(req) 
+    a = getPercentage(req)
     print ("percentage of grid number " + str(gridNumber) + " : " + str(a))
-    return a 
+    return a
 
 def getSortedGridsNumbers():
     global gridsNum, sortedGridArray
@@ -1186,7 +1186,7 @@ def saveParameters():
     rospy.set_param('aliveVictimsFoundNum', aliveVictimsFoundNum)
     rospy.set_param('deadVictimsFoundNum', deadVictimsFoundNum)
 
-    
+
     tempDict = {}
     for i in range(0, len(robotsAliveVictims)):
         tempNestedDict = {}
@@ -1202,7 +1202,7 @@ def saveParameters():
             tempNestedDict[str(j)] = robotsDeadVictims[i][j]
         tempDict[str(i)] = tempNestedDict
     rospy.set_param('robotsDeadVictims', str(tempDict))
- 
+
 
 if __name__ == '__main__':
     rospy.init_node('master')
@@ -1279,28 +1279,26 @@ if __name__ == '__main__':
 
     print("robotsnumber = " + str(robotsNum))
 
-    agent_server0 = actionlib.SimpleActionServer(totalNamespace + '1/master_server', Agent_toMasterAction, execute_cb = agentCallback0, auto_start = True)
-    agent_server1 = actionlib.SimpleActionServer(totalNamespace + '2/master_server', Agent_toMasterAction, execute_cb = agentCallback1, auto_start = True)
-    agent_server2 = actionlib.SimpleActionServer(totalNamespace + '3/master_server', Agent_toMasterAction, execute_cb = agentCallback2, auto_start = True)
-    agent_server3 = actionlib.SimpleActionServer(totalNamespace + '4/master_server', Agent_toMasterAction, execute_cb = agentCallback3, auto_start = True)
-    agent_server4 = actionlib.SimpleActionServer(totalNamespace + '5/master_server', Agent_toMasterAction, execute_cb = agentCallback4, auto_start = True)
-    agent_server5 = actionlib.SimpleActionServer(totalNamespace + '6/master_server', Agent_toMasterAction, execute_cb = agentCallback5, auto_start = True)
-    agent_server6 = actionlib.SimpleActionServer(totalNamespace + '7/master_server', Agent_toMasterAction, execute_cb = agentCallback6, auto_start = True)
-    agent_server7 = actionlib.SimpleActionServer(totalNamespace + '8/master_server', Agent_toMasterAction, execute_cb = agentCallback7, auto_start = True)
+    server_subscriber0 = rospy.Subscriber(totalNamespace + '1/client_message', Agent_toMaster,  agentCallback0)
+    server_subscriber1 = rospy.Subscriber(totalNamespace + '2/client_message', Agent_toMaster,  agentCallback1)
+    server_subscriber2 = rospy.Subscriber(totalNamespace + '3/client_message', Agent_toMaster,  agentCallback2)
+    server_subscriber3 = rospy.Subscriber(totalNamespace + '4/client_message', Agent_toMaster,  agentCallback3)
+    server_subscriber4 = rospy.Subscriber(totalNamespace + '5/client_message', Agent_toMaster,  agentCallback4)
+    server_subscriber5 = rospy.Subscriber(totalNamespace + '6/client_message', Agent_toMaster,  agentCallback5)
+    server_subscriber6 = rospy.Subscriber(totalNamespace + '7/client_message', Agent_toMaster,  agentCallback6)
+    server_subscriber7 = rospy.Subscriber(totalNamespace + '8/client_message', Agent_toMaster,  agentCallback7)
     # just for keep action servers in some variables
 
     rospy.Subscriber('drive_mode', String, enterInDriveMode)
     rospy.Subscriber('joy', Joy, checkJoyData)
-   
 
-    agent_action = [None]*robotsNum
+
+    server_publisher = [None]*robotsNum
 
     for i in range(0, robotsNum):
         robotsAliveVictims.insert(i,[]);
         robotsDeadVictims.insert(i,[]);
-        print("waiting for server :" + totalNamespace + str(i+1) + '/agent_server')
-        agent_action[i] = actionlib.SimpleActionClient(totalNamespace + str(i+1) + '/agent_server', Master_toAgentAction);
-        agent_action[i].wait_for_server();
+        server_publisher[i] = rospy.Publisher(totalNamespace + str(i+1) + '/server_message', Master_toAgent,queue_size=5);
 
 
     print("waiting for service :percentage_server")
@@ -1316,20 +1314,20 @@ if __name__ == '__main__':
         rospy.set_param('startTime', startTime)
 
     if rospy.has_param('targetPercentage'):
-        targetPercentage = rospy.get_param('targetPercentage')        
+        targetPercentage = rospy.get_param('targetPercentage')
 
-    isFinishedExploringGrid = [False] * robotsNum 
+    isFinishedExploringGrid = [False] * robotsNum
     if rospy.has_param('isFinishedExploringGrid'):
         tempDict = yaml.load(rospy.get_param('isFinishedExploringGrid'))
         print (tempDict)
         for i in range(0, robotsNum):
-            isFinishedExploringGrid[i] = tempDict[str(i)]            
+            isFinishedExploringGrid[i] = tempDict[str(i)]
 
     isHalted = [False]*robotsNum
     if rospy.has_param('isHalted'):
         tempDict = yaml.load(rospy.get_param('isHalted'))
         for i in range(0, robotsNum):
-            isHalted[i] = tempDict[str(i)]  
+            isHalted[i] = tempDict[str(i)]
 
 
 
@@ -1366,5 +1364,5 @@ if __name__ == '__main__':
 
 
     buildSM()
-    
+
     rospy.spin()
