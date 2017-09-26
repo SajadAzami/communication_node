@@ -50,7 +50,7 @@ def __receive_message_callback(data):
     print data
 
 
-def receive_message(name_space, message_type):
+def receive_message(name_space, message_type, callback_function):
     """Receive a message
     This is the message sending protocol
 
@@ -61,25 +61,23 @@ def receive_message(name_space, message_type):
     Relations
     ----------
     """
-    rospy.init_node(name_space + '_message_receiver')
 
     if message_type is 'Data_Map':
         print 'Subscribing from ' + name_space + "/inbox"
         print 'Message type: ' + message_type
-        rospy.Subscriber(name_space + "/inbox", Data_Map, __receive_message_callback)
+        rospy.Subscriber(name_space + "/inbox", Data_Map, callback_function)
     elif message_type is 'Data_Image':
 
         print 'Subscribing from ' + name_space + "/inbox"
         print 'Message type: ' + message_type
-        rospy.Subscriber(name_space + "/inbox", Data_Image, __receive_message_callback)
+        rospy.Subscriber(name_space + "/inbox", Data_Image, callback_function)
     elif message_type is 'Data_Position':
 
         print 'Subscribing from ' + name_space + "/inbox"
         print 'Message type: ' + message_type
-        rospy.Subscriber(name_space + "/inbox", Data_Position, __receive_message_callback)
+        rospy.Subscriber(name_space + "/inbox", Data_Position, callback_function)
     elif message_type is 'Data_Generic':
         pass
-    rospy.spin()
 
 
 def register(robot_namespace):

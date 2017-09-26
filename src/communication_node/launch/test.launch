@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+
+  <node pkg="communication_node" type="system_test_subscriber.py" name="subscribing_node" output="screen" />
+  <node pkg="communication_node" type="system_test_publisher.py" name="publishing_node" output="screen" />
+
+
+
+</launch>
