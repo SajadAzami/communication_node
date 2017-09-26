@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<launch>
+	<param name="total_namespace" value="sos"/>
+	<param name="aliveVictimsNum" type="int" value="100"/>
+	<param name="deadVictimsNum" type="int" value="100"/>
+	<param name="finishTime" type="int" value="100"/> <!-- (All time) - (last 5*60 secs) -->
+
+	<!-- for each floor -->
+
+	
+    <node pkg="aut_exploration" type="floor_master.py" name="master1" output="screen">
+		<param name="robotsNum" type="int" value="2"/>
+		<param name="gridsNum" type="int" value="2"/>
+		<param name="floorNumber" type="int" value="1"/>
+		<param name="map_x1" type="double" value="-20"/>
+		<param name="map_y1" type="double" value="-20"/>
+		<param name="map_x2" type="double" value="20"/>
+		<param name="map_y2" type="double" value="20"/>
+		<param name="robot1_x" type="double" value="8.4"/>
+		<param name="robot1_y" type="double" value="3"/>
+		<param name="robot2_x" type="double" value="-10"/>
+		<param name="robot2_y" type="double" value="-10"/>
+	</node>
+
+
+    <node pkg="aut_exploration" type="floor_master.py" name="master2" output="screen">
+		<param name="robotsNum" type="int" value="2"/>
+		<param name="gridsNum" type="int" value="2"/>
+		<param name="floorNumber" type="int" value="2"/>
+		<param name="map_x1" type="double" value="-17"/>	
+		<param name="map_y1" type="double" value="-53"/>
+		<param name="map_x2" type="double" value="16"/>
+		<param name="map_y2" type="double" value="-23"/>
+		<param name="robot1_x" type="double" value="-3"/>
+		<param name="robot1_y" type="double" value="-34"/>
+		<param name="robot2_x" type="double" value="3"/>
+		<param name="robot2_y" type="double" value="-45"/>
+	</node>
+
+
+
+</launch>

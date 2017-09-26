@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- include file="$(find aut_exploration)/launch/floor_master.launch" /-->
+
+  <group ns="floor1_sos1">
+      <param name="namespace" value="floor1_sos1" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+
+ <group ns="floor1_sos2">
+      <param name="namespace" value="floor1_sos2" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+
+
+ <group ns="floor2_sos1">
+      <param name="namespace" value="floor2_sos1" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+
+
+ <group ns="floor2_sos2">
+      <param name="namespace" value="floor2_sos2" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+ 
+</launch>

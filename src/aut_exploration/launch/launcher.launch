@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!--include file="$(find aut_exploration)/launch/master.launch" / -->
+
+  <group ns="sos1">
+      <param name="namespace" value="sos1" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+
+<group ns="sos2">
+      <param name="namespace" value="sos2" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+<group ns="sos3">
+      <param name="namespace" value="sos3" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+<group ns="sos4">
+      <param name="namespace" value="sos4" />
+    <node pkg="aut_exploration" type="sosexp (action).py" name="explore_client" output="screen">
+
+
+    </node>
+
+
+  </group>
+
+ 
+</launch>
