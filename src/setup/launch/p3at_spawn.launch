@@ -11,7 +11,7 @@
 
   <group ns="$(arg robotname)">
 
- <node pkg="communication_node" type="registration_client" name="registration_client_node"   args="$(arg robotname)" > </node>
+ <node pkg="communication_node" type="registration_client" name="registration_client_node" output="screen"  args="$(arg robotname)" > </node>
 
     <param name="robot_description" command="$(find xacro)/xacro '$(find p3at_description)/urdf/pioneer3at.urdf.xacro'" />
 

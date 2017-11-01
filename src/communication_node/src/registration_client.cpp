@@ -23,17 +23,26 @@ int main(int argc, char **argv)
   ac.sendGoal(goal);
 
   //wait for the action to return
-  bool finished_before_timeout = ac.waitForResult(ros::Duration(30.0));
+  bool finished_before_timeout = ac.waitForResult(ros::Duration(5.0));
 
-  if (finished_before_timeout)
-  {
-    actionlib::SimpleClientGoalState state = ac.getState();
-    ROS_INFO("Action finished: %s",state.toString().c_str());
-    ROS_INFO("Robot: %s registered successfully.", robot_namespace.c_str());
+   while (!finished_before_timeout){
+        ac.sendGoal(goal);
+       finished_before_timeout = ac.waitForResult(ros::Duration(5.0));
 
-  }
-  else
-    ROS_INFO("Action did not finish before the time out.");
+   }
+   actionlib::SimpleClientGoalState state = ac.getState();
+   ROS_INFO("Action finished: %s",state.toString().c_str());
+   ROS_INFO("Robot: %s registered successfully.", robot_namespace.c_str());
+
+  // if (finished_before_timeout)
+  // {
+  //   actionlib::SimpleClientGoalState state = ac.getState();
+  //   ROS_INFO("Action finished: %s",state.toString().c_str());
+  //   ROS_INFO("Robot: %s registered successfully.", robot_namespace.c_str());
+  //
+  // }
+  // else
+  //   ROS_INFO("Action did not finish before the time out.");
 
   //exit
   return 0;

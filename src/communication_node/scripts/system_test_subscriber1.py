@@ -12,11 +12,11 @@ def callback(data):
 
 
 def main():
-    receive_message("robot2", "Data_Position", callback)
+    receive_message("robot1", "Data_Position", callback)
 
 
 if __name__ == "__main__":
-    rospy.init_node("test_subscriber")
+    rospy.init_node("test_subscriber1")
     main()
     print("subscriber started")
     rospy.spin()
