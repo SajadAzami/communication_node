@@ -254,68 +254,68 @@
       <pose frame=''>10 -10 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>5574 331000000</sim_time>
-      <real_time>0 0</real_time>
-      <wall_time>1503012605 802633223</wall_time>
-      <iterations>0</iterations>
+      <sim_time>5637 662000000</sim_time>
+      <real_time>63 718302309</real_time>
+      <wall_time>1509534834 293206276</wall_time>
+      <iterations>63331</iterations>
       <model name='Construction Cone_1'>
-        <pose frame=''>4 -11 0.05 0 -0 0</pose>
+        <pose frame=''>4 -11 0.05 -1e-06 2e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4 -11 0.05 0 -0 0</pose>
+          <pose frame=''>4 -11 0.05 -1e-06 2e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -0.929068 -2.23068 1.50952 0</acceleration>
+          <wrench>0 0 -0.929068 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1_clone'>
-        <pose frame=''>16.4841 -18 0.05 0 -0 0</pose>
+        <pose frame=''>16.4841 -18 0.05 -3e-06 -2e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>16.4841 -18 0.05 0 -0 0</pose>
+          <pose frame=''>16.4841 -18 0.05 -3e-06 -2e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>1e-06 1e-06 -1.10998 1.66275 0.956406 3.14159</acceleration>
+          <wrench>1e-06 1e-06 -1.10998 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1_clone_0'>
-        <pose frame=''>13 13.5608 0.05 -1e-06 1e-06 0</pose>
+        <pose frame=''>13 13.5608 0.049999 -3e-06 -1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>13 13.5608 0.05 -1e-06 1e-06 0</pose>
+          <pose frame=''>13 13.5608 0.049999 -3e-06 -1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 -1e-06 -0.572323 -2.19557 -0.174586 -0</acceleration>
+          <wrench>0 -1e-06 -0.572323 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1_clone_1'>
-        <pose frame=''>4 10 0.050001 -2e-06 1e-06 -0</pose>
+        <pose frame=''>4 10 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4 10 0.050001 -2e-06 1e-06 -0</pose>
+          <pose frame=''>4 10 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -0.726883 -2.28039 1.16418 0</acceleration>
+          <wrench>0 0 -0.726883 0 -0 0</wrench>
         </link>
       </model>
       <model name='Dumpster'>
-        <pose frame=''>4.00975 12.2971 0.050917 0 -2e-06 -3e-05</pose>
+        <pose frame=''>4.00975 12.2971 0.050919 0 -1e-06 -3e-05</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4.00975 12.2971 0.050917 0 -2e-06 -3e-05</pose>
+          <pose frame=''>4.00975 12.2971 0.050919 0 -1e-06 -3e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0.005544 -1.1e-05 -0.999565 0.017305 -0.26737 5e-06</acceleration>
+          <wrench>0.005544 -1.1e-05 -0.999565 0 -0 0</wrench>
         </link>
       </model>
       <model name='Dumpster_clone'>
-        <pose frame=''>15.2831 -17.3807 0.050917 0 -2e-06 -1.53387</pose>
+        <pose frame=''>15.2831 -17.3807 0.050919 0 -1e-06 -1.53387</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>15.2831 -17.3807 0.050917 0 -2e-06 -1.53387</pose>
+          <pose frame=''>15.2831 -17.3807 0.050919 0 -1e-06 -1.53387</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0.000193 -0.00554 -0.999565 -0.270838 0.204979 5e-06</acceleration>
+          <wrench>0.000193 -0.00554 -0.999565 0 -0 0</wrench>
         </link>
       </model>
       <model name='asphalt_plane'>
@@ -1373,40 +1373,6 @@
         <scale>1 1 1</scale>
         <link name='Wall_0'>
           <pose frame=''>-0.214438 20.0862 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='pioneer3at'>
-        <pose frame=''>-10 -12 0.18 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>-10 -12 0.18 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='left_front_wheel'>
-          <pose frame=''>-9.875 -11.799 0.12 1.5707 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='left_rear_wheel'>
-          <pose frame=''>-10.125 -11.799 0.12 1.5707 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='right_front_wheel'>
-          <pose frame=''>-9.875 -12.201 0.12 1.5707 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='right_rear_wheel'>
-          <pose frame=''>-10.125 -12.201 0.12 1.5707 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -7711,326 +7677,9 @@
       </link>
       <pose frame=''>4 10 0.05 -1e-06 0 0</pose>
     </model>
-    <!--plugin name='gazebo_simple_world' filename='libgazebo_simple_world.so'/-->
+      <plugin name='gazebo_simple_world' filename='libgazebo_simple_world.so'/>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
-    <model name='pioneer3at'>
-      <pose frame=''>-11.2938 -12.5035 0.18 0 -0 0</pose>
-      <static>0</static>
-      <link name='chassis'>
-        <inertial>
-          <mass>14</mass>
-          <inertia>
-            <ixx>0.147117</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.334951</iyy>
-            <iyz>0</iyz>
-            <izz>0.397834</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>0.501 0.3 0.19</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://pioneer3at/meshes/chassis.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='right_front_wheel'>
-        <pose frame=''>0.125 -0.201 -0.06 1.5707 -0 0</pose>
-        <inertial>
-          <mass>1.5</mass>
-          <inertia>
-            <ixx>0.00524062</ixx>
-            <iyy>0.00524062</iyy>
-            <izz>0.009075</izz>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.11</radius>
-              <length>0.075</length>
-            </cylinder>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <slip1>0.5</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://pioneer3at/meshes/wheel.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='left_front_wheel'>
-        <pose frame=''>0.125 0.201 -0.06 1.5707 -0 0</pose>
-        <inertial>
-          <mass>1.5</mass>
-          <inertia>
-            <ixx>0.00524062</ixx>
-            <iyy>0.00524062</iyy>
-            <izz>0.009075</izz>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.11</radius>
-              <length>0.075</length>
-            </cylinder>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <slip1>0.5</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://pioneer3at/meshes/wheel.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='right_rear_wheel'>
-        <pose frame=''>-0.125 -0.201 -0.06 1.5707 -0 0</pose>
-        <inertial>
-          <mass>1.5</mass>
-          <inertia>
-            <ixx>0.00524062</ixx>
-            <iyy>0.00524062</iyy>
-            <izz>0.009075</izz>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.11</radius>
-              <length>0.075</length>
-            </cylinder>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <slip1>0.5</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://pioneer3at/meshes/wheel.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='left_rear_wheel'>
-        <pose frame=''>-0.125 0.201 -0.06 1.5707 -0 0</pose>
-        <inertial>
-          <mass>1.5</mass>
-          <inertia>
-            <ixx>0.00524062</ixx>
-            <iyy>0.00524062</iyy>
-            <izz>0.009075</izz>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.11</radius>
-              <length>0.075</length>
-            </cylinder>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <slip1>0.5</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://pioneer3at/meshes/wheel.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='right_front' type='revolute'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <child>right_front_wheel</child>
-        <parent>chassis</parent>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <use_parent_model_frame>1</use_parent_model_frame>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <joint name='right_rear' type='revolute'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <child>right_rear_wheel</child>
-        <parent>chassis</parent>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <use_parent_model_frame>1</use_parent_model_frame>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <joint name='left_front' type='revolute'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <child>left_front_wheel</child>
-        <parent>chassis</parent>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <use_parent_model_frame>1</use_parent_model_frame>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <joint name='left_rear' type='revolute'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <child>left_rear_wheel</child>
-        <parent>chassis</parent>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <use_parent_model_frame>1</use_parent_model_frame>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <plugin name='SkidSteerDrivePlugin' filename='libSkidSteerDrivePlugin.so'>
-        <right_front>right_front</right_front>
-        <right_rear>right_rear</right_rear>
-        <left_front>left_front</left_front>
-        <left_rear>left_rear</left_rear>
-        <MaxForce>5.0</MaxForce>
-      </plugin>
-    </model>
   </world>
 </sdf>

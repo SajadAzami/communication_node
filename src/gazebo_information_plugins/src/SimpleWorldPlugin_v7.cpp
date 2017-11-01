@@ -129,7 +129,7 @@ namespace gazebo {
             sphereSDF.SetFromString(
                     "<sdf version ='1.4'>\
         <model name ='test_sphere'>\
-        <pose>-10 -12 0.2 0 0 0</pose>\
+        <pose>-100 -120 0.2 0 0 0</pose>\
         <link name ='link'>\
         <sensor name='my_contact' type='contact'>\
         <plugin name='my_plugin' filename='libgazebo_plugin_contact.so'/>\
