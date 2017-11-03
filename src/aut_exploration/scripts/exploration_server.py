@@ -66,7 +66,9 @@ class GoalStyle(Enum):
     SORTED_GRID = 2,
     DEFAULT_GRID = 3,
     HELP_GRID = 4
-
+def robotPoseSubscriber(data): # for <totalNamespace>1
+    global robotsPose
+    robotsPose[int(data.source[-1])] = thePoint(data.odom.pose.pose.position.x, data.odom.pose.pose.position.y)
 def robotPoseSubscriber0(odom): # for <totalNamespace>1
     global robotsPose
     robotsPose[0] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
@@ -1234,8 +1236,8 @@ if __name__ == '__main__':
 
     robotIsEnable = [True] * robotsNum
 
-    for i in range(0, robotsNum):
-        rospy.Subscriber(totalNamespace+str(i+1)+'/odom', Odometry , poseCallBackFunctions[str(i)]);
+
+    rospy.Subscriber('/message_server_odom', Data_Odom , robotPoseSubscriber);
     gridCenters = [thePoint()] * gridsNum
     gridMap()
 
