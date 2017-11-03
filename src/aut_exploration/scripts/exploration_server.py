@@ -69,6 +69,7 @@ class GoalStyle(Enum):
 def robotPoseSubscriber(data): # for <totalNamespace>1
     global robotsPose
     robotsPose[int(data.source[-1])] = thePoint(data.odom.pose.pose.position.x, data.odom.pose.pose.position.y)
+    
 def robotPoseSubscriber0(odom): # for <totalNamespace>1
     global robotsPose
     robotsPose[0] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
