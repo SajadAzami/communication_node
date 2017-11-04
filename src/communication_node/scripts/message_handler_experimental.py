@@ -19,7 +19,7 @@ import sys
 from time import gmtime,strftime
 import rospy
 from communication_node.msg import Data_Position , Data_Map
-from aut_exploration.msg import Data_AtM , Data_MtA
+from aut_exploration.msg import Data_AtM , Data_MtA , Data_Odom
 from nav_msgs.msg import *
 from environment_information import get_object_distance
 from propagation_models import one_slope_model_checker

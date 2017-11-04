@@ -29,7 +29,7 @@ lastRobotsCommand_Y = [] # [int:robotNumber] -> if is Goal -> (y)
 
 isFinishValidatingParams = False
 
-totalNamespace = "sos"
+totalNamespace = "robot"
 
 
 targetPercentage = 75 # initial percentage
@@ -75,21 +75,21 @@ def enterInDriveMode(robotName):
     print "enter in drive mode"
     robotIsEnable = [True] * robotsNum
     robotNum = -1
-    if robotName == "sos1":
+    if robotName == "robot1":
         robotNum = 1
-    elif robotName == "sos2":
+    elif robotName == "robot2":
         robotNum = 2
-    elif robotName == "sos3":
+    elif robotName == "robot3":
         robotNum = 3
-    elif robotName == "sos4":
+    elif robotName == "robot4":
         robotNum = 4
-    elif robotName == "sos5":
+    elif robotName == "robot5":
         robotNum = 5
-    elif robotName == "sos6":
+    elif robotName == "robot6":
         robotNum = 6
-    elif robotName == "sos7":
+    elif robotName == "robot7":
         robotNum = 7
-    elif robotName == "sos8":
+    elif robotName == "robot8":
         robotNum = 8
     else:
         return

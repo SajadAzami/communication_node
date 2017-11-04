@@ -2,7 +2,7 @@
 <launch>
 	<param name="robotsNum" type="int" value="4"/>
 	<param name="gridsNum" type="int" value="4"/>
-	<param name="total_namespace" value="sos"/>
+	<param name="total_namespace" value="robot"/>
 	<param name="map_x1" type="double" value="-20"/>
 	<param name="map_y1" type="double" value="-20"/>
 	<param name="map_x2" type="double" value="20"/>
@@ -14,6 +14,6 @@
 
 
 
-    <node pkg="aut_exploration" type="master.py" name="master" output="screen">
+    <node pkg="aut_exploration" type="exploration_server.py" name="master" output="screen">
 	</node>
 </launch>

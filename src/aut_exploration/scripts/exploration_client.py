@@ -177,7 +177,7 @@ def setOdom(rawodomdata):
     new_data.odom=rawodomdata;
     new_data.source=robot_name_space;
     new_data.destination="exploration_master";
-    odom_publisher(new_data);
+    odom_publisher.publish(new_data);
 
 def setMap(costmap_data):
     global GCostmap_data;

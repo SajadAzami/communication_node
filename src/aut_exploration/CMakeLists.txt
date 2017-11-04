@@ -42,6 +42,9 @@ find_package(catkin REQUIRED COMPONENTS
    Detections.msg
 	 Master_toAgent.msg
 	 Agent_toMaster.msg
+   Data_MtA.msg
+   Data_AtM.msg
+   Data_Odom.msg
 )
 
 ## Generate services in the 'srv' folder
