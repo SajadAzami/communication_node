@@ -2,6 +2,10 @@
 <launch>
 
 
+    <node pkg="gazebo_ros" type="spawn_model" name="gazebo_coke"  args="-database coke_can -gazebo -model exploration_master -y -10 -x -10" />
+
+    <node pkg="communication_node" type="registration_client" name="registration_client_node_coke" output="screen"  args="exploration_master" > </node>
+
 
   <include file="$(find setup)/launch/p3at_spawn.launch">
     <arg name="robotname" value="robot1"/>

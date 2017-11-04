@@ -32,6 +32,8 @@ from move_base_msgs.msg import *;
 from smach_ros import ServiceState;
 from std_msgs.msg import *;
 from tf import TransformListener;
+from communication_node.msg import Data_Map
+
 
 
 new_command= False;
@@ -47,6 +49,7 @@ Odom_data = None;
 current_victim_status=None;
 current_goal_status = 0 ; # goal status--- PENDING=0--- ACTIVE=1---PREEMPTED=2--SUCCEEDED=3--ABORTED=4---REJECTED=5--PREEMPTING=6---RECALLING=7---RECALLED=8---LOST=9
 sac=None;
+map_publisher=None;
 client_subscriber=None;
 odom_publisher=None;
 client_publisher=None;
@@ -165,7 +168,7 @@ def move_base_tools():
     sac.wait_for_server();
 
 def in_range(x, y, w, z):
-    return math.sqrt((x - w) ** 2 + (y - z) ** 2);
+    return math.sqrt((x-w) ** 2 + (y-z) ** 2);
 
 def setOdom(rawodomdata):
     global Odom_data;
@@ -179,6 +182,11 @@ def setOdom(rawodomdata):
 def setMap(costmap_data):
     global GCostmap_data;
     GCostmap_data = costmap_data;
+    new_data=Data_Map();
+    new_data.source=robot_name_space;
+    new_data.destination="exploration_master";
+    new_data.data=costmap_data;
+    map_publisher.publish(new_data);
 
 def PxCalculator(mapdata):
     sum = 0;
@@ -227,10 +235,11 @@ def start_services():
      global client_publisher;
      global client_subscriber;
      global odom_publisher;
+     global map_publisher;
      client_subscriber = rospy.Subscriber("inbox_MtA", Data_MtA, master_request_handler);
      client_publisher=rospy.Publisher("/message_server_AtM", Data_AtM,queue_size=15);
      odom_publisher=rospy.Publisher("/message_server_Odom", Data_Odom,queue_size=15);
-     map_publisher=rospy.Publisher("/message_server_map", Data_Odom,queue_size=15);
+     map_publisher=rospy.Publisher("/message_server_map", Data_Map,queue_size=15);
 
 
 
