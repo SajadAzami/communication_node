@@ -20,6 +20,7 @@ from time import gmtime,strftime
 import rospy
 from communication_node.msg import Data_Position , Data_Map
 from aut_exploration.msg import Data_AtM , Data_MtA
+from nav_msgs.msg import *
 from environment_information import get_object_distance
 from propagation_models import one_slope_model_checker
 
@@ -65,12 +66,51 @@ def callback_MtA(data):
         else:
             # TODO, ignore the message, send feedback
             if debuger_mode==True :
-               information_logger.write("MtA"+"".join(["-" for k in range(0,5)]))
+              information_logger.write("MtA"+"".join(["-" for k in range(0,5)]))
               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
               information_logger.write("failed"+"\n")
             print "communication is not possible"
+
+
+def callback_Odom(data):
+    global information_logger
+    # TODO handle for different message types
+    # TODO prop_model = data.prop_model
+    print("new data received")
+    prop_model = '1sm'
+    if prop_model == '1sm':
+        # distance = get_object_distance("pioneer3at", "Dumpster")
+        distance = get_object_distance(data.destination, data.source)
+        print type(distance)
+        result = one_slope_model_checker(distance=distance)
+        if result:
+            message_publisher = rospy.Publisher(data.destination + '/inbox_Odom', Data_Odom, queue_size=10)
+            i=0
+            while not ( rospy.is_shutdown() or i>1):
+                message_publisher.publish(data)
+                i+=1
+                rate.sleep()
+            i=0
+            print "communication is possible"
+            if debuger_mode==True :
+               information_logger.write("Odom"+"".join(["-" for k in range(0,4)]))
+               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
+               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
+               information_logger.write("message sent"+"\n")
+
+        else:
+            # TODO, ignore the message, send feedback
+            if debuger_mode==True :
+              information_logger.write("Odom"+"".join(["-" for k in range(0,4)]))
+              information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
+              information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+              information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
+              information_logger.write("failed"+"\n")
+            print "communication is not possible"
+
 
 def callback_AtM(data):
     global information_logger
@@ -102,7 +142,7 @@ def callback_AtM(data):
         else:
             # TODO, ignore the message, send feedback
             if debuger_mode==True :
-               information_logger.write("AtM"+"".join(["-" for k in range(0,5)]))
+              information_logger.write("AtM"+"".join(["-" for k in range(0,5)]))
               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
@@ -122,10 +162,10 @@ def callback_map(data):
         print type(distance)
         result = one_slope_model_checker(distance=distance)
         if result:
-            message_publisher = rospy.Publisher(data.destination + '/inbox_map', Data_Map, queue_size=10)
+            message_publisher = rospy.Publisher(data.source + '/g_map', OccupancyGrid, queue_size=10)
             i=0
             while not ( rospy.is_shutdown() or i>1):
-                message_publisher.publish(data)
+                message_publisher.publish(data.data)
                 i+=1
                 rate.sleep()
             i=0
@@ -160,10 +200,11 @@ def listener():
          information_logger =  open("./"+log_file, "a")
          information_logger.write("\n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         information_logger.write("Number--Source-----Destination-----Distance----------Outcome\n");
+         information_logger.write("Type----Source-----Destination-----Distance----------Outcome\n");
     rospy.Subscriber("/message_server_MtA", Data_MtA, callback_MtA,queue_size=50)
     rospy.Subscriber("/message_server_AtM", Data_AtM, callback_AtM,queue_size=50)
     rospy.Subscriber("/message_server_map", Data_Map, callback_map,queue_size=50)
+    rospy.Subscriber("/message_server_Odom", Data_Odom, callback_Odom,queue_size=50)
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
     rospy.spin()

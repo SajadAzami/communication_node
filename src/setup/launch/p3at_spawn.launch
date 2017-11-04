@@ -10,7 +10,10 @@
 
 
   <group ns="$(arg robotname)">
-
+     <param name="map_merge/init_pose_x" value="0"/>
+    <param name="map_merge/init_pose_y" value="0"/>
+    <param name="map_merge/init_pose_z" value="0.0"/>
+    <param name="map_merge/init_pose_yaw" value="0.0"/>
  <node pkg="communication_node" type="registration_client" name="registration_client_node" output="screen"  args="$(arg robotname)" > </node>
 
     <param name="robot_description" command="$(find xacro)/xacro '$(find p3at_description)/urdf/pioneer3at.urdf.xacro'" />

@@ -48,6 +48,7 @@ current_victim_status=None;
 current_goal_status = 0 ; # goal status--- PENDING=0--- ACTIVE=1---PREEMPTED=2--SUCCEEDED=3--ABORTED=4---REJECTED=5--PREEMPTING=6---RECALLING=7---RECALLED=8---LOST=9
 sac=None;
 client_subscriber=None;
+odom_publisher=None;
 client_publisher=None;
 command_from_master=None;
 exploration_boundry=None;
@@ -169,6 +170,11 @@ def in_range(x, y, w, z):
 def setOdom(rawodomdata):
     global Odom_data;
     Odom_data = rawodomdata;
+    new_data=Data_Odom();
+    new_data.odom=rawodomdata;
+    new_data.source=robot_name_space;
+    new_data.destination="exploration_master";
+    odom_publisher(new_data);
 
 def setMap(costmap_data):
     global GCostmap_data;
@@ -196,9 +202,8 @@ def start_listening():
     if(verbose):print ("verbosing--"+robot_name_space+"--reading data");
     rospy.Subscriber("move_base/status", GoalStatusArray, callback_goal_status);
     rospy.Subscriber("odom", Odometry, setOdom);
-    rospy.Subscriber("move_base/global_costmap/costmap", OccupancyGrid, setMap);
+    rospy.Subscriber("map", OccupancyGrid, setMap);
     rospy.Subscriber("victim_detected",Point,victim_callback2);
-
     rospy.Subscriber("/drive_mode",String,drivemodecallback);
 
 def drivemodecallback(data):
@@ -221,8 +226,11 @@ def master_request_handler(req):
 def start_services():
      global client_publisher;
      global client_subscriber;
+     global odom_publisher;
      client_subscriber = rospy.Subscriber("inbox_MtA", Data_MtA, master_request_handler);
-     client_publisher=rospy.Publisher("/message_server_AtM", Data_AtM,queue_size=5);
+     client_publisher=rospy.Publisher("/message_server_AtM", Data_AtM,queue_size=15);
+     odom_publisher=rospy.Publisher("/message_server_Odom", Data_Odom,queue_size=15);
+     map_publisher=rospy.Publisher("/message_server_map", Data_Odom,queue_size=15);
 
 
 

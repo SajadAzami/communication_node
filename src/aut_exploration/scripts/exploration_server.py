@@ -39,7 +39,7 @@ startTime = 0 # remained time = finishTime - (rospy.Time.now().secs - startTime)
 
 isFinishedExploringGrid = [] # [int:robotNumber] -> bool
 
-server_publisher = []
+server_publisher = None
 
 stateNumber = -1
 Grids = []
@@ -69,34 +69,6 @@ class GoalStyle(Enum):
 def robotPoseSubscriber(data): # for <totalNamespace>1
     global robotsPose
     robotsPose[int(data.source[-1])] = thePoint(data.odom.pose.pose.position.x, data.odom.pose.pose.position.y)
-    
-def robotPoseSubscriber0(odom): # for <totalNamespace>1
-    global robotsPose
-    robotsPose[0] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber1(odom): # for <totalNamespace>2
-    global robotsPose
-    robotsPose[1] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber2(odom): # for <totalNamespace>3
-    global robotsPose
-    robotsPose[2] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber3(odom): # for <totalNamespace>4
-    global robotsPose
-    robotsPose[3] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber4(odom): # for <totalNamespace>5
-    global robotsPose
-    robotsPose[4] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber5(odom): # for <totalNamespace>6
-    global robotsPose
-    robotsPose[5] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber6(odom): # for <totalNamespace>7
-    global robotsPose
-    robotsPose[6] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-def robotPoseSubscriber7(odom): # for <totalNamespace>8
-    global robotsPose
-    robotsPose[7] = thePoint(odom.pose.pose.position.x, odom.pose.pose.position.y)
-
-poseCallBackFunctions = {'0':robotPoseSubscriber0, '1':robotPoseSubscriber1, '2':robotPoseSubscriber2, '3':robotPoseSubscriber3,
-                         '4':robotPoseSubscriber4, '5':robotPoseSubscriber5, '6':robotPoseSubscriber6, '7':robotPoseSubscriber7}
 
 def enterInDriveMode(robotName):
     global robotIsEnable, robotsNum, totalNamespace
@@ -195,11 +167,13 @@ def goToGoal(robotNumber, goalPoint):
     lastRobotsCommand_X[robotNumber] = goalPoint.x
     lastRobotsCommand_Y[robotNumber] = goalPoint.y
 
-    req = Master_toAgent()
+    req = Data_MtA()
+    req.source="exploration_master"
+    req.destination="robot"+str(robotNumber);
     req.command = 'standby'
     req.goal_x = goalPoint.x
     req.goal_y = goalPoint.y
-    server_publisher[robotNumber].publish(req)
+    server_publisher.publish(req)
 
     print ("goal send to robot (" + str(robotNumber) + ") : ( " + str(goalPoint.x) + ", " + str(goalPoint.y) + ")")
 
@@ -219,7 +193,9 @@ def goToGrid(robotNumber, gridNumber):
     isFinishedExploringGrid[robotNumber] = False
 
 
-    req = Master_toAgent()
+    req = Data_MtA()
+    req.source="exploration_master"
+    req.destination="robot"+str(robotNumber)
     if targetPercentage >= 85 and not aliveVictimsFoundNum + deadVictimsFoundNum == aliveVictimsNum + deadVictimsNum:
         req.command = 'detect_victim'
     else:
@@ -229,7 +205,7 @@ def goToGrid(robotNumber, gridNumber):
     req.goal_x = gridCenters[gridNumber].x
     req.goal_y = gridCenters[gridNumber].y
     # TODO : percentage ro bgire
-    server_publisher[robotNumber].publish(req)
+    server_publisher.publish(req)
 
     print ("goal send to robot (" + str(robotNumber) + ") : gridNum = " + str(gridNumber) + " gridCenter:( "+ str(gridCenters[gridNumber].x) + ", " + str(gridCenters[gridNumber].y) + ")")
 
@@ -242,226 +218,38 @@ def getGridIndexInSortedArray(gridNumber): # return index of grid number in sort
             return i
     return -1
 
-def agentCallback0(agentData):
+def agentCallback(agentData):
     global isFinishedExploringGrid, robotIsEnable, server_publisher
+    agent_number = int(agentData.source[-1])
     print ("agent (1) callback:" + agentData.agent_state)
-    if robotIsEnable[0]:
+    if robotIsEnable[agent_number]:
         agentState = agentData.agent_state
         if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[0] = True
+            isFinishedExploringGrid[agent_number] = True
         elif agentState == 'victim_is_detected':
             isAlive = False
             if agentData.vic_state == 2: # victim is alive
                 isAlive = True
-            isConfirmed = victimFound(0, agentData.vic_x, agentData.vic_y, isAlive)
+            isConfirmed = victimFound(agent_number, agentData.vic_x, agentData.vic_y, isAlive)
 
-            req = Master_toAgent()
+            req = Data_MtA()
+            req.source="exploration_master"
+            req.destination="robot"+str(agent_number)
             if isConfirmed:
                 req.command = 'victim_confirmed'
             else:
                 req.command = 'go_on'
-            server_publisher[0].publish(req)
+            server_publisher.publish(req)
 
             if isConfirmed:
-                rn = 0
+                rn = agent_number
                 if lastRobotsCommand_Type[rn]:
                     goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
                 elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
                     goToGrid(rn, lastRobotsCommand_X[rn])
 
         else: # failed_toMOVE
-            couldntReach(0)
-
-def agentCallback1(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (2) callback:" + agentData.agent_state)
-    if robotIsEnable[1]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[1] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(1, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[1].publish(req)
-
-            if isConfirmed:
-                rn = 1
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(1)
-def agentCallback2(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (3) callback:" + agentData.agent_state)
-    if robotIsEnable[2]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[2] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(2, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[2].publish(req)
-            if isConfirmed:
-                rn = 2
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(2)
-def agentCallback3(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (4) callback:" + agentData.agent_state)
-    if robotIsEnable[3]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[3] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(3, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[3].publish(req)
-            if isConfirmed:
-                rn = 3
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(3)
-def agentCallback4(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (5) callback:" + agentData.agent_state)
-    if robotIsEnable[4]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[4] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(4, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[4].publish(req)
-            if isConfirmed:
-                rn = 4
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(4)
-def agentCallback5(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (6) callback:" + agentData.agent_state)
-    if robotIsEnable[5]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[5] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(5, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[5].publish(req)
-            if isConfirmed:
-                rn = 5
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(5)
-def agentCallback6(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (7) callback:" + agentData.agent_state)
-    if robotIsEnable[6]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[6] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(6, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[6].publish(req)
-            if isConfirmed:
-                rn = 6
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(6)
-def agentCallback7(agentData):
-    global isFinishedExploringGrid, robotIsEnable, server_publisher
-    print ("agent (8) callback:" + agentData.agent_state)
-    if robotIsEnable[7]:
-        agentState = agentData.agent_state
-        if agentState == 'exp_finished' or agentState == 'vicexp_finished':
-            isFinishedExploringGrid[7] = True
-        elif agentState == 'victim_is_detected':
-            isAlive = False
-            if agentData.vic_state == 2: # victim is alive
-                isAlive = True
-            isConfirmed = victimFound(7, agentData.vic_x, agentData.vic_y, isAlive)
-
-            req = Master_toAgent()
-            if isConfirmed:
-                req.command = 'victim_confirmed'
-            else:
-                req.command = 'go_on'
-            server_publisher[7].publish(req)
-            if isConfirmed:
-                rn = 7
-                if lastRobotsCommand_Type[rn]:
-                    goToGoal(rn, int(thePoint(lastRobotsCommand_X[rn]), int(lastRobotsCommand_Y[rn])))
-                elif not lastRobotsCommand_X[rn] == -1: # if is -1 => means that isn't set a command yet
-                    goToGrid(rn, lastRobotsCommand_X[rn])
-        else: # failed_toMOVE
-            couldntReach(7)
+            couldntReach(agent_number)
 
 
 
@@ -1238,7 +1026,7 @@ if __name__ == '__main__':
     robotIsEnable = [True] * robotsNum
 
 
-    rospy.Subscriber('/message_server_odom', Data_Odom , robotPoseSubscriber);
+    rospy.Subscriber('/exploration_master/inbox_Odom', Data_Odom , robotPoseSubscriber);
     gridCenters = [thePoint()] * gridsNum
     gridMap()
 
@@ -1281,27 +1069,18 @@ if __name__ == '__main__':
         defaultGrids[i] = index;
 
     print("robotsnumber = " + str(robotsNum))
-
-    server_subscriber0 = rospy.Subscriber(totalNamespace + '1/client_message', Agent_toMaster,  agentCallback0)
-    server_subscriber1 = rospy.Subscriber(totalNamespace + '2/client_message', Agent_toMaster,  agentCallback1)
-    server_subscriber2 = rospy.Subscriber(totalNamespace + '3/client_message', Agent_toMaster,  agentCallback2)
-    server_subscriber3 = rospy.Subscriber(totalNamespace + '4/client_message', Agent_toMaster,  agentCallback3)
-    server_subscriber4 = rospy.Subscriber(totalNamespace + '5/client_message', Agent_toMaster,  agentCallback4)
-    server_subscriber5 = rospy.Subscriber(totalNamespace + '6/client_message', Agent_toMaster,  agentCallback5)
-    server_subscriber6 = rospy.Subscriber(totalNamespace + '7/client_message', Agent_toMaster,  agentCallback6)
-    server_subscriber7 = rospy.Subscriber(totalNamespace + '8/client_message', Agent_toMaster,  agentCallback7)
+    server_subscriber = rospy.Subscriber( '/exploration_master/inbox_AtM', Data_AtM,  agentCallback)
     # just for keep action servers in some variables
 
     rospy.Subscriber('drive_mode', String, enterInDriveMode)
     rospy.Subscriber('joy', Joy, checkJoyData)
 
 
-    server_publisher = [None]*robotsNum
+    server_publisher = rospy.Publisher('/message_server_MtA', Data_MtA,queue_size=10);
 
     for i in range(0, robotsNum):
         robotsAliveVictims.insert(i,[]);
         robotsDeadVictims.insert(i,[]);
-        server_publisher[i] = rospy.Publisher(totalNamespace + str(i+1) + '/server_message', Master_toAgent,queue_size=5);
 
 
     print("waiting for service :percentage_server")
