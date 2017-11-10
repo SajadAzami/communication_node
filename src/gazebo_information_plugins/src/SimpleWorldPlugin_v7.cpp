@@ -27,7 +27,7 @@ namespace gazebo {
         physics::WorldPtr _world;
         ros::NodeHandle n;
         ros::Subscriber map_subscriber;
-        ros::ServiceServer service;
+        ros::ServiceServer service1,service2,service3,service4;
         std::vector<std::string> vec;
         std::string object_name;
         int check;
@@ -170,7 +170,11 @@ namespace gazebo {
             int argc = 0;
             char **argv = NULL;
             ros::init(argc, argv, "gazebo_client", ros::init_options::NoSigintHandler);
-            service = n.advertiseService("GzInfo_service", &WorldPluginTutorial::service_handler, this);
+            service1 = n.advertiseService("GzInfo_service1", &WorldPluginTutorial::service_handler1, this);
+            service2 = n.advertiseService("GzInfo_service2", &WorldPluginTutorial::service_handler2, this);
+            service3 = n.advertiseService("GzInfo_service3", &WorldPluginTutorial::service_handler3, this);
+            service4 = n.advertiseService("GzInfo_service4", &WorldPluginTutorial::service_handler4, this);
+
             std::string subscribing_topic = "collision_topic";//move_base/local_costmap/costmap";
             map_subscriber = n.subscribe(subscribing_topic, 10, &WorldPluginTutorial::collision_callback, this);
 
@@ -192,7 +196,7 @@ namespace gazebo {
             //ROS_INFO("%s",object_name.data.c_str());
         }
 
-        bool service_handler(gazebo_information_plugins::distance_serivce::Request &req,
+        bool service_handler1(gazebo_information_plugins::distance_serivce::Request &req,
                              gazebo_information_plugins::distance_serivce::Response &res) {
 
             std::string command = req.command, robot1 = req.robot1, robot2 = req.robot2;
@@ -217,6 +221,85 @@ namespace gazebo {
             } */
             return true;
         }
+
+
+
+        bool service_handler2(gazebo_information_plugins::distance_serivce::Request &req,
+                             gazebo_information_plugins::distance_serivce::Response &res) {
+
+            std::string command = req.command, robot1 = req.robot1, robot2 = req.robot2;
+            if (command == "distance") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = 0;
+            } else if (command == "walls") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            }
+            else if (command == "temp") {
+                res.distance = 0;
+                res.number_of_objects = 0;
+            }
+            else if (command == "pressure") {
+                res.distance = 0;
+                res.number_of_objects = 0;
+            }
+        /*TODO   else if (command == "magnet") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            } */
+            return true;
+        }
+        bool service_handler3(gazebo_information_plugins::distance_serivce::Request &req,
+                             gazebo_information_plugins::distance_serivce::Response &res) {
+
+            std::string command = req.command, robot1 = req.robot1, robot2 = req.robot2;
+            if (command == "distance") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = 0;
+            } else if (command == "walls") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            }
+            else if (command == "temp") {
+                res.distance = 0;
+                res.number_of_objects = 0;
+            }
+            else if (command == "pressure") {
+                res.distance = 0;
+                res.number_of_objects = 0;
+            }
+        /*TODO   else if (command == "magnet") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            } */
+            return true;
+        }
+        bool service_handler4(gazebo_information_plugins::distance_serivce::Request &req,
+                             gazebo_information_plugins::distance_serivce::Response &res) {
+
+            std::string command = req.command, robot1 = req.robot1, robot2 = req.robot2;
+            if (command == "distance") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = 0;
+            } else if (command == "walls") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            }
+            else if (command == "temp") {
+                res.distance = 0;
+                res.number_of_objects = 0;
+            }
+            else if (command == "pressure") {
+                res.distance = 0;
+                res.number_of_objects = 0;
+            }
+        /*TODO   else if (command == "magnet") {
+                res.distance = get_distance(robot1, robot2);
+                res.number_of_objects = get_walls(robot1, robot2);
+            } */
+            return true;
+        }
+
 
 
     };

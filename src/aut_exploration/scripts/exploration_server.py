@@ -68,7 +68,7 @@ class GoalStyle(Enum):
     HELP_GRID = 4
 def robotPoseSubscriber(data): # for <totalNamespace>1
     global robotsPose
-    robotsPose[int(data.source[-1])] = thePoint(data.odom.pose.pose.position.x, data.odom.pose.pose.position.y)
+    robotsPose[(int(data.source[-1]))-1] = thePoint(data.odom.pose.pose.position.x, data.odom.pose.pose.position.y)
 
 def enterInDriveMode(robotName):
     global robotIsEnable, robotsNum, totalNamespace
@@ -498,9 +498,15 @@ def getGridPercentage(gridNumber):
     points.append(Point(maxX, minY, 0))
     points.append(Point(maxX, maxY, 0))
     req.points = points
-    a = getPercentage(req)
-    print ("percentage of grid number " + str(gridNumber) + " : " + str(a))
-    return a
+    for vn in range(0,4):
+      try:
+          a = getPercentage(req)
+          print ("percentage of grid number " + str(gridNumber) + " : " + str(a))
+          return a.percentage
+      except Exception as e:
+          print (e)
+          print ("percentage of grid failed failed failed failed failed")
+
 
 def getSortedGridsNumbers():
     global gridsNum, sortedGridArray

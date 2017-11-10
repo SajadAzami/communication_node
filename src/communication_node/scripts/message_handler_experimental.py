@@ -40,12 +40,14 @@ def callback_MtA(data):
     global information_logger
     # TODO handle for different message types
     # TODO prop_model = data.prop_model
-    print("new data received")
+    print("new MtA received")
     prop_model = '1sm'
     if prop_model == '1sm':
         # distance = get_object_distance("pioneer3at", "Dumpster")
-        distance = get_object_distance(data.destination, data.source)
-        print type(distance)
+        distance = get_object_distance(data.source,data.destination)
+        print (type(distance),"MtA")
+        while (distance==None):
+            distance = get_object_distance(data.destination, data.source)
         result = one_slope_model_checker(distance=distance)
         if result:
             message_publisher = rospy.Publisher(data.destination + '/inbox_MtA', Data_MtA, queue_size=10)
@@ -78,12 +80,14 @@ def callback_Odom(data):
     global information_logger
     # TODO handle for different message types
     # TODO prop_model = data.prop_model
-    print("new data received")
+    print("new odom received")
     prop_model = '1sm'
     if prop_model == '1sm':
         # distance = get_object_distance("pioneer3at", "Dumpster")
         distance = get_object_distance(data.destination, data.source)
-        print type(distance)
+        print (type(distance),"odom")
+        while (distance==None):
+            distance = get_object_distance(data.destination, data.source)
         result = one_slope_model_checker(distance=distance)
         if result:
             message_publisher = rospy.Publisher(data.destination + '/inbox_Odom', Data_Odom, queue_size=10)
@@ -121,7 +125,9 @@ def callback_AtM(data):
     if prop_model == '1sm':
         # distance = get_object_distance("pioneer3at", "Dumpster")
         distance = get_object_distance(data.destination, data.source)
-        print type(distance)
+        print (type(distance),"AtM")
+        while (distance==None):
+            distance = get_object_distance(data.destination, data.source)
         result = one_slope_model_checker(distance=distance)
         if result:
             message_publisher = rospy.Publisher(data.destination + '/inbox_AtM', Data_AtM, queue_size=10)
@@ -159,7 +165,9 @@ def callback_map(data):
     if prop_model == '1sm':
         # distance = get_object_distance("pioneer3at", "Dumpster")
         distance = get_object_distance(data.destination, data.source)
-        print type(distance)
+        print (type(distance),"map")
+        while (distance==None):
+            distance = get_object_distance(data.destination, data.source)
         result = one_slope_model_checker(distance=distance)
         if result:
             message_publisher = rospy.Publisher(data.source + '/g_map', OccupancyGrid, queue_size=10)

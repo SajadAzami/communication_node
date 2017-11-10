@@ -165,6 +165,7 @@ def move_base_tools():
     global sac;
     move_base_cancel_publisher=rospy.Publisher("move_base/cancel",GoalID,queue_size=10);
     sac = actionlib.SimpleActionClient("move_base", MoveBaseAction);
+    print (robot_name_space);
     sac.wait_for_server();
 
 def in_range(x, y, w, z):
@@ -172,6 +173,7 @@ def in_range(x, y, w, z):
 
 def setOdom(rawodomdata):
     global Odom_data;
+    global odom_publisher;
     Odom_data = rawodomdata;
     new_data=Data_Odom();
     new_data.odom=rawodomdata;
@@ -181,6 +183,7 @@ def setOdom(rawodomdata):
 
 def setMap(costmap_data):
     global GCostmap_data;
+    global map_publisher;
     GCostmap_data = costmap_data;
     new_data=Data_Map();
     new_data.source=robot_name_space;
@@ -1082,9 +1085,9 @@ class SimpleState(smach.State):
 
 def main():
     # Create the top level SMACH state machine
+    start_services();
     start_listening();
     move_base_tools();
-    start_services();
     print ("reading finished \n ");
 
     rospy.sleep(2);
