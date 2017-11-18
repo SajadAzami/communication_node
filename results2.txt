@@ -1,0 +1,2884 @@
+
+ ###################### 
+ ###################### 
+
+ This is the result of test on 2017-11-08 15:52:08 GMT time 
+Type----Source-----Destination-----Distance----------Outcome
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot1-----exploration_master2.99999761581-----message sent
+map-----robot4-----exploration_master7.0719628334------message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot1-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+map-----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.0719628334------message sent
+map-----robot1-----exploration_master2.99999761581-----message sent
+map-----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.0719628334------message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+map-----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot1-----exploration_master2.99999761581-----message sent
+map-----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot4-----exploration_master7.0719628334------message sent
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.0719628334------message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+map-----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----map-----robot1-----exploration_master2.9999973774------message sent
+robot2-----exploration_master7.07104825974-----message sent
+map-----robot4-----exploration_master7.07196331024-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430110931-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.0719628334------message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.0719628334------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+map-----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot4-----exploration_master7.07196378708-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+map-----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+map-----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+map-----robot1-----exploration_master2.9999973774------message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+map-----robot4-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+map-----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+map-----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+map-----robot1-----exploration_master2.99999713898-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430120468-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+map-----robot1-----exploration_master2.9999973774------message sent
+map-----robot2-----exploration_master7.07104825974-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+map-----robot2-----exploration_master7.0710477829------message sent
+map-----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+map-----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.9999973774------message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot4-----exploration_master7.07196331024-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+map-----robot1-----exploration_master2.99999713898-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----Odom----robot4-----exploration_master7.07196378708-----message sent
+exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999690056-----message sent
+map-----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+map-----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999690056-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot4-----exploration_master7.07196331024-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.9999973774------message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot2-----exploration_master7.07104825974-----message sent
+map-----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999713898-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+map-----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.9999973774------message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999785423-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot1-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999761581-----message sent
+Odom----robot4-----exploration_master7.07196378708-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.07104969025-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999785423-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot1-----exploration_master2.99999833107-----message sent
+map-----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+map-----robot4-----exploration_master7.07196474075-----message sent
+map-----robot2-----exploration_master7.07104969025-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430130005-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196426392-----message sent
+map-----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+map-----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+map-----robot4-----exploration_master7.07196474075-----message sent
+map-----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999809265-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+map-----robot1-----exploration_master2.99999833107-----message sent
+map-----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999856949-----message sent
+map-----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot4-----exploration_master7.07196521759-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196521759-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196521759-----message sent
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot2-----exploration_master7.0710477829------message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot1-----exploration_master2.99999856949-----message sent
+map-----robot2-----exploration_master7.0710477829------message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+map-----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999833107-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot2-----exploration_master7.0710477829------message sent
+map-----robot4-----exploration_master7.07196474075-----message sent
+map-----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196426392-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196521759-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999856949-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot4-----exploration_master7.07196521759-----message sent
+map-----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196521759-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999880791-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999880791-----message sent
+Odom----robot4-----exploration_master7.07196521759-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999880791-----message sent
+Odom----robot2-----exploration_master7.07104825974-----message sent
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196474075-----message sent
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot1-----exploration_master2.99999856949-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot1-----exploration_master2.99999880791-----message sent
+Odom----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430139542-----failed
+Odom----robot4-----exploration_master7.07196521759-----message sent
+map-----robot2-----exploration_master7.07104873657-----message sent
+Odom----robot3-----exploration_master14.1430149078-----failed
+Odom----robot3-----exploration_master14.1430139542-----failed
+map-----robot4-----exploration_master7.07196521759-----message sent
+map-----robot1-----exploration_master2.99999880791-----message sent
+Odom----robot3-----exploration_master14.1430149078-----failed
+
+ ###################### 
+ ###################### 

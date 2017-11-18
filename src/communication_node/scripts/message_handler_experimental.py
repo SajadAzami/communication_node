@@ -181,7 +181,7 @@ def callback_map(data):
             if debuger_mode==True :
                information_logger.write("map"+"".join(["-" for k in range(0,5)]))
                information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+               information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
                information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                information_logger.write("message sent"+"\n")
 
@@ -190,7 +190,7 @@ def callback_map(data):
             if debuger_mode==True :
               information_logger.write("map"+"".join(["-" for k in range(0,5)]))
               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-              information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+              information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
               information_logger.write("failed"+"\n")
             print "communication is not possible"
@@ -205,10 +205,10 @@ def listener():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results.txt")
-         information_logger =  open("./"+log_file, "a")
+         information_logger =  open("/home/user/project_franchesco/communication_node/"+log_file, "a")
          information_logger.write("\n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         information_logger.write("Type----Source-----Destination-----Distance----------Outcome\n");
+         information_logger.write("Type----Source-----Destination---------Distance----------Outcome\n");
     rospy.Subscriber("/message_server_MtA", Data_MtA, callback_MtA,queue_size=50)
     rospy.Subscriber("/message_server_AtM", Data_AtM, callback_AtM,queue_size=50)
     rospy.Subscriber("/message_server_map", Data_Map, callback_map,queue_size=50)

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-  <param name="log_file" type="string" value="results2.txt"/>
+  <param name="log_file" type="string" value="results3.txt"/>
   <param name="debuger_mode" type="boolean" value="True"/>
     <node pkg="communication_node" type="message_handler_experimental.py" name="message_handler" output="screen" />
 
