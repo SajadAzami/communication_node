@@ -61,7 +61,7 @@ def callback_MtA(data):
             if debuger_mode==True :
                information_logger.write("MtA"+"".join(["-" for k in range(0,5)]))
                information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+               information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
                information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                information_logger.write("message sent"+"\n")
 
@@ -70,7 +70,7 @@ def callback_MtA(data):
             if debuger_mode==True :
               information_logger.write("MtA"+"".join(["-" for k in range(0,5)]))
               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-              information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+              information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
               information_logger.write("failed"+"\n")
             print "communication is not possible"
@@ -101,7 +101,7 @@ def callback_Odom(data):
             if debuger_mode==True :
                information_logger.write("Odom"+"".join(["-" for k in range(0,4)]))
                information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+               information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
                information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                information_logger.write("message sent"+"\n")
 
@@ -110,7 +110,7 @@ def callback_Odom(data):
             if debuger_mode==True :
               information_logger.write("Odom"+"".join(["-" for k in range(0,4)]))
               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-              information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+              information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
               information_logger.write("failed"+"\n")
             print "communication is not possible"
@@ -141,7 +141,7 @@ def callback_AtM(data):
             if debuger_mode==True :
                information_logger.write("AtM"+"".join(["-" for k in range(0,5)]))
                information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-               information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+               information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
                information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                information_logger.write("message sent"+"\n")
 
@@ -150,7 +150,7 @@ def callback_AtM(data):
             if debuger_mode==True :
               information_logger.write("AtM"+"".join(["-" for k in range(0,5)]))
               information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
-              information_logger.write(data.destination+"".join(["-" for k in range(0,16-len(data.destination))]))
+              information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
               information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
               information_logger.write("failed"+"\n")
             print "communication is not possible"
@@ -204,8 +204,10 @@ def listener():
     rate=rospy.Rate(10)
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
-         log_file=rospy.get_param("log_file",default="results.txt")
-         information_logger =  open("/home/user/project_franchesco/communication_node/"+log_file, "a")
+         log_file=rospy.get_param("log_file",default="results")
+         if not os.path.exists("/home/user/project_franchesco/communication_node/test_results/"+log_file):
+             os.makedirs("/home/user/project_franchesco/communication_node/test_results/"+log_file)
+         information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+".log", "a")
          information_logger.write("\n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
          information_logger.write("Type----Source-----Destination---------Distance----------Outcome\n");
