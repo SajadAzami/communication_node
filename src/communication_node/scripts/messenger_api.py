@@ -19,7 +19,7 @@ from communication_node.msg import Data_Map, Data_Image, Data_Position
 from registration_client import registration_client
 
 
-def send_message(message, message_type):
+def send_message(message=None, message_type=None,message_tag=""):
     """Sending a message
     This is the message sending protocol
 
@@ -30,18 +30,9 @@ def send_message(message, message_type):
     Relations
     ----------
     """
-    if message_type is 'Data_Map':
-        message_publisher = rospy.Publisher('/message_server', Data_Map, queue_size=10)
-    elif message_type is 'Data_Image':
-        message_publisher = rospy.Publisher('/message_server', Data_Image, queue_size=10)
-    elif message_type is 'Data_Position':
-        message_publisher = rospy.Publisher('/message_server', Data_Position, queue_size=10)
-    elif message_type is 'Data_Generic':
-        pass
-
+    message_publisher = rospy.Publisher("/message_server_"+message_tag, message_type, queue_size=10)
     # rospy.init_node(robot_namespace + '_message_sender_node', anonymous=True)
     rate = rospy.Rate(1)  # 10hz
-
     message_publisher.publish(message)
     rate.sleep()
 
@@ -50,7 +41,7 @@ def __receive_message_callback(data):
     print data
 
 
-def receive_message(name_space, message_type, callback_function):
+def receive_message(name_space="", message_type=None,message_tag="", callback_function):
     """Receive a message
     This is the message sending protocol
 
@@ -61,23 +52,7 @@ def receive_message(name_space, message_type, callback_function):
     Relations
     ----------
     """
-
-    if message_type is 'Data_Map':
-        print 'Subscribing from ' + name_space + "/inbox"
-        print 'Message type: ' + message_type
-        rospy.Subscriber(name_space + "/inbox", Data_Map, callback_function)
-    elif message_type is 'Data_Image':
-
-        print 'Subscribing from ' + name_space + "/inbox"
-        print 'Message type: ' + message_type
-        rospy.Subscriber(name_space + "/inbox", Data_Image, callback_function)
-    elif message_type is 'Data_Position':
-
-        print 'Subscribing from ' + name_space + "/inbox"
-        print 'Message type: ' + message_type
-        rospy.Subscriber(name_space + "/inbox", Data_Position, callback_function)
-    elif message_type is 'Data_Generic':
-        pass
+    rospy.Subscriber(name_space + "/inbox_"+message_tag, message_type, callback_function)
 
 
 def register(robot_namespace):

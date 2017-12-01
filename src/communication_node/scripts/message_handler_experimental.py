@@ -18,8 +18,7 @@ import signal
 import sys
 from time import gmtime,strftime
 import rospy
-from communication_node.msg import Data_Position , Data_Map
-from aut_exploration.msg import Data_AtM , Data_MtA , Data_Odom
+from communication_node.msg import *
 from nav_msgs.msg import *
 from environment_information import get_object_distance
 from propagation_models import one_slope_model_checker
@@ -44,7 +43,7 @@ class message_handle:
         self.data_type=data_type;
         self.alt_type=alt_type;
         self.tag=tag;
-        self.subscriber=rospy.Subscriber(self.subs_topic,self.data_type, self.callback_function,queue_size=50);
+        self.subscriber=rospy.Subscriber(self.subs_topic+self.tag,self.data_type, self.callback_function,queue_size=50);
         self.message_publisher=None;
     def callback_function(self,data):
             global information_logger
@@ -106,7 +105,7 @@ def listener():
          information_logger.write("\n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
          information_logger.write("Type-------Source-----Destination---------Distance----------Outcome\n");
-    message_list=[["/message_server_MtA","/inbox_MtA",Data_MtA,"MtA"],["/message_server_AtM","/inbox_AtM",Data_AtM,"AtM"],["/message_server_map","/g_map",Data_Map,"map",alt_type=OccupancyGrid],["/message_server_Odom","/inbox_Odom",Data_Odom,"odom"]];
+    message_list=[["/message_server_","/inbox_MtA",Data_MtA,"MtA"],["/message_server_","/inbox_AtM",Data_AtM,"AtM"],["/message_server_","/g_map",Data_Map,"map",alt_type=OccupancyGrid],["/message_server_","/inbox_Odom",Data_Odom,"Odom"]];
     for i in range (0,len(message_list)):
         message_handlers_list.append(message_handle(message_list[i][0],message_list[i][1],message_list[i][2],message_list[i][3]));
     signal.signal(signal.SIGINT, on_exit)

@@ -55,6 +55,9 @@ add_message_files(FILES
   Data_Image.msg
   Data_Position.msg
   Data_Map.msg
+  Data_MtA.msg
+  Data_AtM.msg
+  Data_Odom.msg
 )
 
 ## Generate services in the 'srv' folder

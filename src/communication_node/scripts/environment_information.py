@@ -11,84 +11,24 @@ Utils package for environment information extraction.
 
 import tf
 import rospy
+import rosservice
 from gazebo_information_plugins.srv import *
 
 
 class GetInfo:
-    def __init__(self):
-        self.client1 = None
-        self.client2 = None
-        self.client3 = None
-        self.client4 = None
-        rospy.wait_for_service("GzInfo_service1")
+    def __init__(self,service_name=""):
+        temp_list=rosservice.rosservice_find("distance_serivce")        rospy.wait_for_service(service_name)
         try:
-            self.client1 = rospy.ServiceProxy("GzInfo_service1", distance_serivce)
-            print ("gazebo server1 found")
+                self.client=rospy.ServiceProxy(service_name, distance_serivce)
+                print ("gazebo ",service_name," found")
         except rospy.ServiceException:
-            print ("Service call failed ")
-        rospy.wait_for_service("GzInfo_service2")
-        try:
-            self.client2 = rospy.ServiceProxy("GzInfo_service2", distance_serivce)
-            print ("gazebo server2 found")
-        except rospy.ServiceException:
-            print ("Service call failed ")
-        rospy.wait_for_service("GzInfo_service3")
-        try:
-            self.client3 = rospy.ServiceProxy("GzInfo_service3", distance_serivce)
-            print ("gazebo server3 found")
-        except rospy.ServiceException:
-            print ("Service call failed ")
-        rospy.wait_for_service("GzInfo_service4")
-        try:
-            self.client4 = rospy.ServiceProxy("GzInfo_service4", distance_serivce)
-            print ("gazebo server4 found")
-        except rospy.ServiceException:
-            print ("Service call failed ")
+                print ("Service call failed ", service_name,"  not good")
 
     def request1(self, command="walls", robot1="sos1", robot2="sos2"):
         request = distance_serivceRequest(command, robot1, robot2)
         output = [None, None]
         try:
-            response = self.client1(request)
-            output = [response.distance, response.number_of_objects]
-        except Exception as e:
-            print (e)
-            print ("sending the request failed")
-            response = "failed"
-            print(command,"---",robot1,"---",robot2)
-        return output
-
-    def request2(self, command="walls", robot1="sos1", robot2="sos2"):
-        request = distance_serivceRequest(command, robot1, robot2)
-        output = [None, None]
-        try:
-            response = self.client2(request)
-            output = [response.distance, response.number_of_objects]
-        except Exception as e:
-            print (e)
-            print ("sending the request failed")
-            response = "failed"
-            print(command,"---",robot1,"---",robot2)
-        return output
-
-    def request3(self, command="walls", robot1="sos1", robot2="sos2"):
-        request = distance_serivceRequest(command, robot1, robot2)
-        output = [None, None]
-        try:
-            response = self.client3(request)
-            output = [response.distance, response.number_of_objects]
-        except Exception as e:
-            print (e)
-            print ("sending the request failed")
-            response = "failed"
-            print(command,"---",robot1,"---",robot2)
-        return output
-
-    def request4(self, command="walls", robot1="sos1", robot2="sos2"):
-        request = distance_serivceRequest(command, robot1, robot2)
-        output = [None, None]
-        try:
-            response = self.client4(request)
+            response = self.client(request)
             output = [response.distance, response.number_of_objects]
         except Exception as e:
             print (e)
@@ -98,8 +38,10 @@ class GetInfo:
         return output
 
 
-environment_info = GetInfo()
-func_list=[environment_info.request1,environment_info.request2,environment_info.request3,environment_info.request4]
+temp_list=rosservice.rosservice_find("distance_serivce")
+environment_info=[]
+for i in temp_list:
+    environment_info.append(GetInfo(i))
 counter=0
 def get_current_position(name_space):
     """Get current location of robot using tf translation
@@ -166,11 +108,12 @@ def get_object_distance(ns1, ns2):
     ----------
     """
     global counter
-    global func_list
+    global environment_info
+    global temp_list
     print (len(func_list))
-    if counter >3 :
+    if counter >=len(environment_info) :
         counter =0
-    output_info = func_list[counter](command="distance", robot1=ns1, robot2=ns2)
+    output_info = (environment_info[counter]).request1(command="distance", robot1=ns1, robot2=ns2)
     counter=counter+1
     distance = output_info[0]
     if distance == -1:

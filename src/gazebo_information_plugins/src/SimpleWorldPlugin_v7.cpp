@@ -22,7 +22,17 @@
 #define NUM_SRV 4
 
 namespace gazebo {
-    class service_handle;
+    class WorldPluginTutorial ;
+    class service_handle{
+
+    public:
+      WorldPluginTutorial* WPT;
+      std::string sn;
+      ros::ServiceServer service1;
+      service_handle(std::string service_name,WorldPluginTutorial* world_plugin);
+      bool service_handler1(gazebo_information_plugins::distance_serivce::Request &req,
+                           gazebo_information_plugins::distance_serivce::Response &res);
+     };
     class WorldPluginTutorial : public WorldPlugin {
     public:
         physics::WorldPtr _world;
@@ -173,7 +183,7 @@ namespace gazebo {
             char **argv = NULL;
             ros::init(argc, argv, "gazebo_client", ros::init_options::NoSigintHandler);
             for (int i=0;i<NUM_SRV;i++){
-              vec_srv.push_back(new service_handle("GzInfo_service"+(std::to_string(i)),this))
+              vec_srv.push_back(new service_handle("GzInfo_service"+(std::to_string(i)),this));
             };
             // service1 = n.advertiseService("GzInfo_service1", &WorldPluginTutorial::service_handler1, this);
             // service2 = n.advertiseService("GzInfo_service2", &WorldPluginTutorial::service_handler2, this);
@@ -229,21 +239,18 @@ namespace gazebo {
 
 
 
-    
+
 
     };
 
-    class service_handle {
-  public:
-    WorldPluginTutorial* WPT;
-    std::string sn;
-    ros::ServiceServer service1;
-    service_handle(std::string service_name,WorldPluginTutorial* world_plugin){
+
+
+    service_handle::service_handle(std::string service_name,WorldPluginTutorial* world_plugin){
                sn=service_name;
                WPT=world_plugin;
                  service1 = (WPT->n).advertiseService(sn, &service_handle::service_handler1, this);
     };
-    bool service_handler1(gazebo_information_plugins::distance_serivce::Request &req,
+    bool service_handle::service_handler1(gazebo_information_plugins::distance_serivce::Request &req,
                          gazebo_information_plugins::distance_serivce::Response &res) {
 
         std::string command = req.command, robot1 = req.robot1, robot2 = req.robot2;
@@ -267,11 +274,11 @@ namespace gazebo {
             res.number_of_objects = get_walls(robot1, robot2);
         } */
         return true;
-    }
+    };
 
 
-  };
 
 
-    GZ_REGISTER_WORLD_PLUGIN(WorldPluginTutorial)
+
+    GZ_REGISTER_WORLD_PLUGIN(WorldPluginTutorial);
 }
