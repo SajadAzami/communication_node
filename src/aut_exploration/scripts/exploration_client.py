@@ -32,7 +32,7 @@ from move_base_msgs.msg import *;
 from smach_ros import ServiceState;
 from std_msgs.msg import *;
 from tf import TransformListener;
-from communication_node.msg import Data_Map
+from communication_node.msg import *
 
 
 

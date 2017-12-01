@@ -14,6 +14,7 @@ from sensor_msgs.msg import Joy
 from nav_msgs.msg import *
 from aut_exploration.srv import *
 from aut_exploration.msg import *
+from communication_node.msg import *
 import yaml
 
 
