@@ -1,6 +1,6 @@
 /* world plugin
 
-# Authors:  Mohammad Hossein Gohari Nejad <mhgoharinejad@gmail.com>
+# Authors:  MohammadHossein GohariNejad <hoseingohari76@gmail.com>
 # License:  BSD 3 clause
 
 

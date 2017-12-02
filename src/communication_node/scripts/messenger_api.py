@@ -3,6 +3,7 @@
 """Messenger API.
 
 # Authors:  Sajjad Azami <sajjadaazami@gmail.com>
+#           MohammadHossein GohariNejad <hoseingohari76@gmail.com>
 # License:  BSD 3 clause
 
 API for sending and receiving message
@@ -24,10 +25,12 @@ def send_message(message=None, message_type=None,message_tag=""):
     This is the message sending protocol
 
     :parameter
-    message_type : message_type in String
     message : *(message_type).msg type message
+    message_type : type, type of the sending message
+    message_tag : string, tage for the type of the message
 
     Relations
+    publishes to /message_server_+"message_tag"
     ----------
     """
     message_publisher = rospy.Publisher("/message_server_"+message_tag, message_type, queue_size=10)
@@ -37,22 +40,24 @@ def send_message(message=None, message_type=None,message_tag=""):
     rate.sleep()
 
 
-def __receive_message_callback(data):
-    print data
 
 
 def receive_message(name_space="", message_type=None,message_tag="", callback_function):
     """Receive a message
-    This is the message sending protocol
+    This is the a wrapper around a ros subscriber
 
     :parameter
-    message_type : message_type in String
     name_space : your robot's name_space
-
+    message_type : type, type of the message received by this function
+    message_tag : string, tag for messagetype
+    --------------------
+    Returns: the subscriber object
+    --------------------
     Relations
+    subscribes to /inbox_+"message_tag"
     ----------
     """
-    rospy.Subscriber(name_space + "/inbox_"+message_tag, message_type, callback_function)
+    return rospy.Subscriber(name_space + "/inbox_"+message_tag, message_type, callback_function)
 
 
 def register(robot_namespace):

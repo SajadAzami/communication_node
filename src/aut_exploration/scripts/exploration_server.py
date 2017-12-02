@@ -69,7 +69,7 @@ class GoalStyle(Enum):
     HELP_GRID = 4
 def robotPoseSubscriber(data): # for <totalNamespace>1
     global robotsPose
-    robotsPose[(int(data.source[-1]))-1] = thePoint(data.odom.pose.pose.position.x, data.odom.pose.pose.position.y)
+    robotsPose[(int(data.source[-1]))-1] = thePoint(data.data.pose.pose.position.x, data.data.pose.pose.position.y)
 
 def enterInDriveMode(robotName):
     global robotIsEnable, robotsNum, totalNamespace
@@ -171,9 +171,11 @@ def goToGoal(robotNumber, goalPoint):
     req = Data_MtA()
     req.source="exploration_master"
     req.destination="robot"+str(robotNumber);
-    req.command = 'standby'
-    req.goal_x = goalPoint.x
-    req.goal_y = goalPoint.y
+    req_data=Master_toAgent();
+    req_data.command = 'standby'
+    req_data.goal_x = goalPoint.x
+    req_data.goal_y = goalPoint.y
+    req.data=req_data;
     server_publisher.publish(req)
 
     print ("goal send to robot (" + str(robotNumber) + ") : ( " + str(goalPoint.x) + ", " + str(goalPoint.y) + ")")
@@ -197,15 +199,17 @@ def goToGrid(robotNumber, gridNumber):
     req = Data_MtA()
     req.source="exploration_master"
     req.destination="robot"+str(robotNumber)
+    req_data=Master_toAgent();
     if targetPercentage >= 85 and not aliveVictimsFoundNum + deadVictimsFoundNum == aliveVictimsNum + deadVictimsNum:
-        req.command = 'detect_victim'
+        req_data.command = 'detect_victim'
     else:
-        req.command = 'explore'
+        req_data.command = 'explore'
 
-    req.blocks = Grids[gridNumber]
-    req.goal_x = gridCenters[gridNumber].x
-    req.goal_y = gridCenters[gridNumber].y
+    req_data.blocks = Grids[gridNumber]
+    req_data.goal_x = gridCenters[gridNumber].x
+    req_data.goal_y = gridCenters[gridNumber].y
     # TODO : percentage ro bgire
+    req.data=req_data;
     server_publisher.publish(req)
 
     print ("goal send to robot (" + str(robotNumber) + ") : gridNum = " + str(gridNumber) + " gridCenter:( "+ str(gridCenters[gridNumber].x) + ", " + str(gridCenters[gridNumber].y) + ")")
@@ -219,9 +223,10 @@ def getGridIndexInSortedArray(gridNumber): # return index of grid number in sort
             return i
     return -1
 
-def agentCallback(agentData):
+def agentCallback(agent_Data):
     global isFinishedExploringGrid, robotIsEnable, server_publisher
-    agent_number = int(agentData.source[-1])
+    agentData=agent_Data.data
+    agent_number = int(agent_Data.source[-1])
     print ("agent (1) callback:" + agentData.agent_state)
     if robotIsEnable[agent_number]:
         agentState = agentData.agent_state
@@ -234,12 +239,14 @@ def agentCallback(agentData):
             isConfirmed = victimFound(agent_number, agentData.vic_x, agentData.vic_y, isAlive)
 
             req = Data_MtA()
+            req_data=Master_toAgent();
             req.source="exploration_master"
             req.destination="robot"+str(agent_number)
             if isConfirmed:
-                req.command = 'victim_confirmed'
+                req_data.command = 'victim_confirmed'
             else:
-                req.command = 'go_on'
+                req_data.command = 'go_on'
+            req.data=req_data;
             server_publisher.publish(req)
 
             if isConfirmed:

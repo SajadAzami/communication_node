@@ -176,7 +176,7 @@ def setOdom(rawodomdata):
     global odom_publisher;
     Odom_data = rawodomdata;
     new_data=Data_Odom();
-    new_data.odom=rawodomdata;
+    new_data.data=rawodomdata;
     new_data.source=robot_name_space;
     new_data.destination="exploration_master";
     odom_publisher.publish(new_data);
@@ -231,7 +231,7 @@ def master_request_handler(req):
     if req.destination!= robot_name_space : return;
     new_command=True;
     if(verbose):print ("verbosing--"+robot_name_space+"--received new command from master");
-    command_from_master=req;
+    command_from_master=req.data;
 
 
 def start_services():
@@ -565,6 +565,7 @@ class ContactMaster(smach.State):
         rospy.loginfo("Executing state Contact_master");
         a = "taher";
         service_toMaster=Data_AtM();
+        service_data=Agent_toMaster();
         rate = rospy.Rate(1);
         while self.initial:
             if(new_command==True):
@@ -580,41 +581,46 @@ class ContactMaster(smach.State):
              if(verbose):print ("verbosing--"+robot_name_space+"--verbosing--"+userdata.CM_input);
              service_toMaster.source=robot_name_space;
              service_toMaster.destination="exploration_master";
-             service_toMaster.agent_state="vicexp_finished";
-             service_toMaster.agent_x=Odom_data.pose.pose.position.x;
-             service_toMaster.agent_y=Odom_data.pose.pose.position.y;
+             service_data.agent_state="vicexp_finished";
+             service_data.agent_x=Odom_data.pose.pose.position.x;
+             service_data.agent_y=Odom_data.pose.pose.position.y;
+             service_toMaster.data=service_data;
              self.send_the_service(service_toMaster);
 
         elif(userdata.CM_input.origin=="gotogoal"):
             if(verbose):print("verbosing--"+robot_name_space+"--failing to move");
             service_toMaster.source=robot_name_space;
             service_toMaster.destination="exploration_master";
-            service_toMaster.agent_state="failed_toMOVE";
-            service_toMaster.agent_x=Odom_data.pose.pose.position.x;
-            service_toMaster.agent_y=Odom_data.pose.pose.position.y;
+            service_data.agent_state="failed_toMOVE";
+            service_data.agent_x=Odom_data.pose.pose.position.x;
+            service_data.agent_y=Odom_data.pose.pose.position.y;
+            service_toMaster.data=service_data;
             self.send_the_service(service_toMaster);
 
         elif(userdata.CM_input.origin=="victim_searching"):
             service_toMaster.source=robot_name_space;
             service_toMaster.destination="exploration_master";
-            service_toMaster.agent_state="vicexp_finished";
-            service_toMaster.agent_x=Odom_data.pose.pose.position.x;
-            service_toMaster.agent_y=Odom_data.pose.pose.position.y;
+            service_data.agent_state="vicexp_finished";
+            service_data.agent_x=Odom_data.pose.pose.position.x;
+            service_data.agent_y=Odom_data.pose.pose.position.y;
+            service_toMaster.data=service_data;
             self.send_the_service(service_toMaster);
 
         elif(userdata.CM_input.origin=="victim"):
             service_toMaster.source=robot_name_space;
             service_toMaster.destination="exploration_master";
-            service_toMaster.agent_state="victim_is_detected";
-            service_toMaster.agent_x=Odom_data.pose.pose.position.x;
-            service_toMaster.agent_y=Odom_data.pose.pose.position.y;
+            service_data.agent_state="victim_is_detected";
+            service_data.agent_x=Odom_data.pose.pose.position.x;
+            service_data.agent_y=Odom_data.pose.pose.position.y;
+            service_toMaster.data=service_data;
             self.send_the_service(service_toMaster);
         elif(userdata.CM_input.origin=="explore"):
             service_toMaster.source=robot_name_space;
             service_toMaster.destination="exploration_master";
-            service_toMaster.agent_state="exp_finished";
-            service_toMaster.agent_x=Odom_data.pose.pose.position.x;
-            service_toMaster.agent_y=Odom_data.pose.pose.position.y;
+            service_data.agent_state="exp_finished";
+            service_data.agent_x=Odom_data.pose.pose.position.x;
+            service_data.agent_y=Odom_data.pose.pose.position.y;
+            service_toMaster.data=service_data;
             self.send_the_service(service_toMaster);
 
       # we keep waitng for command from master for 30 seconds

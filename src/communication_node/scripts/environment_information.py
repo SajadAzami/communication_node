@@ -2,8 +2,8 @@
 # coding=utf-8
 """Environment Information.
 
-# Authors:  Sajjad Azami <sajjadaazami@gmail.com>
-#           MohammadHossein GohariNejad
+# Authors:  MohammadHossein GohariNejad <hoseingohari76@gmail.com>
+#           Sajjad Azami <sajjadaazami@gmail.com>
 # License:  BSD 3 clause
 
 Utils package for environment information extraction.
@@ -16,15 +16,36 @@ from gazebo_information_plugins.srv import *
 
 
 class GetInfo:
+        """ this class is a wrapper around a client for rosservice and a call back
+        function for the responses received from the service
+
+
+        """
     def __init__(self,service_name=""):
-        temp_list=rosservice.rosservice_find("distance_serivce")        rospy.wait_for_service(service_name)
+            """  this is the constructor for the GetInfo class
+            :parameter
+            service_name : string, allowed values = name of the service with the type "distance_serivce"
+            ---------
+            """
+        rospy.wait_for_service(service_name)
         try:
                 self.client=rospy.ServiceProxy(service_name, distance_serivce)
                 print ("gazebo ",service_name," found")
         except rospy.ServiceException:
-                print ("Service call failed ", service_name,"  not good")
+                print ("connecting to gazebo ", service_name , " failed")
 
-    def request1(self, command="walls", robot1="sos1", robot2="sos2"):
+    def request_func(self, command="walls", robot1="robot1", robot2="robot2"):
+            """sends a request to the gazebo server for information
+            :parameter
+            command : string, allowed values = "walls"  "distance"
+            robot1,robot2: string, allowed values = name of any model peresent in simulation
+            -------
+            :returns
+            a list with 2 elemnts "distance" attribute of the response object and
+             "number_of_objects" attribute of response object
+
+            ---------
+            """
         request = distance_serivceRequest(command, robot1, robot2)
         output = [None, None]
         try:
@@ -38,9 +59,9 @@ class GetInfo:
         return output
 
 
-temp_list=rosservice.rosservice_find("distance_serivce")
+server_list=rosservice.rosservice_find("distance_serivce") """  we call rosservice_find to find any service with the "distance_srvice" type """
 environment_info=[]
-for i in temp_list:
+for i in server_list:
     environment_info.append(GetInfo(i))
 counter=0
 def get_current_position(name_space):
@@ -79,13 +100,19 @@ def get_n_walls_between(ns1, ns2):
     ns2 : string, object2 namespace
 
     :returns
-    number_of_walls  : integer, number of all the objects between 2 robots
-    should the name of robots be wrong or no model can be found with given names
+    number_of_walls  : integer, number of all the objects between object1 and object2
+    should the name of object1 or object2 be wrong or no model can be found with given names
     this method returns -1
     Relations
     ----------
     """
-    output_info = environment_info.request(command="walls", robot1=ns1, robot2=ns2)
+    global counter
+    global environment_info
+    global server_list
+    if counter >=len(environment_info) :
+        counter =0
+    output_info = (environment_info[counter]).request_func(command="walls", robot1=ns1, robot2=ns2)
+    counter=counter+1
     distance = output_info[0]
     number_of_walls = output_info[1]
     if distance == -1:
@@ -95,7 +122,7 @@ def get_n_walls_between(ns1, ns2):
 
 
 def get_object_distance(ns1, ns2):
-    """Returns object1 and object2 distances in Gazebo
+    """Returns  the distance between object1 and object2  in Gazebo
     :parameter
     ns1 : string, object1 namespace
 
@@ -109,45 +136,12 @@ def get_object_distance(ns1, ns2):
     """
     global counter
     global environment_info
-    global temp_list
-    print (len(func_list))
+    global server_list
     if counter >=len(environment_info) :
         counter =0
-    output_info = (environment_info[counter]).request1(command="distance", robot1=ns1, robot2=ns2)
+    output_info = (environment_info[counter]).request_func(command="distance", robot1=ns1, robot2=ns2)
     counter=counter+1
     distance = output_info[0]
     if distance == -1:
         print("wrong model name")
     return distance
-
-
-def get_temp():
-    """Returns Temperature of Atmosphere in Gazebo
-
-    :NOTE needs gazebo-8
-    :returns
-    temp : float,
-
-    Relations
-    ----------
-    """
-
-    output_info = environment_info.request(command="temp")
-    temp = output_info[0]
-    return temp
-
-
-def get_pressure():
-    """Returns Pressure of Atmosphere in Gazebo
-
-    :NOTE needs gazebo-8
-    :returns
-    pressure : float,
-
-    Relations
-    ----------
-    """
-
-    output_info = environment_info.request(command="pressure")
-    pressure = output_info[0]
-    return pressure
