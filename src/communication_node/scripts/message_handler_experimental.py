@@ -84,6 +84,10 @@ class message_handle:
             # TODO handle for different message types
             # TODO prop_model = data.prop_model
             print("new "+tag+" received")
+            robots_list=rospy.get_param("/robots_list")
+            if (data.destination not in robots_list) or ( data.source not in robots_list):
+                print ("unregistered robot")
+                return
             prop_model = '1sm'
             if prop_model == '1sm':
                 # distance = get_object_distance("pioneer3at", "Dumpster")
