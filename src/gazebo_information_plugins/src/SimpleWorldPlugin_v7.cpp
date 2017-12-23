@@ -51,15 +51,17 @@ namespace gazebo {
         WorldPluginTutorial() : WorldPlugin() {}
 
 
-        int get_walls(std::string robot_name1, std::string robot_name2) {
+        std::vector<int> get_walls(std::string robot_name1, std::string robot_name2) {
             // this function returns number of walls between robot_name1 and robot_name2 as Integer
             //if the robot_name1 or robot_name2 are not name for models in the world this function returns -1
+            std::vector<int> type_vec;
             physics::ModelPtr model1, model2;
             model1 = _world->GetModel(robot_name1);
             model2 = _world->GetModel(robot_name2);
             if (model1 == 0 || model2 == 0) {
                 ROS_WARN("invalid model name!");
-                return -1;
+                type_vec.push_back(-1);
+                return type_vec;
             }
 
             float start_x, start_y, slope;
@@ -99,10 +101,25 @@ namespace gazebo {
             }
             int number_of_walls = vec.size() - 2;
             check = 0;
+            std::string room1="room1",longwall="longwall",jersey="jersey",Dumpster="Dumpster",drc_practice="drc_practice",worlds_1="worlds_1";
+            int room1_num=0,jersey_num=0,Dumpster_num=0,drc_practice_num=0;
+            for (int k=0;k<vec.size();k++){
+              if(!room1.compare(vec[k].substr(0,5))){room1_num++;}
+              else if (!jersey.compare(vec[k].substr(0,6))){jersey_num++;}
+              else if (!longwall.compare(vec[k].substr(0,8))){room1_num++;}
+              else if (!worlds_1.compare(vec[k].substr(0,8))){room1_num++;}
+              else if (!Dumpster.compare(vec[k].substr(0,8))){Dumpster_num++;}
+              else if (!drc_practice.compare(vec[k].substr(0,12))){drc_practice_num++;}
+            }
+            type_vec.push_back(room1_num);
+            type_vec.push_back(jersey_num);
+            type_vec.push_back(Dumpster_num);
+            type_vec.push_back(drc_practice_num);
+
             vec.clear();
             math::Pose new_test_pose(200.0, 200.0, 10.0, 0, 0, 0);
             _world->GetModel(test_object)->SetWorldPose(new_test_pose);
-            return number_of_walls;
+            return type_vec;
 
         }
 
@@ -193,6 +210,8 @@ namespace gazebo {
         }
 
         void collision_callback(const std_msgs::String object_name) {
+
+            //object's name = (jersey)(worlds_1)(longwall)(drc_practice)(Dumpster)(room1)
             this->object_name = object_name.data;
             if (vec.size() > 0 && check == 1) {
                 for (int j = 0; j < vec.size(); j++) {
@@ -230,7 +249,7 @@ namespace gazebo {
             res.number_of_objects = 0;
         } else if (command == "walls") {
             res.distance = WPT->get_distance(robot1, robot2);
-            res.number_of_objects = WPT->get_walls(robot1, robot2);
+            res.objects_type=WPT->get_walls(robot1, robot2);
         }
         else if (command == "temp") {
             res.distance = 0;
