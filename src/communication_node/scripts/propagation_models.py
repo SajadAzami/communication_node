@@ -34,12 +34,12 @@ import numpy as np
 
 def _one_slope_model_checker(distance, decay_factor, l0, threshold):
     signal_loss = l0 + 10 * decay_factor * np.log10(distance)
-    print signal_loss
+    #print signal_loss
 
     if signal_loss <= threshold:
-        return True
+        return [True,int(signal_loss)]
     else:
-        return False
+        return [False,int(signal_loss)]
 
 
 def _one_slope_model_strength(distance, decay_factor, l0):

@@ -1,5 +1,3 @@
-#include <ros/ros.h>
-#include <string>
 /*messanger_api
 
  Authors:  MohammadHossein GohariNejad <hoseingohari76@gmail.com>
@@ -7,6 +5,9 @@
 
  api for sending and receiving messages
 */
+
+#include <ros/ros.h>
+#include <string>
 
 template <class messageType,class reference_class>
 class messanger_api

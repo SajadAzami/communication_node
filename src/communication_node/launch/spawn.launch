@@ -13,8 +13,8 @@
 
   <include file="$(find setup)/launch/p3at_spawn.launch">
     <arg name="robotname" value="robot1"/>
-    <arg name="initialx" value="-7"/>
-    <arg name="initialy" value="-10"/>
+    <arg name="initialx" value="-12"/>
+    <arg name="initialy" value="-8"/>
   </include>
 
 
@@ -22,8 +22,8 @@
 
   <include file="$(find setup)/launch/p3at_spawn.launch">
     <arg name="robotname" value="robot2"/>
-    <arg name="initialx" value="-15"/>
-    <arg name="initialy" value="-15"/>
+    <arg name="initialx" value="-12"/>
+    <arg name="initialy" value="-12"/>
   </include>
 
 

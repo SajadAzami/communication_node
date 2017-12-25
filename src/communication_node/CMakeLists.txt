@@ -16,16 +16,16 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   nav_msgs
+
 )
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
+catkin_python_setup()
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -56,9 +56,10 @@ add_message_files(FILES
   Data_Image.msg
   Data_Position.msg
   Data_Map.msg
+  Data_Odom.msg
   Data_MtA.msg
   Data_AtM.msg
-  Data_Odom.msg
+
 )
 
 ## Generate services in the 'srv' folder
@@ -88,7 +89,7 @@ add_action_files(
 
 generate_messages(
   DEPENDENCIES
-  actionlib_msgs   std_msgs sensor_msgs  nav_msgs aut_exploration
+  actionlib_msgs aut_exploration std_msgs sensor_msgs  nav_msgs
 )
 
 
@@ -138,7 +139,6 @@ catkin_package(
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
-  ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
