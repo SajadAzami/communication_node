@@ -19,7 +19,7 @@
 #include <math.h>
 #include <nav_msgs/OccupancyGrid.h>
 #include <std_msgs/String.h>
-#define NUM_SRV 4 // this is the number of serivceservers we want to create
+#define NUM_SRV 1 // this is the number of serivceservers we want to create
 
 namespace gazebo {
     class WorldPluginTutorial ;
@@ -101,20 +101,25 @@ namespace gazebo {
             }
             int number_of_walls = vec.size() - 2;
             check = 0;
-            std::string room1="room1",longwall="longwall",jersey="jersey",Dumpster="Dumpster",drc_practice="drc_practice",worlds_1="worlds_1";
-            int room1_num=0,jersey_num=0,Dumpster_num=0,drc_practice_num=0;
+            std::string jersey="jersey",concrete="concrete",Dumpster="Dumpster",maze_final="maze_final",willowgarage="willowgarage",drc_practice="drc_practice";
+
+            int jersey_num=0,concrete_num=0,Dumpster_num=0,maze_final_num=0,willowgarage_num=0,drc_practice_num=0;
             for (int k=0;k<vec.size();k++){
-              if(!room1.compare(vec[k].substr(0,5))){room1_num++;}
+              if(vec[k].length()<6){continue;}
               else if (!jersey.compare(vec[k].substr(0,6))){jersey_num++;}
-              else if (!longwall.compare(vec[k].substr(0,8))){room1_num++;}
-              else if (!worlds_1.compare(vec[k].substr(0,8))){room1_num++;}
+              else if (!concrete.compare(vec[k].substr(0,8))){concrete_num++;}
               else if (!Dumpster.compare(vec[k].substr(0,8))){Dumpster_num++;}
+              else if (!maze_final.compare(vec[k].substr(0,10))){maze_final_num++;}
+              else if (!willowgarage.compare(vec[k].substr(0,12))){willowgarage_num++;}
               else if (!drc_practice.compare(vec[k].substr(0,12))){drc_practice_num++;}
             }
-            type_vec.push_back(room1_num);
             type_vec.push_back(jersey_num);
+            type_vec.push_back(concrete_num);
             type_vec.push_back(Dumpster_num);
+            type_vec.push_back(maze_final_num);
+            type_vec.push_back(willowgarage_num);
             type_vec.push_back(drc_practice_num);
+
 
             vec.clear();
             math::Pose new_test_pose(200.0, 200.0, 10.0, 0, 0, 0);
@@ -166,7 +171,7 @@ namespace gazebo {
             sphereSDF.SetFromString(
                     "<sdf version ='1.4'>\
         <model name ='test_sphere'>\
-        <pose>-100 -120 0.2 0 0 0</pose>\
+        <pose>-150 -150 0.2 0 0 0</pose>\
         <link name ='link'>\
         <sensor name='my_contact' type='contact'>\
         <plugin name='my_plugin' filename='libgazebo_plugin_contact.so'/>\
@@ -213,6 +218,7 @@ namespace gazebo {
 
             //object's name = (jersey)(worlds_1)(longwall)(drc_practice)(Dumpster)(room1)
             this->object_name = object_name.data;
+              ROS_INFO("new objects %s",object_name.data.c_str());
             if (vec.size() > 0 && check == 1) {
                 for (int j = 0; j < vec.size(); j++) {
                     if (vec[j] == object_name.data) {

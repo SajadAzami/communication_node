@@ -21,7 +21,7 @@ from time import gmtime,strftime
 import rospy
 from communication_node.msg import *
 from nav_msgs.msg import *
-from environment_information import get_object_distance
+from environment_information import get_object_distance ,get_n_walls_between
 from propagation_models import one_slope_model_checker
 
 debuger_mode=False;

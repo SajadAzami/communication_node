@@ -3,11 +3,11 @@
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
   <arg name="paused" default="false"/>
-      <arg name="world_name" default="$(find setup)/worlds/communication_test_big.world"/>
+      <arg name="world_name" default="$(find setup)/worlds/complete_world_test.world"/>
   </include>
  <node pkg="communication_node" type="registration_server" name="registration_server_node" />
 
 
 
-  
+
 </launch>
