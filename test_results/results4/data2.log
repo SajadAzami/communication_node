@@ -1,0 +1,2874 @@
+
+ 
+ 
+ ###################### 
+ ###################### 
+
+ This is the result of test on 2017-12-28 21:57:54 GMT time 
+Type-------Source-----Destination---------Outcome
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----map--------robot2-----exploration_master--message sent
+exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot1-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+MtA--------exploration_masterrobot1--------------message sent
+AtM--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+MtA--------exploration_masterrobot1--------------message sent
+MtA--------exploration_masterrobot2--------------message sent
+MtA--------exploration_masterrobot3--------------message sent
+MtA--------exploration_masterrobot2--------------message sent
+MtA--------exploration_masterrobot3--------------message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----Odom-------robot1-----exploration_master--message sent
+exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----Odom-------robot3-----exploration_master--message sent
+exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--map--------robot1-----exploration_master--message sent
+message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--Odom-------robot3-----exploration_master--message sent
+message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+MtA--------exploration_masterrobot3--------------message sent
+Odom-------robot1-----exploration_master--message sent
+MtA--------exploration_masterrobot3--------------message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----map--------robot3-----exploration_master--message sent
+exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+MtA--------exploration_masterrobot2--------------message sent
+AtM--------robot2-----exploration_master--message sent
+MtA--------exploration_masterrobot2--------------message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+MtA--------exploration_masterrobot0--------------message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+MtA--------exploration_masterrobot1--------------message sent
+MtA--------exploration_masterrobot2--------------message sent
+MtA--------exploration_masterrobot3--------------message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------Odom-------robot3-----exploration_master--message sent
+robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--Odom-------robot3-----exploration_master--message sent
+message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+MtA--------exploration_masterrobot2--------------message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+MtA--------exploration_masterrobot2--------------message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+AtM--------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+AtM--------robot2-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+map--------robot1-----exploration_master--failed
+map--------robot2-----exploration_master--failed
+map--------robot3-----exploration_master--failed
+Odom-------robot2-----exploration_master--failed
+Odom-------robot3-----exploration_master--failed
+Odom-------robot1-----exploration_master--failed
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+MtA--------exploration_masterrobot3--------------message sent
+Odom-------robot1-----exploration_master--message sent
+MtA--------exploration_masterrobot3--------------message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot2-----exploration_master--message sent
+MtA--------exploration_masterrobot2--------------message sent
+MtA--------exploration_masterrobot2--------------message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--map--------robot2-----exploration_master--message sent
+message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+AtM--------robot3-----exploration_master--message sent
+MtA--------exploration_masterrobot3--------------message sent
+MtA--------exploration_masterrobot3--------------message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+map--------robot2-----exploration_master--message sent
+map--------robot1-----exploration_master--message sent
+map--------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+Odom-------robot2-----exploration_master--message sent
+Odom-------robot3-----exploration_master--message sent
+Odom-------robot1-----exploration_master--message sent
+
+ The Test has finished on 2017-12-28 22:25:35 GMT time 
+
+ ======================== 
+ ======================== 
+ 
+ 
