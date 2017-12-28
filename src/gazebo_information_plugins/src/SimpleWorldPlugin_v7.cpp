@@ -114,7 +114,7 @@ namespace gazebo {
             type_vec.push_back(willowgarage_num);
             type_vec.push_back(brick_wall_num);
             type_vec.push_back(concrete_num);
-        
+
 
             vec.clear();
             math::Pose new_test_pose(200.0, 200.0, 10.0, 0, 0, 0);
@@ -211,21 +211,31 @@ namespace gazebo {
         }
 
         void collision_callback(const std_msgs::String object_name) {
-
+          std::string concrete="concrete",willowgarage="willowgarage",brick_wall="brick";
+          if(object_name.data.length()<5){return;}
+          else if (!brick_wall.compare(object_name.data.substr(0,5))){
+                    ROS_INFO("new objects %s",object_name.data.c_str());
+                  }
+          else if (!concrete.compare(object_name.data.substr(0,8))){
+            ROS_INFO("new objects %s",object_name.data.c_str());}
+          else if (!willowgarage.compare(object_name.data.substr(0,12))){
+            ROS_INFO("new objects %s",object_name.data.c_str());}
+            else{return;}
             //object's name = (jersey)(worlds_1)(longwall)(drc_practice)(Dumpster)(room1)
             this->object_name = object_name.data;
               ROS_INFO("new objects %s",object_name.data.c_str());
-            if (vec.size() > 0 && check == 1) {
-                for (int j = 0; j < vec.size(); j++) {
-                    if (vec[j] == object_name.data) {
-                        break;
-                    } else if (j + 1 == vec.size() && object_name.data != "") {
-                        vec.push_back(object_name.data);
-                        ROS_INFO("these are the objects %s  \n", object_name.data.c_str());
-                    }
-                }
-
-            }
+              vec.push_back(object_name.data);
+            // if (vec.size() > 0 && check == 1) {
+            //     for (int j = 0; j < vec.size(); j++) {
+            //         if (vec[j] == object_name.data) {
+            //             break;
+            //         } else if (j + 1 == vec.size() && object_name.data != "") {
+            //             vec.push_back(object_name.data);
+            //             ROS_INFO("these are the objects %s  \n", object_name.data.c_str());
+            //         }
+            //     }
+            //
+            // }
         }
 
     };
