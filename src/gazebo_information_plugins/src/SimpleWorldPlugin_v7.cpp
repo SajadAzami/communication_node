@@ -85,8 +85,9 @@ namespace gazebo {
             check = 1;
             _world->GetModel(test_object)->SetStatic(true);
             for (int i = 0; i < iterations; i++) {
+              _world->GetModel(test_object)->SetStatic(true);
 
-                math::Pose new_test_pose(start_x + i * 0.02, start_y + i * 0.02 * slope, 0.05, 0, 0, 0);
+                math::Pose new_test_pose(start_x + i * 0.02, start_y + i * 0.02 * slope, 0.12, 0, 0, 0);
                 _world->GetModel(test_object)->SetWorldPose(new_test_pose);
                 this->object_name = "";
                 _world->GetModel(test_object)->SetWorldPose(new_test_pose);
@@ -101,25 +102,19 @@ namespace gazebo {
             }
             int number_of_walls = vec.size() - 2;
             check = 0;
-            std::string jersey="jersey",concrete="concrete",Dumpster="Dumpster",maze_final="maze_final",willowgarage="willowgarage",drc_practice="drc_practice";
+            std::string concrete="concrete",willowgarage="willowgarage",brick_wall="brick";
 
-            int jersey_num=0,concrete_num=0,Dumpster_num=0,maze_final_num=0,willowgarage_num=0,drc_practice_num=0;
+            int concrete_num=0,willowgarage_num=0,brick_wall_num=0;
             for (int k=0;k<vec.size();k++){
-              if(vec[k].length()<6){continue;}
-              else if (!jersey.compare(vec[k].substr(0,6))){jersey_num++;}
+              if(vec[k].length()<5){continue;}
+              else if (!brick_wall.compare(vec[k].substr(0,5))){brick_wall_num++;}
               else if (!concrete.compare(vec[k].substr(0,8))){concrete_num++;}
-              else if (!Dumpster.compare(vec[k].substr(0,8))){Dumpster_num++;}
-              else if (!maze_final.compare(vec[k].substr(0,10))){maze_final_num++;}
               else if (!willowgarage.compare(vec[k].substr(0,12))){willowgarage_num++;}
-              else if (!drc_practice.compare(vec[k].substr(0,12))){drc_practice_num++;}
             }
-            type_vec.push_back(jersey_num);
-            type_vec.push_back(concrete_num);
-            type_vec.push_back(Dumpster_num);
-            type_vec.push_back(maze_final_num);
             type_vec.push_back(willowgarage_num);
-            type_vec.push_back(drc_practice_num);
-
+            type_vec.push_back(brick_wall_num);
+            type_vec.push_back(concrete_num);
+        
 
             vec.clear();
             math::Pose new_test_pose(200.0, 200.0, 10.0, 0, 0, 0);
@@ -151,7 +146,7 @@ namespace gazebo {
            //this function is inhered from WorldPlugin reference class and we have to override it
            // when the gazebo enging starts and this plugin loads this function is automatically RECALLED
            // _parent is a pointer to the world object used by gazebo engine
-
+            std::string test_object = "unique_sphere";
             check = 0;
             // Make sure the ROS node for Gazebo has already been initialized
             if (!ros::isInitialized()) {
@@ -208,6 +203,7 @@ namespace gazebo {
               // we create objects of type service_handle and push them into vec_src
               vec_srv.push_back(new service_handle("GzInfo_service"+(std::to_string(i)),this));
             };
+        //    _world->GetModel(test_object)->SetStatic(true);
 
             std::string subscribing_topic = "collision_topic";
             map_subscriber = n.subscribe(subscribing_topic, 10, &WorldPluginTutorial::collision_callback, this);
