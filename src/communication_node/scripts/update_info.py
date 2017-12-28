@@ -23,7 +23,7 @@ direct_connection=[];
 debuger_mode=False;
 information_logger=None;
 robots_list=[];
-prop_model="1sm"
+prop_model="1sm";
 
 
 def on_exit(*args):
@@ -90,6 +90,7 @@ def main():
     global direct_connection;
     global debuger_mode;
     global information_logger;
+    global prop_model;
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
     rospy.init_node("update_info", anonymous=True)
@@ -102,7 +103,7 @@ def main():
          information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+"2.log", "a")
          information_logger.write("\n \n \n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         information_logger.write("propagation parameters===>>>"+" [decay_factor="+str(propagation_parameters["decay_factor"])+" ]--[ l0="+str(propagation_parameters["l0"])+"]--[ threshold="+str(propagation_parameters["threshold"])+ "]\n")
+         information_logger.write("propagation model =>"+prop_model+" --- propagation parameters===>>>"+" [decay_factor="+str(propagation_parameters["decay_factor"])+" ]--[ l0="+str(propagation_parameters["l0"])+"]--[ threshold="+str(propagation_parameters["threshold"])+ "]\n")
          information_logger.write("robotname ")
          for i in robots_list:
              information_logger.write("---concetion to "+ i);
