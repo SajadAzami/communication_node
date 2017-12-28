@@ -23,6 +23,7 @@ direct_connection=[];
 debuger_mode=False;
 information_logger=None;
 robots_list=[];
+prop_model="1sm"
 
 
 def on_exit(*args):
@@ -38,6 +39,7 @@ def on_exit(*args):
 
 
 def line_of_sight():
+    global prop_model;
     global connection_list;
     global robots_list;
     global direct_connection;
@@ -95,8 +97,8 @@ def main():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
-         if not os.path.exists("/home/user/project_franchesco/communication_node/test_results/"+log_file):
-             os.makedirs("/home/user/project_franchesco/communication_node/test_results/"+log_file)
+         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file):
+             os.makedirs("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file)
          information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+"2.log", "a")
          information_logger.write("\n \n \n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
