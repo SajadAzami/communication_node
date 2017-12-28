@@ -21,14 +21,11 @@ from time import gmtime,strftime
 import rospy
 from communication_node.msg import *
 from nav_msgs.msg import *
-from environment_information import get_object_distance ,get_n_walls_between
-from propagation_models import one_slope_model_checker
 
 debuger_mode=False;
 information_logger=None;
 rate=None
 message_handlers_list=[]
-propagation_parameters={ "decay_factor":4.0,"l0":30,"threshold":93}
 
 def on_exit(*args):
     global information_logger
@@ -87,15 +84,12 @@ class message_handle:
             if(self.tag=="MtA"or self.tag=="AtM"):
                 print("new "+self.tag+" received")
             robots_list=rospy.get_param("/robots_list")
-            prop_model = '1sm'
-            if prop_model == '1sm':
-                # distance = get_object_distance("pioneer3at", "Dumpster")
-                distance = get_object_distance(data.destination, data.source)
-                #print (type(distance),self.tag)
-                while (distance==None):
-                    distance = get_object_distance(data.destination, data.source)
-                result = one_slope_model_checker(distance=distance,decay_factor=propagation_parameters["decay_factor"],l0=propagation_parameters["l0"],threshold=propagation_parameters["threshold"])
-                if result[0]:
+            if ((data.source not in robots_list )or(data.destination not in robots_list) ):
+                return;
+            connection_list=[];
+            connection_list=(rospy.get_param("/connection_list_"+data.source));
+            source_index=robots_list.index(data.destination);
+            if (connection_list[1+source_index]==1):
                     if (self.alt_type!=None):
                        self.message_publisher = rospy.Publisher(data.source +"/g_map", self.alt_type, queue_size=10)
                        i=0
@@ -117,18 +111,16 @@ class message_handle:
                     #print "communication is possible"
                     if debuger_mode==True :
                         # we write infomation to the log file
-                       information_logger.write(str(result[1])+"".join(["-" for k in range(0,12-len(str(result[1])))]))
                        information_logger.write(self.tag+"".join(["-" for k in range(0,11-len(self.tag))]))
                        information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
                        information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
                        information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                        information_logger.write("message sent"+"\n")
 
-                else:
+            else:
                     # TODO, ignore the message, send feedback
                     if debuger_mode==True :
                       # we write infomation to the log file
-                      information_logger.write(str(result[1])+"".join(["-" for k in range(0,12-len(str(result[1])))]))
                       information_logger.write(self.tag+"".join(["-" for k in range(0,11-len(self.tag))]))
                       information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
                       information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
@@ -147,13 +139,12 @@ def listener():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
-         if not os.path.exists("/home/user/project_franchesco/communication_node/test_results/"+log_file):
-             os.makedirs("/home/user/project_franchesco/communication_node/test_results/"+log_file)
+         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file):
+             os.makedirs("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file)
          information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+".log", "a")
          information_logger.write("\n \n \n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         information_logger.write("propagation parameters===>>>"+" [decay_factor="+str(propagation_parameters["decay_factor"])+" ]--[ l0="+str(propagation_parameters["l0"])+"]--[ threshold="+str(propagation_parameters["threshold"])+ "]\n")
-         information_logger.write("Signal------Type-------Source-----Destination---------Distance----------Outcome\n");
+         information_logger.write("Type-------Source-----Destination---------Distance----------Outcome\n");
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
     rate=rospy.Rate(10)

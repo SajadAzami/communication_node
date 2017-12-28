@@ -60,6 +60,7 @@
       </link>
     </model>
     <gravity>0 0 -9.8</gravity>
+    <plugin name='gazebo_simple_world' filename='libgazebo_simple_world.so'/>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
     <physics name='default_physics' default='0' type='ode'>

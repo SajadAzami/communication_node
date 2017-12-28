@@ -118,7 +118,7 @@ def get_n_walls_between(ns1, ns2):
     if distance == -1:
         print("wrong model name")
         return -1
-    return distance
+    return [distance,number_of_walls]
 
 
 def get_object_distance(ns1, ns2):

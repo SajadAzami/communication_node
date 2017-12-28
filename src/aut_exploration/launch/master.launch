@@ -3,10 +3,10 @@
 	<param name="robotsNum" type="int" value="4"/>
 	<param name="gridsNum" type="int" value="4"/>
 	<param name="total_namespace" value="robot"/>
-	<param name="map_x1" type="double" value="-40"/>
-	<param name="map_y1" type="double" value="-40"/>
-	<param name="map_x2" type="double" value="40"/>
-	<param name="map_y2" type="double" value="40"/>
+	<param name="map_x1" type="double" value="-50"/>
+	<param name="map_y1" type="double" value="-50"/>
+	<param name="map_x2" type="double" value="50"/>
+	<param name="map_y2" type="double" value="50"/>
 	<param name="aliveVictimsNum" type="int" value="100"/>
 	<param name="deadVictimsNum" type="int" value="100"/>
 	<param name="finishTime" type="int" value="100"/> <!-- (All time) - (last 5*60 secs) -->

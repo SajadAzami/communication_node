@@ -70,35 +70,37 @@ namespace gazebo {
                 start_x = model2->GetWorldPose().pos.x;
                 start_y = model2->GetWorldPose().pos.y;
                 slope = (model1->GetWorldPose().pos.y - start_y) / (model1->GetWorldPose().pos.x - start_x);
-                iterations = (model1->GetWorldPose().pos.x - start_x) * 50;
+                iterations = (model1->GetWorldPose().pos.x - start_x) * 100;
             } else {
                 start_x = model1->GetWorldPose().pos.x;
                 start_y = model1->GetWorldPose().pos.y;
                 slope = (model2->GetWorldPose().pos.y - start_y) / (model2->GetWorldPose().pos.x - start_x);
-                iterations = (model2->GetWorldPose().pos.x - start_x) * 50;
+                iterations = (model2->GetWorldPose().pos.x - start_x) * 100;
             }
-            ROS_WARN("iterations %d \n", iterations);
+          //  ROS_WARN("iterations %d \n", iterations);
             std::string test_object = "unique_sphere";
             vec.clear();
             vec.push_back(robot_name1);
             vec.push_back(robot_name2);
             check = 1;
             _world->GetModel(test_object)->SetStatic(true);
+            ros::Rate r(5*iterations);
             for (int i = 0; i < iterations; i++) {
               _world->GetModel(test_object)->SetStatic(true);
 
-                math::Pose new_test_pose(start_x + i * 0.02, start_y + i * 0.02 * slope, 0.12, 0, 0, 0);
+                math::Pose new_test_pose(start_x + i * 0.01, start_y + i * 0.01 * slope, 0.12, 0, 0, 0);
                 _world->GetModel(test_object)->SetWorldPose(new_test_pose);
-                this->object_name = "";
+              //  this->object_name = "";
                 _world->GetModel(test_object)->SetWorldPose(new_test_pose);
-                ROS_WARN("pose x: %f y: %f  \n", start_x + i * 0.02, start_y + i * 0.02 * slope);
-                for (int j = 0; j < vec.size(); j++) {
-                    if (vec[j] == this->object_name) { break; }
-                    else if (j + 1 == vec.size() && this->object_name != "") {
-                        vec.push_back(this->object_name);
-                        ROS_INFO("these are the objects %s  \n", this->object_name.c_str());
-                    }
-                }
+              //  ROS_WARN("pose x: %f y: %f  \n", start_x + i * 0.02, start_y + i * 0.02 * slope);
+                // for (int j = 0; j < vec.size(); j++) {
+                //     if (vec[j] == this->object_name) { break; }
+                //     else if (j + 1 == vec.size() && this->object_name != "") {
+                //         vec.push_back(this->object_name);
+                //         ROS_INFO("these are the objects %s  \n", this->object_name.c_str());
+                //     }
+                // }
+                r.sleep();
             }
             int number_of_walls = vec.size() - 2;
             check = 0;
@@ -114,7 +116,9 @@ namespace gazebo {
             type_vec.push_back(willowgarage_num);
             type_vec.push_back(brick_wall_num);
             type_vec.push_back(concrete_num);
-
+            ROS_INFO("willowgarage_num %d \n",willowgarage_num );
+            ROS_INFO("brick_wall_num %d \n",brick_wall_num );
+            ROS_INFO("concrete_num %d \n",concrete_num );
 
             vec.clear();
             math::Pose new_test_pose(200.0, 200.0, 10.0, 0, 0, 0);
@@ -206,7 +210,7 @@ namespace gazebo {
         //    _world->GetModel(test_object)->SetStatic(true);
 
             std::string subscribing_topic = "collision_topic";
-            map_subscriber = n.subscribe(subscribing_topic, 10, &WorldPluginTutorial::collision_callback, this);
+            map_subscriber = n.subscribe(subscribing_topic, 200, &WorldPluginTutorial::collision_callback, this);
 
         }
 
