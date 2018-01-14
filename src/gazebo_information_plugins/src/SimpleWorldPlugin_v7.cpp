@@ -84,7 +84,7 @@ namespace gazebo {
             vec.push_back(robot_name2);
             check = 1;
             _world->GetModel(test_object)->SetStatic(true);
-            ros::Rate r(5*iterations);
+            ros::Rate r(10*iterations);
             for (int i = 0; i < iterations; i++) {
               _world->GetModel(test_object)->SetStatic(true);
 
