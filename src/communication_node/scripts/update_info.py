@@ -100,15 +100,15 @@ def main():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
-         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file):
-             os.makedirs("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file)
-         information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+"2.log", "a")
+         if not os.path.exists("/home/user/project_franchesco/communication_node/test_results/"+log_file):
+             os.makedirs("/home/user/project_franchesco/communication_node/test_results/"+log_file)
+         information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+"_signal.log", "w")
          information_logger.write("\n \n \n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
          information_logger.write("propagation model =>"+prop_model+" --- propagation parameters===>>>"+" [decay_factor="+str(propagation_parameters["decay_factor"])+" ]--[ l0="+str(propagation_parameters["l0"])+"]--[ threshold="+str(propagation_parameters["threshold"])+ "]\n")
          information_logger.write("robotname ")
          for i in robots_list:
-             information_logger.write("---concetion to "+ i);
+             information_logger.write("---conection to "+ i);
          information_logger.write("\n ");
 
     for i in robots_list:
@@ -125,15 +125,16 @@ def main():
             rospy.set_param("/connection_list_"+connection_list[i][0],connection_list[i]);
         #print("update done");
         if debuger_mode==True:
+            information_logger.write("\n ////////////////////// \n //////////////////// \n "+strftime("%M:%S", gmtime()) + " GMT time \n")
             information_logger.write("information for multihub \n ");
             for j in connection_list:
                 for k in j :
-                    information_logger.write("--"+k+"--");
+                    information_logger.write("--"+str(k)+"--");
                 information_logger.write("\n");
             information_logger.write("information for direct connection \n ");
             for j in direct_connection:
                 for k in j :
-                    information_logger.write("--"+k+"--");
+                    information_logger.write("--"+str(k)+"--");
                 information_logger.write("\n");
 
     rospy.spin();

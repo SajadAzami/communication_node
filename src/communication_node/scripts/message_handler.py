@@ -65,7 +65,7 @@ class message_handle:
             self.data_type=data_type;
             self.alt_type=alt_type;
             self.tag=tag;
-            self.subscriber=rospy.Subscriber(self.sub_topic+self.tag,self.data_type, self.callback_function,queue_size=50);
+            self.subscriber=rospy.Subscriber(self.sub_topic+self.tag,self.data_type, self.callback_function,queue_size=20);
             self.message_publisher=None;
 
     def callback_function(self,data):
@@ -81,7 +81,7 @@ class message_handle:
             global propagation_parameters
             # TODO handle for different message types
             # TODO prop_model = data.prop_model
-            if(self.tag=="MtA"or self.tag=="AtM"):
+            if(self.tag!="map"and self.tag!="Odom"):
                 print("new "+self.tag+" received")
             robots_list=rospy.get_param("/robots_list")
             if ((data.source not in robots_list )or(data.destination not in robots_list) ):
@@ -114,7 +114,6 @@ class message_handle:
                        information_logger.write(self.tag+"".join(["-" for k in range(0,11-len(self.tag))]))
                        information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
                        information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
-                       information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                        information_logger.write("message sent"+"\n")
 
             else:
@@ -124,7 +123,6 @@ class message_handle:
                       information_logger.write(self.tag+"".join(["-" for k in range(0,11-len(self.tag))]))
                       information_logger.write(data.source+"".join(["-" for k in range(0,11-len(data.source))]))
                       information_logger.write(data.destination+"".join(["-" for k in range(0,20-len(data.destination))]))
-                      information_logger.write(str(distance)+"".join(["-" for k in range(0,18-len(str(distance)))]))
                       information_logger.write("failed"+"\n")
                     #print "communication is not possible"
 
@@ -139,15 +137,15 @@ def listener():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
-         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file):
-             os.makedirs("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file)
-         information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+".log", "a")
+         if not os.path.exists("/home/user/project_franchesco/communication_node/test_results/"+log_file):
+             os.makedirs("/home/user/project_franchesco/communication_node/test_results/"+log_file)
+         information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+".log", "w")
          information_logger.write("\n \n \n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         information_logger.write("Type-------Source-----Destination---------Distance----------Outcome\n");
+         information_logger.write("Type-------Source-----Destination---------Outcome\n");
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
-    rate=rospy.Rate(10)
+    rate=rospy.Rate(50)
     message_list=[["/message_server_","/inbox_MtA",Data_MtA,"MtA",None],["/message_server_","/inbox_Odom",Data_Odom,"Odom",None],["/message_server_","/inbox_AtM",Data_AtM,"AtM",None],["/message_server_","/g_map",Data_Map,"map",OccupancyGrid]];
     for i in range (0,len(message_list)):
         message_handlers_list.append(message_handle(message_list[i][0],message_list[i][1],message_list[i][2],message_list[i][3],message_list[i][4]));
