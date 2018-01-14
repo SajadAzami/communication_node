@@ -90,8 +90,8 @@ def enterInDriveMode(robotName):
         robotNum = 6
     elif robotName == "robot7":
         robotNum = 7
-    elif robotName == "robot8":
-        robotNum = 8
+    elif robotName == "robot0":
+        robotNum = 0
     else:
         return
 
@@ -232,6 +232,8 @@ def agentCallback(agent_Data):
         agentState = agentData.agent_state
         if agentState == 'exp_finished' or agentState == 'vicexp_finished':
             isFinishedExploringGrid[agent_number] = True
+        elif agentState=="initial":
+            goToGrid(agent_number,defaultGrids[agent_number]);
         elif agentState == 'victim_is_detected':
             isAlive = False
             if agentData.vic_state == 2: # victim is alive

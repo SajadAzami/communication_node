@@ -568,13 +568,21 @@ class ContactMaster(smach.State):
         service_data=Agent_toMaster();
         rate = rospy.Rate(1);
         while self.initial:
-            if(new_command==True):
-                break;
-            rate.sleep();
+            service_toMaster.source=robot_name_space;
+            service_toMaster.destination="exploration_master";
+            service_data.agent_state="initial";
+            service_data.agent_x=Odom_data.pose.pose.position.x;
+            service_data.agent_y=Odom_data.pose.pose.position.y;
+            service_toMaster.data=service_data;
+            while new_command==False:
+                  self.send_the_service(service_toMaster);
+                  rate.sleep();
+            self.initial=False;
 
 
-        if(self.initial):
-            if(verbose):print ("verbosing--"+robot_name_space+"-- initial state of ours");
+
+        if(new_command==True):
+            if(verbose):print ("verbosing--"+robot_name_space+"-- have new command");
             self.initial=False;
 
         elif(type(userdata.CM_input) is str):
@@ -585,7 +593,9 @@ class ContactMaster(smach.State):
              service_data.agent_x=Odom_data.pose.pose.position.x;
              service_data.agent_y=Odom_data.pose.pose.position.y;
              service_toMaster.data=service_data;
-             self.send_the_service(service_toMaster);
+             while new_command==False:
+                   self.send_the_service(service_toMaster);
+                   rate.sleep();
 
         elif(userdata.CM_input.origin=="gotogoal"):
             if(verbose):print("verbosing--"+robot_name_space+"--failing to move");
@@ -595,7 +605,9 @@ class ContactMaster(smach.State):
             service_data.agent_x=Odom_data.pose.pose.position.x;
             service_data.agent_y=Odom_data.pose.pose.position.y;
             service_toMaster.data=service_data;
-            self.send_the_service(service_toMaster);
+            while new_command==False:
+                  self.send_the_service(service_toMaster);
+                  rate.sleep();
 
         elif(userdata.CM_input.origin=="victim_searching"):
             service_toMaster.source=robot_name_space;
@@ -604,7 +616,9 @@ class ContactMaster(smach.State):
             service_data.agent_x=Odom_data.pose.pose.position.x;
             service_data.agent_y=Odom_data.pose.pose.position.y;
             service_toMaster.data=service_data;
-            self.send_the_service(service_toMaster);
+            while new_command==False:
+                  self.send_the_service(service_toMaster);
+                  rate.sleep();
 
         elif(userdata.CM_input.origin=="victim"):
             service_toMaster.source=robot_name_space;
@@ -613,7 +627,9 @@ class ContactMaster(smach.State):
             service_data.agent_x=Odom_data.pose.pose.position.x;
             service_data.agent_y=Odom_data.pose.pose.position.y;
             service_toMaster.data=service_data;
-            self.send_the_service(service_toMaster);
+            while new_command==False:
+                  self.send_the_service(service_toMaster);
+                  rate.sleep();
         elif(userdata.CM_input.origin=="explore"):
             service_toMaster.source=robot_name_space;
             service_toMaster.destination="exploration_master";
@@ -621,10 +637,12 @@ class ContactMaster(smach.State):
             service_data.agent_x=Odom_data.pose.pose.position.x;
             service_data.agent_y=Odom_data.pose.pose.position.y;
             service_toMaster.data=service_data;
-            self.send_the_service(service_toMaster);
+            while new_command==False:
+                  self.send_the_service(service_toMaster);
+                  rate.sleep();
 
       # we keep waitng for command from master for 30 seconds
-        rate = rospy.Rate(1);
+
         timer=0;
         while new_command==False:
             timer+=1;
