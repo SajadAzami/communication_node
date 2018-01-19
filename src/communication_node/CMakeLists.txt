@@ -59,6 +59,7 @@ add_message_files(FILES
   Data_Odom.msg
   Data_MtA.msg
   Data_AtM.msg
+  Data_Goal.msg
 
 )
 

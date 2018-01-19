@@ -2,15 +2,6 @@
 <launch>
 
 
-
-    <include file="$(find setup)/launch/p3at_spawn.launch">
-      <arg name="robotname" value="exploration_master"/>
-      <arg name="initialy" value="0"/>
-      <arg name="initialx" value="-44"/>
-    </include>
-
-
-
   <include file="$(find setup)/launch/p3at_spawn.launch">
     <arg name="robotname" value="robot1"/>
     <arg name="initialy" value="4"/>

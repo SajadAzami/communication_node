@@ -146,7 +146,7 @@ def listener():
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
     rate=rospy.Rate(50)
-    message_list=[["/message_server_","/inbox_MtA",Data_MtA,"MtA",None],["/message_server_","/inbox_Odom",Data_Odom,"Odom",None],["/message_server_","/inbox_AtM",Data_AtM,"AtM",None],["/message_server_","/g_map",Data_Map,"map",OccupancyGrid]];
+    message_list=[["/message_server_","/inbox_Goal",Data_Goal,"Goal",None],["/message_server_","/inbox_Map",Data_Map,"map",None]];
     for i in range (0,len(message_list)):
         message_handlers_list.append(message_handle(message_list[i][0],message_list[i][1],message_list[i][2],message_list[i][3],message_list[i][4]));
     rospy.spin()

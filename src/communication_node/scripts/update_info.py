@@ -8,6 +8,8 @@
 
 Utils package for environment information extraction.
 """
+import numpy as np
+
 import os
 import signal
 import sys
@@ -16,7 +18,7 @@ import rospy
 from communication_node.msg import *
 from nav_msgs.msg import *
 from environment_information import get_object_distance ,get_n_walls_between
-from propagation_models import one_slope_model_checker,multi_wall_model_checker
+from propagation_models import *
 propagation_parameters={ "decay_factor":2.0,"l0":40.0,"threshold":93}
 connection_list=[];
 direct_connection=[];
@@ -96,6 +98,7 @@ def main():
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
     rospy.init_node("update_info", anonymous=True)
+    print(np.log10(100),"htis is the np we are looking for")
     robots_list=rospy.get_param("/robots_list")
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :

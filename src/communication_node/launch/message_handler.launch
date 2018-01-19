@@ -2,7 +2,7 @@
 <launch>
 
   <param name="log_file" type="string" value="results5"/>
-  <param name="debuger_mode" type="boolean" value="True"/>
+  <param name="debuger_mode" type="boolean" value="False"/>
     <node pkg="communication_node" type="message_handler.py" name="message_handler" output="screen" />
 
 
