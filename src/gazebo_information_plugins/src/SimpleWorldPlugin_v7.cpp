@@ -5,7 +5,7 @@
 
 
 */
-#include <gazebo/common/Plugin.hh>
+#include <cmath>        // std::abs#include <gazebo/common/Plugin.hh>
 #include <ignition/math/Pose3.hh>
 #include <ignition/math/Vector3.hh>
 #include "gazebo/physics/physics.hh"
@@ -66,29 +66,56 @@ namespace gazebo {
 
             float start_x, start_y, slope;
             int iterations;
-            if (model1->GetWorldPose().pos.x > model2->GetWorldPose().pos.x) {
-                start_x = model2->GetWorldPose().pos.x;
-                start_y = model2->GetWorldPose().pos.y;
-                slope = (model1->GetWorldPose().pos.y - start_y) / (model1->GetWorldPose().pos.x - start_x);
-                iterations = (model1->GetWorldPose().pos.x - start_x) * 100;
+            int my_temp=1;
+            float increment=0.01;
+            float x_1=model1->GetWorldPose().pos.x;
+            float y_1=model1->GetWorldPose().pos.y;
+            float x_2=model2->GetWorldPose().pos.x;
+            float y_2=model2->GetWorldPose().pos.y;
+
+            float x_temp=std::abs(x_1 -x_2);
+            float y_temp=std::abs(y_1 -y_2);
+            if (x_temp>y_temp){
+              iterations = x_temp * 100;
+            }
+            else {
+              iterations = y_temp * 100;
+              increment=x_temp/iterations;
+            }
+
+            if (x_1 >x_2 ) {
+                start_x = x_2;
+                start_y = y_2;
+                slope = (y_1 - start_y) / (x_1 - start_x);
+
+              }
+            else if (x_1 == x_2){
+               my_temp=0;
+              start_x = x_1;
+              start_y = y_1;
+              slope = 1;
+              increment=0.01;
+
             } else {
-                start_x = model1->GetWorldPose().pos.x;
-                start_y = model1->GetWorldPose().pos.y;
-                slope = (model2->GetWorldPose().pos.y - start_y) / (model2->GetWorldPose().pos.x - start_x);
-                iterations = (model2->GetWorldPose().pos.x - start_x) * 100;
+                start_x = x_1;
+                start_y = y_1;
+                slope = (y_2 - start_y) / (x_2- start_x);
             }
           //  ROS_WARN("iterations %d \n", iterations);
+
             std::string test_object = "unique_sphere";
             vec.clear();
             vec.push_back(robot_name1);
             vec.push_back(robot_name2);
             check = 1;
             _world->GetModel(test_object)->SetStatic(true);
-            ros::Rate r(10*iterations);
+
+            ros::Rate r(12*iterations);
+
             for (int i = 0; i < iterations; i++) {
               _world->GetModel(test_object)->SetStatic(true);
 
-                math::Pose new_test_pose(start_x + i * 0.01, start_y + i * 0.01 * slope, 0.12, 0, 0, 0);
+                math::Pose new_test_pose(start_x + i * increment*my_temp, start_y + i * increment * slope, 0.12, 0, 0, 0);
                 _world->GetModel(test_object)->SetWorldPose(new_test_pose);
               //  this->object_name = "";
                 _world->GetModel(test_object)->SetWorldPose(new_test_pose);
@@ -102,6 +129,7 @@ namespace gazebo {
                 // }
                 r.sleep();
             }
+
             int number_of_walls = vec.size() - 2;
             check = 0;
             std::string concrete="concrete",willowgarage="willowgarage",brick_wall="brick";
@@ -159,8 +187,6 @@ namespace gazebo {
                 return;
             }
             _world = _parent;
-            ROS_INFO("Hello World!");
-            ROS_INFO("Hello World!");
 
             ROS_INFO("Hello World!");
 
@@ -260,12 +286,14 @@ namespace gazebo {
         // req is the reference to the object of request we have recived from a client
         // res is the reference to the object of response that we have to complete and send back to the client
         std::string command = req.command, robot1 = req.robot1, robot2 = req.robot2;
+
         if (command == "distance") {
             res.distance = WPT->get_distance(robot1, robot2);
             res.number_of_objects = 0;
         } else if (command == "walls") {
             res.distance = WPT->get_distance(robot1, robot2);
             res.objects_type=WPT->get_walls(robot1, robot2);
+
         }
         else if (command == "temp") {
             res.distance = 0;
