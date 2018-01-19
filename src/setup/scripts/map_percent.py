@@ -34,9 +34,19 @@ def talker():
     global explored_percent;
     global t_lock;
     rospy.init_node('map_percent', anonymous=True)
+    global_map=rospy.get_param("global_map", default="none");
     robot_name_space = rospy.get_param("robot_name", default="sos1");
-    rospy.Subscriber("/"+robot_name_space+"/map", OccupancyGrid, call_back)
-    pub = rospy.Publisher("/"+robot_name_space+"/percent_of_map", Float64, queue_size=10)
+    subscribing_topic="";
+    publishing_topic="";
+    if global_map=="none":
+        subscribing_topic="/"+robot_name_space+"/map";
+        publishing_topic="/"+robot_name_space+"/percent_of_map";
+    else:
+        subscribing_topic="/global_map";
+        publishing_topic="/"+"global_map"+"/percent_of_map";
+
+    rospy.Subscriber(subscribing_topic, OccupancyGrid, call_back)
+    pub = rospy.Publisher(publishing_topic, Float64, queue_size=10)
     rate = rospy.Rate(1.5) # 10hz
     while not rospy.is_shutdown():
         temp_data=Float64();
