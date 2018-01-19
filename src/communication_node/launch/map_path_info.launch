@@ -3,7 +3,7 @@
 
   <param name="log_file" type="string" value="results5"/>
   <param name="debuger_mode" type="boolean" value="False"/>
-    <node pkg="communication_node" type="update_info.py" name="update_info" output="screen" />
+    <node pkg="communication_node" type="map_path.py" name="info_node" output="screen" />
 
 
 </launch>

@@ -42,7 +42,9 @@ def on_exit(*args):
 class map_path:
     def __init__(self,robot_name_space,t_lock_map,t_lock_path):
         self.map_sub=rospy.Subscriber("/"+robot_name_space+"/percent_of_map", Float64, self.map_callback);
-        self.path_sub=rospy.Subscriber("/"+robot_name_space+"/path_lenght", Float64, self.path_callback);
+        self.path_sub=None;
+        if(robot_name_space!="global_map"):
+            self.path_sub=rospy.Subscriber("/"+robot_name_space+"/path_lenght", Float64, self.path_callback);
         self.path_lenght=0;
         self.map_percent=0;
         self.t_lock_map=t_lock_map;
@@ -84,7 +86,7 @@ def main():
          path_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
 
 
-    for i in ["robot0","robot1","robot2","robot3"]:
+    for i in ["robot0","robot1","robot2","robot3","global_map"]:
         info_list.append(map_path(i,threading.Lock(),threading.Lock()));
 
     rate = rospy.Rate(0.75)
@@ -92,10 +94,11 @@ def main():
         if debuger_mode==True:
             for i in info_list:
                 i.t_lock_map.acquire();
-                map_logger.write("\n "+i.robot+","+str(i.map_percent)+" ,"+str(int(rospy.get_time()-base_time))+";")
+                map_logger.write("\n "+i.robot+","+str(i.map_percent)+" ,"+str(int(rospy.get_time()-base_time)))
                 i.t_lock_map.release();
                 i.t_lock_path.acquire();
-                path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(rospy.get_time()-base_time))+";")
+                if(i.robot!="global_map"):
+                    path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(rospy.get_time()-base_time)))
                 i.t_lock_path.release();
         rate.sleep();
     rospy.spin()
