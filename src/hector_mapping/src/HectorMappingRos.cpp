@@ -266,31 +266,33 @@ void HectorMappingRos::scanCallback(const sensor_msgs::LaserScan& scan)
           initial_pose_set_ = false;
           startEstimate = initial_pose_;
         }else if (p_use_tf_pose_start_estimate_){
-          int myflag=0;
-         while(myflag==0){
+
           try
           {
             tf::StampedTransform stamped_pose;
 
             tf_.waitForTransform(p_map_frame_,p_base_frame_, scan.header.stamp, ros::Duration(0.75));
-            ros::Time a_little_after_the_beginning(0.0);
             tf_.lookupTransform(p_map_frame_, p_base_frame_, scan.header.stamp , stamped_pose);
             tfScalar yaw, pitch, roll;
             stamped_pose.getBasis().getEulerYPR(yaw, pitch, roll);
 
             startEstimate = Eigen::Vector3f(stamped_pose.getOrigin().getX(),stamped_pose.getOrigin().getY(), yaw);
-            myflag=1;
-            break;
+
           }
           catch(tf::TransformException e)
           {
-            ROS_ERROR("Transform from %s to %s failed\n", p_map_frame_.c_str(), p_base_frame_.c_str());
-            //startEstimate = slamProcessor->getLastScanMatchPose();
+            tf::StampedTransform stamped_pose;
+
+            ros::Time a_little_after_the_beginning(0.0);
+            tf_.lookupTransform(p_map_frame_, p_base_frame_, a_little_after_the_beginning , stamped_pose);
+            tfScalar yaw, pitch, roll;
+            stamped_pose.getBasis().getEulerYPR(yaw, pitch, roll);
+
+            startEstimate = Eigen::Vector3f(stamped_pose.getOrigin().getX(),stamped_pose.getOrigin().getY(), yaw);
+
           }
 
-          if(myflag==1)break;
-           break;
-        }
+      
 
         }else{
           startEstimate = slamProcessor->getLastScanMatchPose();

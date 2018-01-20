@@ -24,11 +24,6 @@
       <node pkg="setup" type="map_percent.py" name="map" output="screen" />
   </group>
 
-  <group ns="robot3">
-      <param name="robot_name" value="robot3" />
-      <node pkg="setup" type="path.py" name="path" output="screen" />
-      <node pkg="setup" type="map_percent.py" name="map" output="screen" />
-  </group>
 
   <group ns="global">
       <param name="robot_name" value="global" />

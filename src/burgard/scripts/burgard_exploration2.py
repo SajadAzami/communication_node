@@ -7,8 +7,7 @@ import numpy as np;
 from nav_msgs.srv import GetPlan ,GetPlanRequest;
 from nav_msgs.msg import Path , OccupancyGrid, Odometry;
 from communication_node.msg import Data_Goal,Data_Map;
-from geometry_msgs.msg import Point , PoseStamped
-
+from geometry_msgs.msg import Point
 
 import roslib;
 import actionlib;
@@ -42,7 +41,6 @@ map_pub_counter=0;
 ###############################
 move_base_cancel_publisher=None;
 simple_action_client=None
-move_base_goal_publisher=None;
 current_goal_status = 0 ; # goal status--- PENDING=0--- ACTIVE=1---PREEMPTED=2--SUCCEEDED=3--ABORTED=4---REJECTED=5--PREEMPTING=6---RECALLING=7---RECALLED=8---LOST=9
 
 #########################
@@ -125,10 +123,11 @@ def callback_goal_status(data):
 def move_base_tools():
     global move_base_cancel_publisher;
     global simple_action_client;
-    global name_space,move_base_goal_publisher;
+    global name_space;
     global move_base_status_subscriber;
-    move_base_goal_publisher=rospy.Publisher("/"+name_space+"/move_base_simple/goal", PoseStamped,queue_size=6);
     move_base_cancel_publisher=rospy.Publisher("/"+name_space+"/move_base/cancel",GoalID,queue_size=10);
+    simple_action_client = actionlib.SimpleActionClient("/"+name_space+"/move_base", MoveBaseAction);
+    simple_action_client.wait_for_server();
     print(name_space,"move base tools are ok")
     move_base_status_subscriber=rospy.Subscriber("/"+name_space+"/move_base/status", GoalStatusArray, callback_goal_status);
 
@@ -181,7 +180,7 @@ def request(sx,sy,gx,gy):
 
 def send_goal(goal_x,goal_y):
     global other_robots_list,goal_publisher;
-    global name_space,move_base_goal_publisher;
+    global name_space;
     global simple_action_client;
     for i in other_robots_list:
         new_data=Data_Goal();
@@ -190,23 +189,19 @@ def send_goal(goal_x,goal_y):
         new_data.data=Point(goal_x,goal_y,0.0);
         goal_publisher.publish(new_data);
 
-    goal = PoseStamped();
+    goal = MoveBaseGoal();
         # set goal
-    goal.pose.position.x = goal_x;
-    goal.pose.position.y = goal_y;
-    goal.pose.orientation.w = 1.0;
-    goal.pose.orientation.z = 0;
-    goal.header.frame_id = "/map";
-    goal.header.stamp = rospy.Time.now();
+    goal.target_pose.pose.position.x = goal_x;
+    goal.target_pose.pose.position.y = goal_y;
+    goal.target_pose.pose.orientation.w = 1.0;
+    goal.target_pose.pose.orientation.z = 0;
+    goal.target_pose.header.frame_id = "/map";
+    goal.target_pose.header.stamp = rospy.Time.now();
         # start listener
         # send goal
     print(name_space,"sent goal")
-    rate = rospy.Rate(10);
-    my_counter=0;
-    while(my_counter<6):
-        move_base_goal_publisher.publish(goal);
-        my_counter+=1;
-        rate.sleep()
+    simple_action_client.send_goal(goal);
+
 ################################################
 ################################################
 def map_callback(map_data):
@@ -276,7 +271,7 @@ def burgard():
         frontiers.sort(key=lambda node: node[2]);
         send_goal(frontiers[0][0],frontiers[0][1]);
         rate = rospy.Rate(0.5);
-        while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
+        while current_goal_status==3 or current_goal_status==4 or current_goal_status==5 or current_goal_status==9:
             rate.sleep();
 
 
@@ -284,7 +279,7 @@ def main():
     global name_space,robot_number,number_of_robots;
     global merged_map,goals_list,other_robots_list;
     global goal_publisher;
-    global map_publisher,move_base_goal_publisher;
+    global map_publisher;
     rospy.init_node("burgard_exploration_node");
     name_space = rospy.get_param("namespace", default="robot1");
     robot_number=int(name_space[-1]);
