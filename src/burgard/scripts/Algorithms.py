@@ -2,7 +2,7 @@ import math;
 
 
 class State:
-    def __init__(self,parent=None,cost=0,heu=0,x=0,y=0,depth=0;):
+    def __init__(self,parent=None,cost=0,heu=0,x=0,y=0,depth=0):
         self.parent=parent;
         self.cost=cost;
         self.heu=heu;
@@ -72,7 +72,7 @@ class Problem:
         return children;
 
     def Goal_test(self,node):
-        if(node.x==self.goal_x and node.y=self.goal_y):
+        if(node.x==self.goal_x and node.y==self.goal_y):
             return True;
         else:
             return False

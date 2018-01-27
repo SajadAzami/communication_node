@@ -32,7 +32,17 @@
     </group>
 
 
-  
+
+
+    <group ns="robot3">
+        <param name="namespace" value="robot3" />
+        <param name="number_of_robots" value="4" />
+    <node pkg="burgard" type="burgard_exploration.py" name="burgard1" output="screen" />
+
+    </group>
+
+
+
 
 
 </launch>

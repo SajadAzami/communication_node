@@ -8,7 +8,7 @@ from nav_msgs.srv import GetPlan ,GetPlanRequest;
 from nav_msgs.msg import Path , OccupancyGrid, Odometry;
 from communication_node.msg import Data_Goal,Data_Map;
 from geometry_msgs.msg import Point , PoseStamped
-from Algorithmes import *;
+from Algorithms import *;
 
 import roslib;
 import actionlib;
@@ -142,7 +142,7 @@ def move_base_tools():
 
 def request(sx,sy,gx,gy):
     global a_star;
-    temp_object=Problem(sx=sx,sy=sy,gy=gy,gx=gx,matrix=list(merged_map),width=int( map_data.info.width),height=int( map_data.info.height));
+    temp_object=Problem(sx=int(merged_map.info.resolution*(sx-merged_map.info.origin.position.x)),sy=int(merged_map.info.resolution*(sy-merged_map.info.origin.position.y)),gy=int(merged_map.info.resolution*(gy-merged_map.info.origin.position.y)),gx=int(merged_map.info.resolution*(gx-merged_map.info.origin.position.x)),matrix=list(merged_map.data),width=int( merged_map.info.width),height=int( merged_map.info.height));
     a_star.problem=temp_object;
     path=a_star.Astar_graph();
     if path==None:
@@ -195,6 +195,7 @@ def map_callback(map_data):
     merged_map_lock.release();
     if (map_pub_counter==0):
         for i in other_robots_list:
+            if map_publisher==None:continue;
             new_data=Data_Map();
             new_data.source=name_space;
             new_data.destination=i.robot_name_space;

@@ -86,7 +86,7 @@ def main():
          path_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
 
 
-    for i in ["robot0","robot1","robot2","global_map"]:
+    for i in ["robot0","robot1","robot2","robot3","global_map"]:
         info_list.append(map_path(i,threading.Lock(),threading.Lock()));
 
     rate = rospy.Rate(0.75)
