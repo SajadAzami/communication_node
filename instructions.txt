@@ -1,0 +1,8 @@
+roslaunch setup gserver 
+roslaunch communication_node registration_server
+roslaunch communication_node spawn.launch and spawn2.launch
+roslanch communication_node navigation.launch and navigation2.launch
+roslaunch communicatino_node update_info.launch 
+wait for 60 seconds 
+roslaunch communication_node message_handler.launch 
+roslaunch burgard burgard.launch 
