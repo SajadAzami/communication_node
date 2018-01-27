@@ -8,13 +8,14 @@ from nav_msgs.srv import GetPlan ,GetPlanRequest;
 from nav_msgs.msg import Path , OccupancyGrid, Odometry;
 from communication_node.msg import Data_Goal,Data_Map;
 from geometry_msgs.msg import Point , PoseStamped
-
+from Algorithmes import *;
 
 import roslib;
 import actionlib;
 from actionlib_msgs.msg import *;
 from move_base_msgs.msg import *;
 
+a_star=None;
 name_space="robot1";
 robot_number=0;
 number_of_robots=0;
@@ -138,46 +139,15 @@ def move_base_tools():
 ################################################
 
 
-def create_service():
-    global my_server,name_space;
-    rospy.wait_for_service("/"+name_space+"/move_base/NavfnROS/make_plan");
-    try:
-            my_server = rospy.ServiceProxy("/"+name_space+"/move_base/NavfnROS/make_plan", GetPlan)
-            print (name_space,"server found")
-    except rospy.ServiceException:
-            print (name_space,"Service not found failed ")
-
-
 
 def request(sx,sy,gx,gy):
-    request = GetPlanRequest();
-    request.start.header.frame_id="/"+name_space+"/map";
-    request.start.pose.position.x=sx;
-    request.start.pose.position.y=sy;
-    request.start.pose.orientation.w=1.0;
-    request.goal.header.frame_id="/"+name_space+"/map";
-    request.goal.pose.position.x=gx;
-    request.goal.pose.position.y=gy;
-    request.goal.pose.orientation.w=1.0;
-    request.tolerance=0.5
-    try:
-        response = my_server(request)
-        if(len(response.plan.poses)==0):
-            #print(name_space,"no path");
-            return 1000000;
-        x=(response.plan.poses[0].pose.position.x);
-        y=(response.plan.poses[0].pose.position.y);
-        sum_path=0;
-        for i in response.plan.poses:
-            sum_path+=math.sqrt( (i.pose.position.x-x)**2 +  (i.pose.position.y-y)**2);
-            x=(i.pose.position.x)
-            y=(i.pose.position.y)
-        #print(sum_path)
-        return sum_path;
-    except rospy.ServiceException:
-        print ("sending the request failed");
-        return -2;
-
+    global a_star;
+    temp_object=Problem(sx=sx,sy=sy,gy=gy,gx=gx,matrix=list(merged_map),width=int( map_data.info.width),height=int( map_data.info.height));
+    a_star.problem=temp_object;
+    path=a_star.Astar_graph();
+    if path==None:
+        return 10000000;
+    return path;
 
 def send_goal(goal_x,goal_y):
     global other_robots_list,goal_publisher;
@@ -283,9 +253,10 @@ def burgard():
 def main():
     global name_space,robot_number,number_of_robots;
     global merged_map,goals_list,other_robots_list;
-    global goal_publisher;
+    global goal_publisher,a_star;
     global map_publisher,move_base_goal_publisher;
     rospy.init_node("burgard_exploration_node");
+    a_star=Algorithmes();
     name_space = rospy.get_param("namespace", default="robot1");
     robot_number=int(name_space[-1]);
     number_of_robots=(int(rospy.get_param("number_of_robots", default=1)));
@@ -295,7 +266,6 @@ def main():
         goals_list.append(None);
         other_robots_list.append(MyWrapper(list_index=temp_i,robot_name_space="robot"+str(i)));
         temp_i+=1;
-    create_service();
     move_base_tools();
     map_subscriber=rospy.Subscriber("/"+name_space+"/map", OccupancyGrid, map_callback);
     odom_subscriber=rospy.Subscriber("/"+name_space+"/odom", Odometry, odom_callback);
