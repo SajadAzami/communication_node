@@ -30,6 +30,7 @@ robot_x=0;
 robot_y=0;
 #################3
 beta=1;
+alpha=1;
 utility=1;
 laser_range=30;
 #################
@@ -74,7 +75,7 @@ class MyWrapper:
 ################################################
 def frontier_is_new(new_frontier,frontiers_list):
     for i in frontiers_list:
-        if(math.sqrt((new_frontier[0]-i[0]) ** 2 + (new_frontier[1]-i[1]) ** 2)<2):
+        if(((new_frontier[0]-i[0]) ** 2 + (new_frontier[1]-i[1]) ** 2)<5):
             return False;
     return True;
 
@@ -85,16 +86,16 @@ def get_frontiers(map_data):
         map_height=int(map_data.info.height);#max of y
         map_size=map_height*map_width;
         temp_list=[-1,0,1];
-        for y in range(0,map_height):
-            for x in range(0,map_width):
+        for y in range(1,map_height-1):
+            for x in range(1,map_width-1):
                 counter=0;
                 if map_data.data[(y*map_width)+x]<0:
                     for i in temp_list:
                         for j in temp_list:
-                            if (y+i)*map_width+(x+j)<map_size:
+                            if not(j==i and i==0):
                                 if(map_data.data[(y+i)*map_width+(x+j)]>=0 and map_data.data[(y+i)*map_width+(x+j)]<10):
                                     counter+=1;
-                    if (counter>1 and counter<4):
+                    if (counter==2 or counter==3):
                         temp_x=(x)*map_data.info.resolution+map_data.info.origin.position.x;
                         temp_y=(y)*map_data.info.resolution+map_data.info.origin.position.y;
                         if(frontier_is_new([temp_x,temp_y],frontiers)==True):
@@ -220,6 +221,7 @@ def burgard():
     global name_space;
     global goals_list;
     global goals_list_lock;
+    global alpha;
     while(merged_map==None):
         pass;
     while not rospy.is_shutdown():
@@ -241,7 +243,7 @@ def burgard():
                 if(j==None):continue;
                 temp_distance=math.sqrt( (j.x-frontiers[i][0])**2 +  (j.y-frontiers[i][1])**2);
                 if(temp_distance<=laser_range):
-                    frontiers[i][2]-=(1-temp_distance/laser_range);
+                    frontiers[i][2]-=alpha*(1-temp_distance/laser_range);
             goals_list_lock.release();
         print("sorting")
         frontiers.sort(key=lambda node: node[2]);
