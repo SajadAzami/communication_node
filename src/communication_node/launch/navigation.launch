@@ -6,13 +6,13 @@
 <include file="$(find setup)/launch/p3at_hmapping.launch">
       <arg name="robotname" value="robot1"/>
 </include>
-<include file="$(find setup)/launch/p3at_move_base.launch">
+<include file="$(find setup)/launch/p3at_move_base2.launch">
       <arg name="robotname" value="robot1"/>
 </include>
 <include file="$(find setup)/launch/p3at_hmapping.launch">
       <arg name="robotname" value="robot2"/>
 </include>
-<include file="$(find setup)/launch/p3at_move_base.launch">
+<include file="$(find setup)/launch/p3at_move_base2.launch">
       <arg name="robotname" value="robot2"/>
 </include>
 
