@@ -30,8 +30,8 @@ robot_x=0;
 robot_y=0;
 #################
 beta=1;
-alpha=5;
-utility=1;
+alpha=200;
+utility=100;
 laser_range=30;
 #################
 my_server=None;
@@ -115,11 +115,18 @@ def compute_frontier_distance(frontiers):
     global robot_x,robot_y;
     frontier_distances=[];
     temp=-2;
+    temp1=0;
+    temp2=0;
     for i in frontiers:
         temp=-2;
         while temp==-2:
             temp=request(robot_x,robot_y,i[0],i[1]);
+            if(temp==10000000):
+                temp1+=1;
+            else:
+                temp2+=1;
         frontier_distances.append([i[0],i[1],utility-beta*temp]);
+    print(name_space,"no path",temp1 ,"path",temp2)
     return list(frontier_distances);
 
 ################################################
@@ -231,14 +238,14 @@ def burgard():
         pass;
     while not rospy.is_shutdown():
         merged_map_lock.acquire();
-        print("going for frointiers")
+        print(name_space,"going for frointiers")
         frontiers=get_frontiers(merged_map);
         merged_map_lock.release();
         if (len(frontiers)==0):
             print(name_space,"no new frontiers");
             exit();
         frontiers=compute_frontier_distance(frontiers);
-        print("we have frontiers")
+        print(name_space,"we have frontiers")
         if (len(frontiers)==0):
             print(name_space,"no path to frointiers");
             exit();
@@ -255,9 +262,10 @@ def burgard():
                     frontiers[i][2]-=alpha*(1-temp_distance/laser_range);
             goals_list_lock.release();
 
-        print("sorting")
+        print(name_space,"sorting")
         frontiers.sort(key=lambda node: node[2]);
-        send_goal(frontiers[0][0],frontiers[0][1]);
+        print(name_space,"best frontier",frontiers[0][2],"  worst frontier",frontiers[-1][2])
+        send_goal(frontiers[-1][0],frontiers[-1][1]);
         while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
             rate.sleep();
 

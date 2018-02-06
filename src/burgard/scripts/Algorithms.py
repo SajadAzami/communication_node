@@ -61,7 +61,7 @@ class Problem:
                 if(j==0 and i==0 ):continue;
                 if (y+i>=self.height or x+j>=self.width):continue;
                 if(self.matrix[y+i][x+j]>90):continue;
-                if(self.check_neighber(x+j,y+i)==True):continue;
+                #if(self.check_neighber(x+j,y+i)==True):continue;
                 my_node=State(parent=node,x=x+j,y=y+i,depth=node.depth+1);
                 my_node.heu=self.heuristic(my_node);
                 if(self.matrix[y+i][x+j]>=0 and self.matrix[y+i][x+j]<10):
@@ -83,7 +83,7 @@ class Problem:
         while (n != None):
             mylist.insert(0, n);
             n = n.parent;
-        print ("found something");
+        #print ("found something");
         return node.depth;
 
     def initialize(self):
@@ -121,7 +121,7 @@ class Algorithmes:
                 self.insert_with_heuristic(i);
                 if (self.problem.Goal_test(i)):
                     return self.problem.Solution(i);
-        print("no solution found");
+        #print("no solution found");
         return None;
 
     def check_e(self,child):

@@ -5,6 +5,7 @@
 
 
 
+ <node pkg="burgard" type="Permission_granter.py" name="permission" output="screen" />
 
 
   <group ns="robot1">

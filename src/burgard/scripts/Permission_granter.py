@@ -7,15 +7,19 @@ permission_lock=threading.Lock();
 
 class MyWrapper:
     def __init__(self,robot_name_space):
+        self.name_space=robot_name_space;
         self.checking_goals_requst_handler=rospy.Subscriber("/"+robot_name_space+"/checking_goals_request", Bool, self.request_handler);
         self.checking_goals_responser=rospy.Publisher("/"+robot_name_space+"/checking_goals_response", Bool,queue_size=15);
     def request_handler(self,input_data):
         global permission_lock;
         if(input_data.data==True):
+            print(self.name_space,"permission requested");
             permission_lock.acquire();
+            print(self.name_space,"permission granted");
             self.checking_goals_responser.publish(Bool(True));
         elif(input_data.data==False):
             permission_lock.release();
+            print(self.name_space,"permission revoked");
             self.checking_goals_responser.publish(Bool(False));
 
 def callback(data):
