@@ -8,6 +8,7 @@ from nav_msgs.srv import GetPlan ,GetPlanRequest;
 from nav_msgs.msg import Path , OccupancyGrid, Odometry;
 from communication_node.msg import Data_Goal,Data_Map;
 from geometry_msgs.msg import Point , PoseStamped
+from std_msgs.msg import Bool;
 from Algorithms import *;
 import roslib;
 import actionlib;
@@ -37,6 +38,10 @@ my_server=None;
 goals_list=[];
 goals_list_lock=threading.Lock();
 other_robots_list=[];
+#############################
+checking_goals_flag=False;
+checking_goals_subscriber=None;
+checking_goals_publisher=None;
 ############################
 map_pub_frequnecy=2;
 map_pub_counter=0;
@@ -173,6 +178,7 @@ def send_goal(goal_x,goal_y):
     goal_pose.header.stamp = rospy.Time.now();
         # send goal
     move_client_goal_.target_pose=goal_pose;
+    checking_goals_publisher.publish(Bool(False));
     move_client_.send_goal_and_wait(goal=move_client_goal_,execute_timeout = rospy.Duration(300),preempt_timeout = rospy.Duration(1));
     print(name_space,"sent goal");
     goal_pose.header.seq =goal_pose.header.seq+1 ;
@@ -220,6 +226,7 @@ def burgard():
     global goals_list;
     global goals_list_lock;
     global alpha;
+    global checking_goals_publisher,checking_goals_flag;
     while(merged_map==None):
         pass;
     while not rospy.is_shutdown():
@@ -235,6 +242,10 @@ def burgard():
         if (len(frontiers)==0):
             print(name_space,"no path to frointiers");
             exit();
+        checking_goals_publisher.publish(Bool(True));
+        rate = rospy.Rate(0.5);
+        while(not checking_goals_flag):
+            rate.sleep();
         for i in range(0,len(frontiers)):
             goals_list_lock.acquire();
             for j in goals_list:
@@ -243,12 +254,17 @@ def burgard():
                 if(temp_distance<=laser_range):
                     frontiers[i][2]-=alpha*(1-temp_distance/laser_range);
             goals_list_lock.release();
+
         print("sorting")
         frontiers.sort(key=lambda node: node[2]);
         send_goal(frontiers[0][0],frontiers[0][1]);
-        rate = rospy.Rate(0.5);
         while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
             rate.sleep();
+
+def checking_goals_response_callback(input_data):
+    global checking_goals_flag;
+    checking_goals_flag=input_data.data;
+
 
 
 def main():
@@ -256,6 +272,7 @@ def main():
     global merged_map,goals_list,other_robots_list;
     global goal_publisher,a_star;
     global map_publisher;
+    global checking_goals_subscriber,checking_goals_publisher;
     rospy.init_node("burgard_exploration_node");
     a_star=Algorithmes();
     name_space = rospy.get_param("namespace", default="robot1");
@@ -272,6 +289,8 @@ def main():
     odom_subscriber=rospy.Subscriber("/"+name_space+"/odom", Odometry, odom_callback);
     goal_publisher=rospy.Publisher("/message_server_Goal", Data_Goal,queue_size=15);
     map_publisher=rospy.Publisher("/message_server_map", Data_Map,queue_size=15);
+    checking_goals_subscriber=rospy.Subscriber("/"+name_space+"/checking_goals_response", Bool, checking_goals_response_callback);
+    checking_goals_publisher=rospy.Publisher("/"+name_space+"/checking_goals_request", Bool,queue_size=15);
     burgard();
     rospy.spin();
 
