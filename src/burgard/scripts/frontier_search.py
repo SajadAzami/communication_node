@@ -92,8 +92,14 @@ class FrontierSearch:
         #record initial contact point for frontier
         ix=0;
         iy=0;
-        self.costmap_.indexToCells(initial_cell,ix,iy);
-        self.costmap_.mapToWorld(ix,iy,output.travel_point.x,output.travel_point.y);
+        #self.costmap_.indexToCells(initial_cell,ix,iy);
+        iy = int(initial_cell / self.size_x_);
+        ix = initial_cell - (ry * self.size_x_);
+
+        #self.costmap_.mapToWorld(ix,iy,output.travel_point.x,output.travel_point.y);
+        output.travel_point.x = self.costmap_.info.origin.position.x + (ix + 0.5) * self.costmap_.info.resolution;
+        output.travel_point.y = self.costmap_.info.origin.position.y + (iy + 0.5) * self.costmap_.info.resolution;
+
 
         #push initial gridcell onto queue
         bfs=Queue();

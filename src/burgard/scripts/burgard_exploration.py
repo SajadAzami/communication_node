@@ -23,10 +23,11 @@ number_of_robots=0;
 ######################
 merged_map_lock=threading.Lock()
 merged_map=None;
-######################
+#####################
 map_publisher=None;
 goal_publisher=None;
 #############
+odom_subscriber=None;
 robot_x=0;
 robot_y=0;
 #################
@@ -85,9 +86,13 @@ def frontier_is_new(new_frontier,frontiers_list):
     return True;
 
 def get_frontiers(map_data):
+        global robot_x,robot_y;
         print("going for frointiers")
         frontiers=[];
         fsc=FrontierSearch(map_data,5,"middle");
+        frontiers=fsc.searchFrom(Point(robot_x,robot_y,0.0));
+        return list(frontier);
+        '''
         map_width=int( map_data.info.width); #max of x
         map_height=int(map_data.info.height);#max of y
         map_size=map_height*map_width;
@@ -112,6 +117,7 @@ def get_frontiers(map_data):
 
         print("this is number of fronteirs", len(frontiers))
         return list(frontiers);
+        '''
 
 def compute_frontier_distance(frontiers):
     global robot_x,robot_y;
@@ -259,15 +265,15 @@ def burgard():
             goals_list_lock.acquire();
             for j in goals_list:
                 if(j==None):continue;
-                temp_distance=math.sqrt( (j.x-frontiers[i][0])**2 +  (j.y-frontiers[i][1])**2);
+                temp_distance=math.sqrt( (j.x-frontiers[i].travel_point.x)**2 +  (j.y-frontiers[i].travel_point.y)**2);
                 if(temp_distance<=laser_range):
-                    frontiers[i][2]-=alpha*(1-temp_distance/laser_range);
+                    frontiers[i].min_distance-=alpha*(1-temp_distance/laser_range);
             goals_list_lock.release();
 
-        print(name_space,"sorting")
-        frontiers.sort(key=lambda node: node[2]);
-        print(name_space,"best frontier",frontiers[0][2],"  worst frontier",frontiers[-1][2])
-        send_goal(frontiers[-1][0],frontiers[-1][1]);
+        print(name_space,"sorting");
+        frontiers.sort(key=lambda node: node.min_distance);
+        print(name_space,"worst frontier",frontiers[0].min_distance,"  best frontier",frontiers[-1].min_distance);
+        send_goal(frontiers[-1].travel_point.x,frontiers[-1].travel_point.y);
         while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
             rate.sleep();
 
@@ -276,12 +282,11 @@ def checking_goals_response_callback(input_data):
     checking_goals_flag=input_data.data;
 
 
-
 def main():
     global name_space,robot_number,number_of_robots;
     global merged_map,goals_list,other_robots_list;
     global goal_publisher,a_star;
-    global map_publisher;
+    global map_publisher,odom_subscriber;
     global checking_goals_subscriber,checking_goals_publisher;
     rospy.init_node("burgard_exploration_node");
     a_star=Algorithmes();
