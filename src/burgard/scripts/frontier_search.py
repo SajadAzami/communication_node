@@ -39,13 +39,13 @@ class FrontierSearch:
         self.size_x_ = self.costmap_.info.width;
         self.size_y_ = self.costmap_.info.height;
         #initialize flag arrays to keep track of visited and frontier cells
-        frontier_flag=[False]*(size_x_ * size_y_);
-        visited_flag=[False]*(size_x_ * size_y_);
+        frontier_flag=[False]*(self.size_x_ * self.size_y_);
+        visited_flag=[False]*(self.size_x_ * self.size_y_);
         #initialize breadth first search
         bfs=Queue();
         #find closest clear cell to start search
         clear=0;
-        pos=my*self.size_x + mx; #index in costmap list
+        pos=my*self.size_x_ + mx; #index in costmap list
         nc=nearestCell( pos, 0, self.costmap_);
         if(nc[0]==True):
             clear=nc[1];
