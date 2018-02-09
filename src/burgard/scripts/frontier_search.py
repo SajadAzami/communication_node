@@ -1,11 +1,9 @@
-from queue import Queue;
+from Queue import Queue;
 from costmap_tools import *;
 import math;
-from queue import Queue;
 from nav_msgs.msg import Path , OccupancyGrid, Odometry;
 from geometry_msgs.msg import Point , PoseStamped
 from std_msgs.msg import Bool;
-import math;
 
 class Frontier:
     def __init__(self):

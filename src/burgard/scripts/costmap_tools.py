@@ -1,4 +1,4 @@
-from queue import Queue;
+from Queue import Queue;
 from nav_msgs.msg import Path , OccupancyGrid, Odometry;
 from geometry_msgs.msg import Point , PoseStamped
 from std_msgs.msg import Bool;
