@@ -158,11 +158,11 @@ class FrontierSearch:
         if(travel_point_ == "closest"):
             # point already set
             pass;
-         elif(travel_point_ == "middle"):
+        elif(travel_point_ == "middle"):
             output.travel_point = middle;
-         elif(travel_point_ == "centroid"):
+        elif(travel_point_ == "centroid"):
             output.travel_point = centroid;
-         else:
+        else:
             ROS_ERROR("Invalid 'frontier_travel_point' parameter, falling back to 'closest'");
             #point already set
 
