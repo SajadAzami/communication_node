@@ -31,8 +31,8 @@ class FrontierSearch:
     #  * @return List of frontiers, if any
     #  */
     def searchFrom(self,position):
-        mx = (int)((position.x - self.costmap_.origin.position.x) / self.costmap_.info.resolution);
-        my = (int)((position.y - self.costmap_.origin.position.y) / self.costmap_.info.resolution);
+        mx = (int)((position.x - self.costmap_.info.origin.position.x) / self.costmap_.info.resolution);
+        my = (int)((position.y - self.costmap_.info.origin.position.y) / self.costmap_.info.resolution);
 
         frontier_list=[];
         map_=self.costmap_.data;
