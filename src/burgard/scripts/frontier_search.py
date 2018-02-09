@@ -106,7 +106,6 @@ class FrontierSearch:
         bfs.put(initial_cell);
 
         #cache reference position in world coords
-        double reference_x, reference_y;
 
         #self.costmap_.indexToCells(reference,rx,ry);
         ry = int(reference / self.size_x_);
