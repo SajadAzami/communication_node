@@ -1,6 +1,11 @@
 from queue import Queue;
 from costmap_tools import *;
 import math;
+from queue import Queue;
+from nav_msgs.msg import Path , OccupancyGrid, Odometry;
+from geometry_msgs.msg import Point , PoseStamped
+from std_msgs.msg import Bool;
+import math;
 
 class Frontier:
     def __init__(self):
@@ -80,8 +85,8 @@ class FrontierSearch:
     def buildNewFrontier(self, initial_cell,  reference,  frontier_flag):
         #initialize frontier structure
         output=Frontier();
-        centroid=geometry_msgs.Point();
-        middle=geometry_msgs.Point();
+        centroid=Point();
+        middle=Point();
         output.size = 1;
         output.min_distance = 999999;
         #record initial contact point for frontier

@@ -14,6 +14,7 @@ import roslib;
 import actionlib;
 from actionlib_msgs.msg import *;
 from move_base_msgs.msg import *;
+from frontier_search import *
 
 a_star=None;
 name_space="robot1";
@@ -86,6 +87,7 @@ def frontier_is_new(new_frontier,frontiers_list):
 def get_frontiers(map_data):
         print("going for frointiers")
         frontiers=[];
+        fsc=FrontierSearch(map_data,5,"middle");
         map_width=int( map_data.info.width); #max of x
         map_height=int(map_data.info.height);#max of y
         map_size=map_height*map_width;
