@@ -31,11 +31,11 @@ class FrontierSearch:
     #  * @return List of frontiers, if any
     #  */
     def searchFrom(self,position):
-        mx = (int)((position.x - self.info.origin.position.x) / self.costmap_.info.resolution);
-        my = (int)((position.y - self.info.origin.position.y) / self.costmap_.info.resolution);
+        mx = (int)((position.x - self.costmap_.origin.position.x) / self.costmap_.info.resolution);
+        my = (int)((position.y - self.costmap_.origin.position.y) / self.costmap_.info.resolution);
 
         frontier_list=[];
-        map_=self.costmap.data;
+        map_=self.costmap_.data;
         self.size_x_ = self.costmap_.info.width;
         self.size_y_ = self.costmap_.info.height;
         #initialize flag arrays to keep track of visited and frontier cells
