@@ -54,7 +54,7 @@ HectorMappingRos::HectorMappingRos()
   ros::NodeHandle private_nh_("~");
 
   std::string mapTopic_ = "map";
-
+  int my_temp_flag=0;
   private_nh_.param("pub_drawings", p_pub_drawings, false);
   private_nh_.param("pub_debug_output", p_pub_debug_output_, false);
   private_nh_.param("pub_map_odom_transform", p_pub_map_odom_transform_,true);
@@ -281,18 +281,20 @@ void HectorMappingRos::scanCallback(const sensor_msgs::LaserScan& scan)
           }
           catch(tf::TransformException e)
           {
+            if(my_temp_flag==0){
+              my_temp_flag=1;
             tf::StampedTransform stamped_pose;
-
             ros::Time a_little_after_the_beginning(0.0);
             tf_.lookupTransform(p_map_frame_, p_base_frame_, a_little_after_the_beginning , stamped_pose);
             tfScalar yaw, pitch, roll;
             stamped_pose.getBasis().getEulerYPR(yaw, pitch, roll);
-
-            startEstimate = Eigen::Vector3f(stamped_pose.getOrigin().getX(),stamped_pose.getOrigin().getY(), yaw);
+            startEstimate = Eigen::Vector3f(stamped_pose.getOrigin().getX(),stamped_pose.getOrigin().getY(), yaw);}
+              else{
+            startEstimate = slamProcessor->getLastScanMatchPose();}
 
           }
 
-      
+
 
         }else{
           startEstimate = slamProcessor->getLastScanMatchPose();
