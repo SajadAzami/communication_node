@@ -70,7 +70,7 @@ public:
   HectorMappingRos();
   ~HectorMappingRos();
 
-
+int my_temp_flag;
   void scanCallback(const sensor_msgs::LaserScan& scan);
   void sysMsgCallback(const std_msgs::String& string);
 

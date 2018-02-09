@@ -54,7 +54,7 @@ HectorMappingRos::HectorMappingRos()
   ros::NodeHandle private_nh_("~");
 
   std::string mapTopic_ = "map";
-  int my_temp_flag=0;
+   my_temp_flag=0;
   private_nh_.param("pub_drawings", p_pub_drawings, false);
   private_nh_.param("pub_debug_output", p_pub_debug_output_, false);
   private_nh_.param("pub_map_odom_transform", p_pub_map_odom_transform_,true);
