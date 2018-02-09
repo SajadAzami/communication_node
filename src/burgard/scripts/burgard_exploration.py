@@ -32,7 +32,7 @@ robot_x=0;
 robot_y=0;
 #################
 beta=1;
-alpha=200;
+alpha=10;
 utility=100;
 laser_range=30;
 #################
@@ -91,7 +91,7 @@ def get_frontiers(map_data):
         frontiers=[];
         fsc=FrontierSearch(map_data,5,"middle");
         frontiers=fsc.searchFrom(Point(robot_x,robot_y,0.0));
-        return list(frontier);
+        return list(frontiers);
         '''
         map_width=int( map_data.info.width); #max of x
         map_height=int(map_data.info.height);#max of y
@@ -128,7 +128,7 @@ def compute_frontier_distance(frontiers):
     for i in frontiers:
         temp=-2;
         while temp==-2:
-            temp=request(robot_x,robot_y,i[0],i[1]);
+            temp=request(robot_x,robot_y,i.travel_point.x,i.travel_point.y);
             if(temp==10000000):
                 temp1+=1;
             else:
@@ -252,7 +252,7 @@ def burgard():
         if (len(frontiers)==0):
             print(name_space,"no new frontiers");
             exit();
-        frontiers=compute_frontier_distance(frontiers);
+        #frontiers=compute_frontier_distance(frontiers);
         print(name_space,"we have frontiers")
         if (len(frontiers)==0):
             print(name_space,"no path to frointiers");
@@ -267,13 +267,13 @@ def burgard():
                 if(j==None):continue;
                 temp_distance=math.sqrt( (j.x-frontiers[i].travel_point.x)**2 +  (j.y-frontiers[i].travel_point.y)**2);
                 if(temp_distance<=laser_range):
-                    frontiers[i].min_distance-=alpha*(1-temp_distance/laser_range);
+                    frontiers[i].min_distance+=alpha*(1-temp_distance/laser_range);
             goals_list_lock.release();
 
         print(name_space,"sorting");
         frontiers.sort(key=lambda node: node.min_distance);
-        print(name_space,"worst frontier",frontiers[0].min_distance,"  best frontier",frontiers[-1].min_distance);
-        send_goal(frontiers[-1].travel_point.x,frontiers[-1].travel_point.y);
+        print(name_space,"worst frontier",frontiers[-1].min_distance,"  best frontier",frontiers[0].min_distance);
+        send_goal(frontiers[0].travel_point.x,frontiers[0].travel_point.y);
         while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
             rate.sleep();
 

@@ -24,6 +24,7 @@ class FrontierSearch:
         self.size_y_=0 ;
         self.min_frontier_size_=min_frontier_size;
         self.travel_point_=travel_point;
+        self.map_=[];
 
     # /**
     #  * @brief Runs search implementation, outward from the start position
@@ -35,7 +36,7 @@ class FrontierSearch:
         my = (int)((position.y - self.costmap_.info.origin.position.y) / self.costmap_.info.resolution);
 
         frontier_list=[];
-        map_=self.costmap_.data;
+        self.map_=self.costmap_.data;
         self.size_x_ = self.costmap_.info.width;
         self.size_y_ = self.costmap_.info.height;
         #initialize flag arrays to keep track of visited and frontier cells
@@ -54,21 +55,21 @@ class FrontierSearch:
             bfs.put(pos);
             ROS_WARN("Could not find nearby clear cell to start search");
 
-        visited_flag[bfs[0]] = True;
+        visited_flag[bfs.queue[0]] = True;
 
         while(not bfs.empty()):
                 idx =bfs.get();
                 #iterate over 4-connected neighbourhood
-                for nbr in nhood4(idx, costmap_):
+                for nbr in nhood4(idx, self.costmap_):
                     #add to queue all free, unvisited cells, use descending search in case initialized on non-free cell
-                    if(map_[nbr] <= map_[idx] and (not visited_flag[nbr])):
+                    if(self.map_[nbr] <= self.map_[idx] and (not visited_flag[nbr])):
                                visited_flag[nbr] = True;
                                bfs.put(nbr);
                                #check if cell is new frontier cell (unvisited, NO_INFORMATION, free neighbour)
                     elif(self.isNewFrontierCell(nbr, frontier_flag)):
                                frontier_flag[nbr] = True;
                                new_frontier = self.buildNewFrontier(nbr, pos, frontier_flag);
-                               if(new_frontier.size > min_frontier_size_):
+                               if(new_frontier.size > self.min_frontier_size_):
                                    frontier_list.append(new_frontier);
 
         return frontier_list;
@@ -92,7 +93,7 @@ class FrontierSearch:
         iy=0;
         #self.costmap_.indexToCells(initial_cell,ix,iy);
         iy = int(initial_cell / self.size_x_);
-        ix = initial_cell - (ry * self.size_x_);
+        ix = initial_cell - (iy * self.size_x_);
 
         #self.costmap_.mapToWorld(ix,iy,output.travel_point.x,output.travel_point.y);
         output.travel_point.x = self.costmap_.info.origin.position.x + (ix + 0.5) * self.costmap_.info.resolution;
@@ -118,12 +119,12 @@ class FrontierSearch:
             idx = bfs.get();
 
             #try adding cells in 8-connected neighborhood to frontier
-            for nbr in nhood8(idx, costmap_):
+            for nbr in nhood8(idx, self.costmap_):
                 #check if neighbour is a potential frontier cell
                 if(self.isNewFrontierCell(nbr,frontier_flag)):
 
                     #mark cell as frontier
-                    frontier_flag[nbr] = true;
+                    frontier_flag[nbr] = True;
 
                     #self.costmap_.indexToCells(nbr,mx,my);
                     my = int(nbr / self.size_x_);
@@ -153,12 +154,12 @@ class FrontierSearch:
         centroid.x /= output.size;
         centroid.y /= output.size;
 
-        if(travel_point_ == "closest"):
+        if(self.travel_point_ == "closest"):
             # point already set
             pass;
-        elif(travel_point_ == "middle"):
+        elif(self.travel_point_ == "middle"):
             output.travel_point = middle;
-        elif(travel_point_ == "centroid"):
+        elif(self.travel_point_ == "centroid"):
             output.travel_point = centroid;
         else:
             ROS_ERROR("Invalid 'frontier_travel_point' parameter, falling back to 'closest'");
@@ -175,10 +176,10 @@ class FrontierSearch:
      # */
     def isNewFrontierCell(self, idx, frontier_flag):
             #check that cell is unknown and not already marked as frontier
-            if(map_[idx] != -1 or frontier_flag[idx]==True):
+            if(self.map_[idx] != -1 or frontier_flag[idx]==True):
                 return False;
             #frontier cells should have at least one cell in 4-connected neighbourhood that is free
             for  nbr in nhood4(idx, self.costmap_):
-                if(map_[nbr] == 0):
+                if(self.map_[nbr] == 0):
                     return True;
             return False;
