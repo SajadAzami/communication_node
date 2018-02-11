@@ -242,6 +242,7 @@ def burgard():
     global goals_list_lock;
     global alpha;
     global checking_goals_publisher,checking_goals_flag;
+    global current_goal_status;
     while(merged_map==None):
         pass;
     while not rospy.is_shutdown():
@@ -274,8 +275,10 @@ def burgard():
         frontiers.sort(key=lambda node: node.min_distance);
         print(name_space,"worst frontier",frontiers[-1].min_distance,"  best frontier",frontiers[0].min_distance);
         send_goal(frontiers[0].travel_point.x,frontiers[0].travel_point.y);
+        rospy.sleep(3.0);
         while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
             rate.sleep();
+        current_goal_status=0;
 
 def checking_goals_response_callback(input_data):
     global checking_goals_flag;
