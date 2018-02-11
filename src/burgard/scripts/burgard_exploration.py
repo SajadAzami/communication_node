@@ -254,7 +254,7 @@ def burgard():
             print(name_space,"no new frontiers");
             exit();
         #frontiers=compute_frontier_distance(frontiers);
-        print(name_space,"we have frontiers")
+        print(name_space,"we have frontiers",len(frontiers));
         if (len(frontiers)==0):
             print(name_space,"no path to frointiers");
             exit();
@@ -274,6 +274,7 @@ def burgard():
         print(name_space,"sorting");
         frontiers.sort(key=lambda node: node.min_distance);
         print(name_space,"worst frontier",frontiers[-1].min_distance,"  best frontier",frontiers[0].min_distance);
+        print(name_space,"  goal is ",str(frontiers[0].travel_point.x),str(frontiers[0].travel_point.y));
         send_goal(frontiers[0].travel_point.x,frontiers[0].travel_point.y);
         rospy.sleep(3.0);
         while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
