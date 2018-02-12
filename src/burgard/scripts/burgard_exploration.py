@@ -32,7 +32,7 @@ robot_x=0;
 robot_y=0;
 #################
 beta=1;
-alpha=10;
+alpha=25;
 utility=100;
 laser_range=30;
 #################
@@ -74,7 +74,9 @@ class MyWrapper:
     def set_Goal(self, goal_data):
         global goals_list,goals_list_lock;
         goals_list_lock.acquire()
-        goals_list[self.list_index]=goal_data.data;
+        if (goal_data.source==self.robot_name_space):
+            print(name_space,"new goal from",self.robot_name_space);
+            goals_list[self.list_index]=goal_data.data;
         goals_list_lock.release();
 
 ################################################
@@ -87,9 +89,8 @@ def frontier_is_new(new_frontier,frontiers_list):
 
 def get_frontiers(map_data):
         global robot_x,robot_y;
-        print("going for frointiers")
         frontiers=[];
-        fsc=FrontierSearch(map_data,5,"middle");
+        fsc=FrontierSearch(map_data,5,"centroid");
         frontiers=fsc.searchFrom(Point(robot_x,robot_y,0.0));
         return list(frontiers);
         '''
@@ -139,8 +140,10 @@ def compute_frontier_distance(frontiers):
 
 ################################################
 ################################################
-def callback_goal_status(data):
+def callback_goal_status(data,data2):
     global current_goal_status;
+    current_goal_status=True;
+    return;
     if len(data.status_list)==0 :
         return;
     current_goal_status = data.status_list[len(data.status_list) - 2].status;
@@ -153,7 +156,7 @@ def move_base_tools():
     move_client_=actionlib.SimpleActionClient("/"+name_space+"/move_base", MoveBaseAction);
     move_client_goal_=MoveBaseGoal();
     print(name_space,"move base tools are ok")
-    move_base_status_subscriber=rospy.Subscriber("/"+name_space+"/move_base/status", GoalStatusArray, callback_goal_status);
+    #move_base_status_subscriber=rospy.Subscriber("/"+name_space+"/move_base/status", GoalStatusArray, callback_goal_status);
 
 
 ################################################
@@ -177,11 +180,13 @@ def send_goal(goal_x,goal_y):
     global move_client_;
     global move_client_goal_;
     global goal_pose;
+    global my_current_goal;
+    my_current_goal=Point(goal_x,goal_y,0.0);
     for i in other_robots_list:
         new_data=Data_Goal();
         new_data.source=name_space;
         new_data.destination=i.robot_name_space;
-        new_data.data=Point(goal_x,goal_y,0.0);
+        new_data.data=my_current_goal;
         goal_publisher.publish(new_data);
 
         # set goal
@@ -192,9 +197,12 @@ def send_goal(goal_x,goal_y):
     goal_pose.header.frame_id = "/map";
     goal_pose.header.stamp = rospy.Time.now();
         # send goal
+    move_client_.cancel_goals_at_and_before_time(rospy.Time.now());
     move_client_goal_.target_pose=goal_pose;
+    rospy.sleep(0.5);
     checking_goals_publisher.publish(Bool(False));
-    move_client_.send_goal_and_wait(goal=move_client_goal_,execute_timeout = rospy.Duration(300),preempt_timeout = rospy.Duration(1));
+    #move_client_.send_goal_and_wait(goal=move_client_goal_,execute_timeout = rospy.Duration(300),preempt_timeout = rospy.Duration(1));
+    move_client_.send_goal(goal=move_client_goal_,done_cb=callback_goal_status);
     print(name_space,"sent goal");
     goal_pose.header.seq =goal_pose.header.seq+1 ;
 ################################################
@@ -243,6 +251,7 @@ def burgard():
     global alpha;
     global checking_goals_publisher,checking_goals_flag;
     global current_goal_status;
+    global goal_publisher,my_current_goal,other_robots_list;
     while(merged_map==None):
         pass;
     while not rospy.is_shutdown():
@@ -258,28 +267,47 @@ def burgard():
         if (len(frontiers)==0):
             print(name_space,"no path to frointiers");
             exit();
+        rate = rospy.Rate(0.5);
+
+        for k in range(int(name_space[-1]),3):
+            while goals_list[k]==None:
+                pass;
+
         checking_goals_publisher.publish(Bool(True));
         rate = rospy.Rate(0.5);
         while(not checking_goals_flag):
             rate.sleep();
+        rospy.sleep(0.5);
         for i in range(0,len(frontiers)):
             goals_list_lock.acquire();
             for j in goals_list:
                 if(j==None):continue;
                 temp_distance=math.sqrt( (j.x-frontiers[i].travel_point.x)**2 +  (j.y-frontiers[i].travel_point.y)**2);
                 if(temp_distance<=laser_range):
+                    print(name_space,"before increment",str(frontiers[i].min_distance))
                     frontiers[i].min_distance+=alpha*(1-temp_distance/laser_range);
+                    print(name_space,"after ",str(frontiers[i].min_distance))
+
+                else:
+                    print(name_space," goal out of range ",str(j.x),str(j.y));
             goals_list_lock.release();
 
         print(name_space,"sorting");
         frontiers.sort(key=lambda node: node.min_distance);
         print(name_space,"worst frontier",frontiers[-1].min_distance,"  best frontier",frontiers[0].min_distance);
         print(name_space,"  goal is ",str(frontiers[0].travel_point.x),str(frontiers[0].travel_point.y));
+        current_goal_status=False;
         send_goal(frontiers[0].travel_point.x,frontiers[0].travel_point.y);
         rospy.sleep(3.0);
-        while current_goal_status!=3 and current_goal_status!=4 and current_goal_status!=5 and current_goal_status!=9:
+        while current_goal_status==False:
             rate.sleep();
-        current_goal_status=0;
+            for i in other_robots_list:
+                new_data=Data_Goal();
+                new_data.source=name_space;
+                new_data.destination=i.robot_name_space;
+                new_data.data=my_current_goal;
+                goal_publisher.publish(new_data);
+        current_goal_status=False;
 
 def checking_goals_response_callback(input_data):
     global checking_goals_flag;

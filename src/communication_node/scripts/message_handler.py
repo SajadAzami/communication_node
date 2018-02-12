@@ -95,6 +95,7 @@ class message_handle:
                        i=0
                        while not ( rospy.is_shutdown() or i>1):
                                  self.message_publisher.publish(data.data)
+                                 print("from",data.source," to",data.destination);
                                  i+=1
                                  rate.sleep()
                        i=0
@@ -103,6 +104,7 @@ class message_handle:
                        i=0
                        while not ( rospy.is_shutdown() or i>1):
                                  self.message_publisher.publish(data)
+                                 print("from",data.source," to",data.destination);
                                  #print("sent messagne",self.tag)
                                  i+=1
                                  rate.sleep()
