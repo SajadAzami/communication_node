@@ -13,11 +13,11 @@
     <param name="iterations" value="1" />
     <param name="maxUrange" value="29" />
     <param name="maxRange" value="30.4" />
-    <param name="linearUpdate" value="0.5" />
-    <param name="xmin" value="-25" />
-    <param name="xmax" value="25" />
-    <param name="ymax" value="25" />
-    <param name="ymin" value="-25" />
+    <param name="linearUpdate" value="0.1" />
+    <param name="xmin" value="-71" />
+    <param name="xmax" value="71" />
+    <param name="ymax" value="71" />
+    <param name="ymin" value="-71" />
 
   </node>
 </group>

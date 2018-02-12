@@ -24,9 +24,9 @@
     <param name="use_tf_pose_start_estimate" value="true" />
     <param name="map_start_x" value="0.5"/>
     <param name="map_start_y" value="0.5" />
-    <param name="map_size" value="1000"/>
+    <param name="map_size" value="500"/>
     <param name="map_pub_period" value="0.5"/>
-    <param name="map_resolution" value="0.1"/>
+    <param name="map_resolution" value="0.2"/>
     <param name="laser_min_dist" value="0.08"/>
     <param name="laser_max_dist" value="30.0"/>
     <param name="map_update_distance_thresh" value="0.05"/>

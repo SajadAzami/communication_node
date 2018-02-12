@@ -4,10 +4,11 @@ global_costmap:
   resolution: 0.2
   rolling_window:             false
   track_unknown_space:        true
-  width:                      30.0
-  height:                     30.0
-
+  width:                      110.0
+  height:                     110.0
+  origin_x:                   -53.0
+  origin_y:                   -53.0
 
   plugins:
-     - {name: static,                    type: "costmap_2d::StaticLayer"}
+     - {name: obstacles_costmap2d2,       type: "costmap_2d::ObstacleLayer"}
      - {name: inflation,                 type: "costmap_2d::InflationLayer"}
