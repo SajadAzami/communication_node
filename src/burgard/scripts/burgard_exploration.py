@@ -299,8 +299,10 @@ def burgard():
         current_goal_status=False;
         send_goal(frontiers[0].travel_point.x,frontiers[0].travel_point.y);
         rospy.sleep(3.0);
-        while current_goal_status==False:
+        time_counter=0;
+        while current_goal_status==False and time_counter<140:
             rate.sleep();
+            time_counter+=2;
             for i in other_robots_list:
                 new_data=Data_Goal();
                 new_data.source=name_space;

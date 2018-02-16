@@ -72,7 +72,6 @@ def main():
     signal.signal(signal.SIGTERM, on_exit)
 
     rospy.init_node('info_node', anonymous=True)
-    base_time = rospy.get_time();
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
@@ -89,18 +88,20 @@ def main():
     for i in ["robot0","robot1","robot2","robot3","global_map"]:
         info_list.append(map_path(i,threading.Lock(),threading.Lock()));
 
-    rate = rospy.Rate(0.75)
-    while not rospy.is_shutdown():
+    rate = rospy.Rate(0.5)
+    base_time = 0;
+    while (not rospy.is_shutdown()) and base_time<1200:
         if debuger_mode==True:
             for i in info_list:
                 i.t_lock_map.acquire();
-                map_logger.write("\n "+i.robot+","+str(i.map_percent)+" ,"+str(int(rospy.get_time()-base_time)))
+                map_logger.write("\n "+i.robot+","+str(i.map_percent)+" ,"+str(int(base_time)))
                 i.t_lock_map.release();
                 i.t_lock_path.acquire();
                 if(i.robot!="global_map"):
-                    path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(rospy.get_time()-base_time)))
+                    path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(base_time)))
                 i.t_lock_path.release();
-        rate.sleep();
+        base_time+=2;
+        rate.sleep()
     rospy.spin()
 
 main();

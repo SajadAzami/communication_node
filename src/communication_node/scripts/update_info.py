@@ -19,7 +19,7 @@ from communication_node.msg import *
 from nav_msgs.msg import *
 from environment_information import get_object_distance ,get_n_walls_between
 from propagation_models import *
-propagation_parameters={ "decay_factor":2.0,"l0":40.0,"threshold":93}
+propagation_parameters={ "decay_factor":4.5,"l0":40.0,"threshold":93}
 connection_list=[];
 direct_connection=[];
 debuger_mode=False;
@@ -103,9 +103,9 @@ def main():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
-         if not os.path.exists("/home/user/project_franchesco/communication_node/test_results/"+log_file):
-             os.makedirs("/home/user/project_franchesco/communication_node/test_results/"+log_file)
-         information_logger =  open("/home/user/project_franchesco/communication_node/test_results/"+log_file+"/"+log_file+"_signal.log", "w")
+         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file):
+             os.makedirs("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file)
+         information_logger =  open("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file+"/"+log_file+"_signal.log", "w")
          information_logger.write("\n \n \n ###################### \n ###################### \n")
          information_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
          information_logger.write("propagation model =>"+prop_model+" --- propagation parameters===>>>"+" [decay_factor="+str(propagation_parameters["decay_factor"])+" ]--[ l0="+str(propagation_parameters["l0"])+"]--[ threshold="+str(propagation_parameters["threshold"])+ "]\n")

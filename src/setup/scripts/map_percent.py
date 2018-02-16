@@ -17,12 +17,14 @@ import threading;
 
 t_lock=threading.Lock();
 explored_percent=0;
-
+md=999999999;
 def call_back(map_data):
     global explored_percent;
     global t_lock;
+    global md;
     t_lock.acquire();
     explored_percent=0;
+    md=map_data.info.height*map_data.info.width;
     for i in map_data.data:
         if i>=0 :
             explored_percent+=1;
@@ -33,6 +35,7 @@ def call_back(map_data):
 def talker():
     global explored_percent;
     global t_lock;
+    global md;
     rospy.init_node('map_percent', anonymous=True)
     global_map=rospy.get_param("global_map", default="none");
     robot_name_space = rospy.get_param("robot_name", default="sos1");
@@ -51,7 +54,7 @@ def talker():
     while not rospy.is_shutdown():
         temp_data=Float64();
         t_lock.acquire();
-        temp_data.data=explored_percent/10000.0;
+        temp_data.data=explored_percent/2500.0;
         t_lock.release();
         pub.publish(temp_data)
         rate.sleep()
