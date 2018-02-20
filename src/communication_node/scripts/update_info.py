@@ -19,7 +19,7 @@ from communication_node.msg import *
 from nav_msgs.msg import *
 from environment_information import get_object_distance ,get_n_walls_between
 from propagation_models import *
-propagation_parameters={ "decay_factor":4.5,"l0":40.0,"threshold":93}
+propagation_parameters={ "decay_factor":0.0,"l0":0.0,"threshold":193}
 connection_list=[];
 direct_connection=[];
 debuger_mode=False;

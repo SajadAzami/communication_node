@@ -91,6 +91,7 @@ def main():
     rate = rospy.Rate(0.5)
     base_time = 0;
     while (not rospy.is_shutdown()) and base_time<1200:
+        if(base_time%100==0):print("100 seconds");
         if debuger_mode==True:
             for i in info_list:
                 i.t_lock_map.acquire();
