@@ -4,10 +4,10 @@ global_costmap:
   resolution: 0.2
   rolling_window:             false
   track_unknown_space:        true
-  width:                      128.0
-  height:                     128.0
-  origin_x:                   -64.0
-  origin_y:                   -64.0
+  width:                      250.0
+  height:                     250.0
+  origin_x:                   -125.0
+  origin_y:                   -125.0
 
   plugins:
      - {name: obstacles_costmap2d2,       type: "costmap_2d::ObstacleLayer"}

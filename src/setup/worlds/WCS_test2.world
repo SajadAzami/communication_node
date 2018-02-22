@@ -60,6 +60,7 @@
         <gravity>1</gravity>
       </link>
     </model>
+    <plugin name='gazebo_simple_world' filename='libgazebo_simple_world.so'/>
     <physics name='default_physics' default='0' type='ode'>
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
