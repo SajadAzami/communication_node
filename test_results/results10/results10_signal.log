@@ -1,0 +1,24 @@
+  This is the result of test on 2018-02-22 17:12:08 GMT time
+propagation model =>mwm --- propagation parameters===>>> [decay_factor=0.0 ]--[ l0=0]--[ threshold=93]
+robotname ---conection to robot1---conection to robot2---conection to robot0---conection to robot3
+
+ //////////////////////
+ ////////////////////
+ 12:08 GMT time
+information for multihub
+ --robot1----1----1----1----1--
+--robot2----1----1----1----1--
+--robot0----1----1----1----1--
+--robot3----1----1----1----1--
+information for direct connection
+ --robot1----1----1----1----1--
+--robot2----1----1----1----1--
+--robot0----1----1----1----1--
+--robot3----1----1----1----1--
+
+ The Test has finished on 2018-02-22 18:21:47 GMT time
+
+ ========================
+ ========================
+
+
