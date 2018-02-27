@@ -50,7 +50,7 @@ def talker():
 
     rospy.Subscriber(subscribing_topic, OccupancyGrid, call_back)
     pub = rospy.Publisher(publishing_topic, Float64, queue_size=10)
-    rate = rospy.Rate(1.5) # 10hz
+    rate = rospy.Rate(0.5) # 10hz
     while not rospy.is_shutdown():
         temp_data=Float64();
         t_lock.acquire();
