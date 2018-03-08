@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-  <param name="log_file" type="string" value="results11"/>
+  <param name="log_file" type="string" value="results12"/>
   <param name="debuger_mode" type="boolean" value="True"/>
     <node pkg="communication_node" type="update_info.py" name="update_info" output="screen" />
 
