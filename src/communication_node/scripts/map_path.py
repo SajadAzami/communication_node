@@ -75,17 +75,17 @@ def main():
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
          log_file=rospy.get_param("log_file",default="results")
-         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file):
-             os.makedirs("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file)
-         map_logger =  open("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file+"/"+log_file+"_map.log", "w")
+         if not os.path.exists("/home/sosvr/communication_node_project/communication_node/results_pack/"+log_file):
+             os.makedirs("/home/sosvr/communication_node_project/communication_node/results_pack/"+log_file)
+         map_logger =  open("/home/sosvr/communication_node_project/communication_node/results_pack/"+log_file+"/"+log_file+"_map.log", "w")
          map_logger.write("\n \n \n ###################### \n ###################### \n")
          map_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         path_logger =  open("/home/sosvr/communication_node_project/communication_node/test_results/"+log_file+"/"+log_file+"_path.log", "w")
+         path_logger =  open("/home/sosvr/communication_node_project/communication_node/results_pack/"+log_file+"/"+log_file+"_path.log", "w")
          path_logger.write("\n \n \n ###################### \n ###################### \n")
          path_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
 
 
-    for i in ["robot0","robot1","robot2","robot3","global_map"]:
+    for i in ["global_map"]:
         info_list.append(map_path(i,threading.Lock(),threading.Lock()));
 
     rate = rospy.Rate(0.5)
