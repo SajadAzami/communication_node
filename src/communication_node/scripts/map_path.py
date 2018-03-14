@@ -88,9 +88,9 @@ def main():
     for i in ["global_map"]:
         info_list.append(map_path(i,threading.Lock(),threading.Lock()));
 
-    rate = rospy.Rate(0.5)
+    rate = rospy.Rate(0.05)
     base_time = 0;
-    while (not rospy.is_shutdown()) and base_time<1200:
+    while (not rospy.is_shutdown()) and base_time<1300:
         if(base_time%100==0):print("100 seconds");
         if debuger_mode==True:
             for i in info_list:
@@ -101,7 +101,7 @@ def main():
                 if(i.robot!="global_map"):
                     path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(base_time)))
                 i.t_lock_path.release();
-        base_time+=2;
+        base_time+=20;
         rate.sleep()
     rospy.spin()
 
