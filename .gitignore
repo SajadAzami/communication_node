@@ -1,4 +1,5 @@
 .idea/
-
+devel/
+build/
 # python waste
 *.pyc
