@@ -3,3 +3,4 @@ devel/
 build/
 # python waste
 *.pyc
+.catkin_workspace
