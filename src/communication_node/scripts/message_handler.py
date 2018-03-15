@@ -86,10 +86,11 @@ class message_handle:
             robots_list=rospy.get_param("/robots_list")
             if ((data.source not in robots_list )or(data.destination not in robots_list) ):
                 return;
-            connection_list=[];
-            connection_list=(rospy.get_param("/connection_list_"+data.source));
-            source_index=robots_list.index(data.destination);
-            if (connection_list[1+source_index]==1):
+            #connection_list=[];
+            #connection_list=(rospy.get_param("/connection_list_"+data.source));
+            #source_index=robots_list.index(data.destination);
+            #if (connection_list[1+source_index]==1):
+            if (True):
                     if (self.alt_type!=None):
                        self.message_publisher = rospy.Publisher(data.source +"/g_map", self.alt_type, queue_size=10)
                        i=0

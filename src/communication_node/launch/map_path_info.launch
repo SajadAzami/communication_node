@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-  <param name="log_file" type="string" value="map3results5"/>
+  <param name="log_file" type="string" value="map3results6"/>
 
   <param name="debuger_mode" type="boolean" value="True"/>
     <node pkg="communication_node" type="map_path.py" name="info_node" output="screen" />
