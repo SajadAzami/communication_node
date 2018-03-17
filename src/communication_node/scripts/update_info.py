@@ -45,6 +45,7 @@ def line_of_sight():
                     direct_connection[i][1+j]=0;
                     continue;
                 result = one_slope_model_checker(distance=distance,decay_factor=propagation_parameters["decay_factor"],l0=propagation_parameters["l0"],threshold=propagation_parameters["threshold"])
+                print("signal",result[1]);
                 if(result[0]==True):
                     connection_list[i][1+j]=1;
                     direct_connection[i][1+j]=1;
@@ -95,14 +96,14 @@ def main():
            temp_list.append(0);
        connection_list.append(list(temp_list));
        direct_connection.append(list(temp_list));
-    rate = rospy.Rate(0.5) # 10hz
+    rate = rospy.Rate(0.3) # 10hz
     while not rospy.is_shutdown():
         line_of_sight();
         multihub();
         for i in range(0,len(connection_list)):
             rospy.set_param("/connection_list_"+connection_list[i][0],connection_list[i]);
         #print("update done");
-
+        rate.sleep();
     rospy.spin();
 
 main();
