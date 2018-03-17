@@ -102,7 +102,8 @@ def main():
                     path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(base_time)))
                 i.t_lock_path.release();
         base_time+=20;
-        rate.sleep()
+        rate.sleep();
+    print("finished");
     rospy.spin()
 
 main();
