@@ -70,7 +70,6 @@ def main():
     global base_time;
     signal.signal(signal.SIGINT, on_exit)
     signal.signal(signal.SIGTERM, on_exit)
-log_folder
     rospy.init_node('info_node', anonymous=True)
     debuger_mode=rospy.get_param("debuger_mode",default=False)
     if debuger_mode==True :
