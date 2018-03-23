@@ -54,7 +54,7 @@ def talker():
     while not rospy.is_shutdown():
         temp_data=Float64();
         t_lock.acquire();
-        temp_data.data=explored_percent/2500.0;
+        temp_data.data=explored_percent/15625.0;
         t_lock.release();
         pub.publish(temp_data)
         rate.sleep()
