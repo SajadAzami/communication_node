@@ -3,7 +3,7 @@
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
   <arg name="paused" default="false"/>
-  <arg name="world_name" default="$(find setup)/worlds/WCS_test3.world"/>
+  <arg name="world_name" default="$(find setup)/worlds/WCS_test1.world"/>
   <arg name="gui" default="false"/>
   </include>
 
