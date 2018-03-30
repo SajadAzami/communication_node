@@ -92,7 +92,7 @@ def multi_wall_model_checker(distance,number_of_walls,
                             decay_factor=2.0,
                             l0=40.0,
                             threshold=93):
-    wall_decays=[6.0,8.0,10.0];
+    wall_decays=[8.0,8.0,8.0];
     signal_loss = _one_slope_model_strength(distance, decay_factor, l0)+(wall_decays[0]*number_of_walls[0])+(wall_decays[1]*number_of_walls[1])+(wall_decays[2]*number_of_walls[2])
     #print signal_loss
 

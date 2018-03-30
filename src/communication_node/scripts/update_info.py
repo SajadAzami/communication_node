@@ -25,7 +25,7 @@ direct_connection=[];
 debuger_mode=False;
 information_logger=None;
 robots_list=[];
-prop_model="1sm";
+prop_model="mwm";
 
 
 
