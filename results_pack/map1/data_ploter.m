@@ -26,10 +26,10 @@ direct_standard_deviation=reshape(direct_standard_deviation,[5,15]);
 
 result11=importdata('./dataset_osm/results11_map.log');
 result12=importdata('./dataset_osm/results12_map.log');
-result15=importdata('./dataset_osm/results15_map.log');
+result13=importdata('./dataset_osm/results13_map.log');
 result14=importdata('./dataset_osm/results14_map.log');
 result15=importdata('./dataset_osm/results15_map.log');
-osm_data_table=horzcat(result11(:,1),result12(:,1),result15(:,1),result14(:,1),result15(:,1));
+osm_data_table=horzcat(result11(:,1),result12(:,1),result13(:,1),result14(:,1),result15(:,1));
 osm_mean_of_data=mean(osm_data_table,2);
 osm_mean_of_data=reshape(osm_mean_of_data,[5,15]);
 osm_standard_deviation = std(osm_data_table,0,2);
