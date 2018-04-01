@@ -50,7 +50,7 @@ class map_path:
         self.map_data=input_map_data.data;
         self.t_lock_map.release();
 
-    def map_percent_calculator():
+    def map_percent_calculator(self):
         self.t_lock_map.acquire();
         explored_percent=0;
         if self.map_data==None:
@@ -85,7 +85,7 @@ def main():
          map_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
 
     for i in ["global_map"]:
-        info_list.append(map_path(i,threading.Lock());
+        info_list.append(map_path(i,threading.Lock()));
 
     rate = rospy.Rate(0.05)
     base_time = 0;
