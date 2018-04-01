@@ -56,7 +56,7 @@ class map_path:
         if self.map_data==None:
             self.t_lock_map.release();
             return 0.0;
-        for i in self.map_data.data:
+        for i in self.map_data:
             if i>=0 :
                 explored_percent+=1;
         self.map_percent=explored_percent/10000.0;
