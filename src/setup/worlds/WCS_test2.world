@@ -127,7 +127,7 @@
       <real_time>161 131729861</real_time>
       <wall_time>1521014147 273135267</wall_time>
       <iterations>160600</iterations>
-      <model name='BuildingDefaultName'>
+      <model name='willowgarage'>
         <pose frame=''>-55.162 46.8849 0 0 -0 1.56444</pose>
         <scale>1 1 1</scale>
         <link name='Wall_10'>
@@ -8997,7 +8997,7 @@
       </link>
       <static>1</static>
     </model>
-    <model name='BuildingDefaultName'>
+    <model name='willowgarage'>
       <pose frame=''>-0.2801 7.1511 0 0 -0 0</pose>
       <link name='Wall_10'>
         <collision name='Wall_10_Collision'>
