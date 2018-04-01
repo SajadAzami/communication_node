@@ -7,9 +7,6 @@
 
 """
 
-#3b3c32e9
-
-
 import os
 import signal
 import sys
@@ -40,26 +37,32 @@ def on_exit(*args):
     sys.exit(0)
 
 class map_path:
-    def __init__(self,robot_name_space,t_lock_map,t_lock_path):
-        self.map_sub=rospy.Subscriber("/"+robot_name_space+"/percent_of_map", Float64, self.map_callback);
-        self.path_sub=None;
-        if(robot_name_space!="global_map"):
-            self.path_sub=rospy.Subscriber("/"+robot_name_space+"/path_lenght", Float64, self.path_callback);
-        self.path_lenght=0;
-        self.map_percent=0;
+    def __init__(self,robot_name_space,t_lock_map):
+        subscribing_topic="/global_map";
+        self.map_sub=rospy.Subscriber(subscribing_topic, OccupancyGrid, self.map_callback);
+        self.map_data=None;
+        self.map_percent=0.0;
         self.t_lock_map=t_lock_map;
-        self.t_lock_path=t_lock_path;
         self.robot=robot_name_space;
 
-    def map_callback(self,map_data):
+    def map_callback(self,input_map_data):
         self.t_lock_map.acquire();
-        self.map_percent=map_data.data;
+        self.map_data=input_map_data.data;
         self.t_lock_map.release();
 
-    def path_callback(self,path_data):
-        self.t_lock_path.acquire();
-        self.path_lenght=path_data.data;
-        self.t_lock_path.release();
+    def map_percent_calculator():
+        self.t_lock_map.acquire();
+        explored_percent=0;
+        if self.map_data==None:
+            self.t_lock_map.release();
+            return 0.0;
+        for i in self.map_data.data:
+            if i>=0 :
+                explored_percent+=1;
+        self.map_percent=explored_percent/10000.0;
+        self.t_lock_map.release();
+        return self.map_percent;
+
 
 
 
@@ -80,13 +83,9 @@ def main():
          map_logger =  open("/home/sosvr/communication_node_project/communication_node/results_pack/"+log_folder+"/"+log_file+"_map.log", "w")
          map_logger.write("\n \n \n ###################### \n ###################### \n")
          map_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-         path_logger =  open("/home/sosvr/communication_node_project/communication_node/results_pack/"+log_folder+"/"+log_file+"_path.log", "w")
-         path_logger.write("\n \n \n ###################### \n ###################### \n")
-         path_logger.write("\n This is the result of test on "+strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " GMT time \n")
-
 
     for i in ["global_map"]:
-        info_list.append(map_path(i,threading.Lock(),threading.Lock()));
+        info_list.append(map_path(i,threading.Lock());
 
     rate = rospy.Rate(0.05)
     base_time = 0;
@@ -94,13 +93,9 @@ def main():
         if(base_time%100==0):print(str(base_time/100),"seconds");
         if debuger_mode==True:
             for i in info_list:
-                i.t_lock_map.acquire();
-                map_logger.write("\n "+i.robot+","+str(i.map_percent)+" ,"+str(int(base_time)))
-                i.t_lock_map.release();
-                i.t_lock_path.acquire();
-                if(i.robot!="global_map"):
-                    path_logger.write("\n "+i.robot+" ,"+str(i.path_lenght)+" ,"+str(int(base_time)))
-                i.t_lock_path.release();
+                i.map_percent_calculator();
+                map_logger.write("\n "+i.robot+","+str(i.map_percent)+" ,"+str(int(base_time)));
+                print(i.map_percent);
         base_time+=20;
         rate.sleep();
     print("finished");

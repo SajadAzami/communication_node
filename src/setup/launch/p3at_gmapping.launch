@@ -14,10 +14,10 @@
     <param name="maxUrange" value="29" />
     <param name="maxRange" value="30.4" />
     <param name="linearUpdate" value="0.1" />
-    <param name="xmin" value="-150" />
-    <param name="xmax" value="150" />
-    <param name="ymax" value="150" />
-    <param name="ymin" value="-150" />
+    <param name="xmin" value="-125" />
+    <param name="xmax" value="125" />
+    <param name="ymax" value="125" />
+    <param name="ymin" value="-125" />
 
   </node>
 </group>
